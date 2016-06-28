@@ -104,11 +104,10 @@ pre.prettyprint-2{
   display: block;
   text-indent: -9999px;
   width: 300px;
-  height:100px;
+  height:75px;
   background: url('../img/M_white.svg');
-  background: url('../img/mbcp_logo_invert.svg');
-  background-size: cover;
+  /*background: url('../img/mbcp_logo_invert.svg');*/
+  background-size: 75px;
   background-repeat:no-repeat;
-  background-position:0 2px;
-  border:1px solid green;
+  background-position:0 0;
 }
