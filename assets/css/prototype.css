@@ -100,14 +100,16 @@ pre.prettyprint-2{
   margin-right: 5px;
 }
 
-.logo {
-  display: block;
-  text-indent: -9999px;
-  width: 100px;
-  height:50px;
-  background: url('../img/M_white.svg');
-  /*background: url('../img/mbcp_logo_invert.svg');*/
-  background-size: 50px;
-  background-repeat:no-repeat;
-  background-position:0 0;
+@media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {
+  .logo {
+    width: 25%;
+    height:25%;
+  }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 380dpi) {
+    .logo {
+      width: 25%;
+      height:25%;
+    }
+  }
