@@ -100,16 +100,27 @@ pre.prettyprint-2{
   margin-right: 5px;
 }
 
+
 @media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {
   .logo {
-    width: 25%;
-    height:25%;
+    width: 8%;
+    height:8%;
+  }
+
+  .logo2 {
+    width: 30%;
+    height:30%;
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 380dpi) {
     .logo {
-      width: 25%;
-      height:25%;
+      width: 12.5%;
+      height:12.5%;
+    }
+
+    .logo2 {
+      width: 50%;
+      height:50%;
     }
   }
