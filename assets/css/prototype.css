@@ -1,3 +1,13 @@
+.content h3 {
+  margin-top: 75px;
+}
+.content .first {
+  margin-top: 0px;
+}
+.content hr {
+  margin-bottom: 25px;
+}
+
 .space-50 {
   height: 50px;
   position: relative;
@@ -27,10 +37,14 @@
   color: #fff;
 }
 
+.first {
+  margin-top: 0px;
+}
+
 pre.prettyprint{
     background-color: #eee;
     border: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-top: 40px;
     padding: 20px;
     text-align: left;
@@ -39,6 +53,7 @@ pre.prettyprint-2{
     background-color: #eee;
     border: 0px;
     margin-top: 0px;
+    margin-bottom: 30px;
     padding: 20px;
     text-align: left;
 }
