@@ -1,0 +1,25 @@
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- @javascript jquery -->
+      <!-- @javascript bootstrap -->
+
+      <!-- Switch Hammer default current class to bootstrap default active class -->
+      <script type="text/javascript">
+            $('.current').each(function(){
+            $(this).removeClass('current');
+            $(this).addClass('active');
+            });
+      </script>
+
+      <!-- Triger Off canvas action -->
+      <script>
+            $(document).ready(function() {
+                  $('[data-toggle="offcanvas"]').click(function() {
+                        $('.row-offcanvas').toggleClass('active')
+                  });
+            });
+      </script>
+
+</body>
+</html>
