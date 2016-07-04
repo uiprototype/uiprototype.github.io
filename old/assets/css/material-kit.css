@@ -54,7 +54,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   transition: all 370ms linear;
 }
 
-.animation-transition-fast, .navbar {
+.animation-transition-fast, . {
   -webkit-transition: all 150ms ease 0s;
   -moz-transition: all 150ms ease 0s;
   -o-transition: all 150ms ease 0s;
