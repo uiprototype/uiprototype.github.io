@@ -2359,5 +2359,11 @@ if (typeof jQuery === 'undefined') {
       Plugin.call($spy, data)
     })
   })
+  
+// DOCUMENTATION SIDEBAR
+  $('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
 
 }(jQuery);

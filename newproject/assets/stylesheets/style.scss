@@ -5,12 +5,12 @@
 @import "template-edits";
 
 // Logo
-.logopng {
-  width:9%;
+.logomobile {
+  width:12%;
   height: auto;
   position:relative;
-  margin-top: 8px;
   margin-left: 10px;
+  margin-top: -5px;
 }
 @media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {
   .logo {
@@ -142,18 +142,23 @@
     display: block;
 }
 
+// Navbar
 @media (max-width: 768px) {
   .navbar.navbar-transparent {
     padding-top: 10px;
     border-radius: 0;
   }
-
-  .main-raised {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+}
+.navbar, .navbar.navbar-default {
+  background-color: #d1005d;
+  color: #ffffff;
+}
+.navbar.navbar-transparent {
+  background-color: transparent;
+  box-shadow: none;
 }
 
+// Contents
 .main {
   background: #FFFFFF;
   position: relative;
@@ -167,15 +172,45 @@
   padding: 0px;
 }
 
-.section {
-  padding: 50px 20px 50px 20px;
+@media (max-width: 768px) {
+  .main-raised {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
-.navbar, .navbar.navbar-default {
-  background-color: #d1005d;
-  color: #ffffff;
-}
-.navbar.navbar-transparent {
-  background-color: transparent;
-  box-shadow: none;
+.section {
+  padding: 50px 20px 50px 20px;
+
+  hr {
+    margin: 20px 0px 40px 0px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.6em;
+    font-weight: 300;
+  }
+  pre {
+    border: 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #555;
+  }
+  @media (max-width: 768px) {
+    pre {
+      padding-left: 0px;
+      padding-top: 20px;
+    }
+  }
+  .row {
+    margin-top: 40px;
+  }
+  .well {
+    background-color: #fff;
+  }
 }
