@@ -181,6 +181,7 @@
 
 .section {
   padding: 50px 20px 50px 20px;
+  font-weight: 300;
 
   hr {
     margin: 20px 0px 40px 0px;
@@ -203,14 +204,44 @@
   }
   @media (max-width: 768px) {
     pre {
-      padding-left: 0px;
+      padding-left: 10px;
       padding-top: 20px;
     }
   }
   .row {
+    margin-bottom: 60px;
     margin-top: 40px;
+  }
+  .nomargin-bottom {
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .lowmargin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .premargin {
+    margin-top: 20px;
   }
   .well {
     background-color: #fff;
   }
+  code {
+    font-size: 11px;
+  }
+  .cssclass {
+    background-color: #E0F2F8;
+    color: #149DD1;
+  }
+  .linelist {
+    line-height: 3.4em;
+  }
+}
+
+.sharelinks {
+    padding: 10px 20px;
+    background: #f1f1f1;
+    box-shadow: 0 1px #fff inset, 0 -1px #fff inset;
+    border-bottom: 1px solid #ddd;
+    position: relative;
 }

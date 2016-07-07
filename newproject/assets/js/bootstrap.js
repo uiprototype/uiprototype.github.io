@@ -2359,11 +2359,30 @@ if (typeof jQuery === 'undefined') {
       Plugin.call($spy, data)
     })
   })
-  
+
 // DOCUMENTATION SIDEBAR
   $('body').scrollspy({
     target: '.bs-docs-sidebar',
-    offset: 40
+});
+
+
+
+// SCROLL div
+var sOffset = $(".bs-docs-sidebar").offset().top;
+var shareheight = $(".bs-docs-sidebar").height() + 43;
+$(window).scroll(function() {
+    var scrollYpos = $(document).scrollTop();
+    if (scrollYpos > sOffset - shareheight) {
+        $(".bs-docs-sidebar").css({
+            'top': '20px',
+            'position': 'fixed'
+        });
+    } else {
+        $(".bs-docs-sidebar").css({
+            'top': 'auto',
+            'position': 'relative'
+        });
+    }
 });
 
 }(jQuery);

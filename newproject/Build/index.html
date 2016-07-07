@@ -1,11 +1,104 @@
-<!-- @include _header -->
-<!-- $title Hammer Theme -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- $description Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. -->
-<!-- $keywords HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development -->
-<!-- $author Marko Krstic and Bootstrap contributors -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+      <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+      <meta name="author" content="Marko Krstic and Bootstrap contributors">
+      <link rel="icon" href="assets/img/favicon.ico">
+      <title>UI Prototype</title>
+      <link rel='stylesheet' href='assets/stylesheets/style.css'>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
 
-<!-- $bodyclass home-template -->
+</head>
+
+<body class="home-template">
+
+  <nav class="navbar navbar-default hidden-md hidden-lg hidden-print">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" class="logomobile"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="nav">Introdução</a></li>
+          <li><a href="nav0">Typography</a></li>
+          <li><a href="nav1">Basic Components</a></li>
+          <li><a href="nav2">Containers</a></li>
+          <li><a href="nav3">Forms</a></li>
+          <li><a href="nav4">Tables</a></li>
+          <li><a href="nav5">Images</a></li>
+          <li><a href="nav6">Advanced Components</a></li>
+          <li><a href="nav7">Page Examples</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="wrapper hidden-print">
+  	<div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-6 col-md-offset-3">
+            <object type="image/svg+xml" data="assets/img/M_white.svg" class="logo">
+                logo
+            </object>
+            <!-- <object type="image/svg+xml" data="assets/img/mbcp_logo_invert.svg" class="logo2">
+                logo
+            </object> -->
+  					<h2 class="title text-center">UI Prototype</h2>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+
+
+
+
+
+
 <div class="container">
   <div class="row">
       <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
@@ -664,7 +757,95 @@
       </div>
     </div>
     <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
-      <!-- @include _nav -->
+      <!DOCTYPE html>
+<html lang="en">
+<div class="container">
+<nav class="bs-docs-sidebar hidden-print affix">
+        <ul id="sidebar" class="nav nav-stacked fixed" data-spy="affix">
+            <li>
+                <a href="#nav">Introdução</a>
+            </li>
+            <li>
+                <a href="#nav0">Typography</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav0_1">Headings</a></li>
+                    <li><a href="#nav0_2">Inline Text Elements</a></li>
+                    <li><a href="#nav0_3">Alignment</a></li>
+                    <li><a href="#nav0_4">Transformation</a></li>
+                    <li><a href="#nav0_5">Blockquote</a></li>
+                    <li><a href="#nav0_6">Lists</a></li>
+                    <li><a href="#nav0_7">Code</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav1">Basic Components</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav1_1">Buttons</a></li>
+                    <li><a href="#nav1_2">Dropdowns</a></li>
+                    <li><a href="#nav1_3">Labels</a></li>
+                    <li><a href="#nav1_4">Tooltip</a></li>
+                    <li><a href="#nav1_5">Popover</a></li>
+                    <li><a href="#nav1_6">Pagination</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav2">Containers</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav2_1">Notifications</a></li>
+                    <li><a href="#nav2_2">Jumbotron</a></li>
+                    <li><a href="#nav2_3">Panel</a></li>
+                    <li><a href="#nav2_4">Modal</a></li>
+                    <li><a href="#nav2_5">Carousel</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav3">Forms</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav3_1">Checkboxes</a></li>
+                    <li><a href="#nav3_2">Radio Buttons</a></li>
+                    <li><a href="#nav3_3">Toggle Buttons</a></li>
+                    <li><a href="#nav3_4">Inputs</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav4">Tables</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav4_1">Simple Table</a></li>
+                    <li><a href="#nav4_2">Simple Table with Actions</a></li>
+                    <li><a href="#nav4_3">Table Styles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav5">Images</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav5_1">Picture Element</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav6">Advanced Components</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav6_1">Account Selector</a></li>
+                    <li><a href="#nav6_2">Product Header</a></li>
+                    <li><a href="#nav6_3">Search</a></li>
+                    <li><a href="#nav6_4">Search Advanced</a></li>
+                    <li><a href="#nav6_5">SAFe</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#nav7">Page Examples</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#nav7_1">Transferência Nacional</a></li>
+                    <li><a href="#nav7_2">Consulta de Movimentos</a></li>
+                    <li><a href="#nav7_3">Detalhe de Conta</a></li>
+                </ul>
+            </li>
+        </ul>
+</nav>
+
+
+
+</div>
+
     </div>
   </div>
 </div>
@@ -672,4 +853,28 @@
 <!-- /.container -->
 
 
-<!-- @include _footer -->
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src='assets/js/vendor/jquery.js'></script>
+      <script src='assets/js/bootstrap.js'></script>
+
+      <!-- Switch Hammer default current class to bootstrap default active class -->
+      <script type="text/javascript">
+            $('.current').each(function(){
+            $(this).removeClass('current');
+            $(this).addClass('active');
+            });
+      </script>
+
+      <!-- Triger Off canvas action -->
+      <script>
+            $(document).ready(function() {
+                  $('[data-toggle="offcanvas"]').click(function() {
+                        $('.row-offcanvas').toggleClass('active')
+                  });
+            });
+      </script>
+
+</body>
+</html>
