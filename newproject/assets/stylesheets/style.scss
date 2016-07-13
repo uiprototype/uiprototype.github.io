@@ -192,6 +192,9 @@
   h3 {
     margin-bottom: 20px;
   }
+  .h3nomargin {
+    margin-bottom: 0px;
+  }
   p {
     line-height: 1.6em;
     font-weight: 300;
@@ -232,6 +235,10 @@
   .cssclass {
     background-color: #E0F2F8;
     color: #149DD1;
+  }
+  .jsfunction {
+    background-color: #F5E6FF;
+    color: #A833FF;
   }
   .linelist {
     line-height: 3.4em;

@@ -6083,6 +6083,8 @@ button.close {
     margin-bottom: 20px; }
   .section h3 {
     margin-bottom: 20px; }
+  .section .h3nomargin {
+    margin-bottom: 0px; }
   .section p {
     line-height: 1.6em;
     font-weight: 300; }
@@ -6113,6 +6115,9 @@ button.close {
   .section .cssclass {
     background-color: #E0F2F8;
     color: #149DD1; }
+  .section .jsfunction {
+    background-color: #F5E6FF;
+    color: #A833FF; }
   .section .linelist {
     line-height: 3.4em; }
 

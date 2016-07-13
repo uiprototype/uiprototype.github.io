@@ -184,7 +184,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // BUTTON PUBLIC CLASS DEFINITION
-  // ==============================
 
   var Button = function (element, options) {
     this.$element  = $(element)
@@ -246,7 +245,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // BUTTON PLUGIN DEFINITION
-  // ========================
 
   function Plugin(option) {
     return this.each(function () {
@@ -268,7 +266,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // BUTTON NO CONFLICT
-  // ==================
 
   $.fn.button.noConflict = function () {
     $.fn.button = old
@@ -277,7 +274,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // BUTTON DATA-API
-  // ===============
 
   $(document)
     .on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
@@ -488,7 +484,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // CAROUSEL NO CONFLICT
-  // ====================
 
   $.fn.carousel.noConflict = function () {
     $.fn.carousel = old
@@ -497,7 +492,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // CAROUSEL DATA-API
-  // =================
 
   var clickHandler = function (e) {
     var href
@@ -543,7 +537,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // COLLAPSE PUBLIC CLASS DEFINITION
-  // ================================
 
   var Collapse = function (element, options) {
     this.$element      = $(element)
@@ -755,7 +748,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // DROPDOWN CLASS DEFINITION
-  // =========================
 
   var backdrop = '.dropdown-backdrop'
   var toggle   = '[data-toggle="dropdown"]'
@@ -869,7 +861,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // DROPDOWN PLUGIN DEFINITION
-  // ==========================
 
   function Plugin(option) {
     return this.each(function () {
@@ -921,7 +912,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // MODAL CLASS DEFINITION
-  // ======================
 
   var Modal = function (element, options) {
     this.options             = options
@@ -1216,7 +1206,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // MODAL NO CONFLICT
-  // =================
 
   $.fn.modal.noConflict = function () {
     $.fn.modal = old
@@ -1225,7 +1214,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // MODAL DATA-API
-  // ==============
 
   $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
     var $this   = $(this)
@@ -1260,7 +1248,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // TOOLTIP PUBLIC CLASS DEFINITION
-  // ===============================
 
   var Tooltip = function (element, options) {
     this.type       = null
@@ -1752,7 +1739,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // TOOLTIP NO CONFLICT
-  // ===================
 
   $.fn.tooltip.noConflict = function () {
     $.fn.tooltip = old
@@ -1793,7 +1779,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // NOTE: POPOVER EXTENDS tooltip.js
-  // ================================
 
   Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
 
@@ -1840,7 +1825,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // POPOVER PLUGIN DEFINITION
-  // =========================
 
   function Plugin(option) {
     return this.each(function () {
@@ -1861,7 +1845,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // POPOVER NO CONFLICT
-  // ===================
 
   $.fn.popover.noConflict = function () {
     $.fn.popover = old
@@ -1883,7 +1866,6 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   // SCROLLSPY CLASS DEFINITION
-  // ==========================
 
   function ScrollSpy(element, options) {
     this.$body          = $(document.body)
@@ -2003,7 +1985,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // SCROLLSPY PLUGIN DEFINITION
-  // ===========================
 
   function Plugin(option) {
     return this.each(function () {
@@ -2023,7 +2004,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // SCROLLSPY NO CONFLICT
-  // =====================
 
   $.fn.scrollspy.noConflict = function () {
     $.fn.scrollspy = old
@@ -2032,7 +2012,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // SCROLLSPY DATA-API
-  // ==================
 
   $(window).on('load.bs.scrollspy.data-api', function () {
     $('[data-spy="scroll"]').each(function () {
@@ -2315,7 +2294,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // AFFIX PLUGIN DEFINITION
-  // =======================
 
   function Plugin(option) {
     return this.each(function () {
@@ -2335,7 +2313,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // AFFIX NO CONFLICT
-  // =================
 
   $.fn.affix.noConflict = function () {
     $.fn.affix = old
@@ -2344,7 +2321,6 @@ if (typeof jQuery === 'undefined') {
 
 
   // AFFIX DATA-API
-  // ==============
 
   $(window).on('load', function () {
     $('[data-spy="affix"]').each(function () {
