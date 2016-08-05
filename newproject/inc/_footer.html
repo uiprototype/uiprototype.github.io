@@ -5,11 +5,20 @@
       <!-- @javascript bootstrap -->
 
       <!-- Switch Hammer default current class to bootstrap default active class -->
+      <script src="../assets/js/bootstrap-datepicker.js"
       <script type="text/javascript">
             $('.current').each(function(){
             $(this).removeClass('current');
             $(this).addClass('active');
             });
+      </script>
+
+      <script>
+        $(document).on('click.nav','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+          $(this).removeClass('in').addClass('collapse');
+          }
+        });
       </script>
 
       <!-- Triger Off canvas action -->
@@ -30,6 +39,8 @@
               $('[data-toggle="popover"]').popover()
             })
       </script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
 </body>
 </html>

@@ -2341,8 +2341,6 @@ if (typeof jQuery === 'undefined') {
     target: '.bs-docs-sidebar',
 });
 
-
-
 // SCROLL div
 var sOffset = $(".bs-docs-sidebar").offset().top;
 var shareheight = $(".bs-docs-sidebar").height() + 43;

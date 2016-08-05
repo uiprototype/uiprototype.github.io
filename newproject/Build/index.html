@@ -40,12 +40,14 @@
           </script>
         <!-- /Hammer reload -->
       
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+      <link href="../assets/stylesheets/font-awesome.css" rel="stylesheet">
 
 </head>
 
 <body class="home-template">
 
-  <nav class="navbar navbar-default hidden-md hidden-lg hidden-print">
+  <nav class="navbar navbar-default hidden-md hidden-lg hidden-print navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -61,22 +63,21 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="nav">Introdução</a></li>
-          <li><a href="nav0">Typography</a></li>
-          <li><a href="nav1">Basic Components</a></li>
-          <li><a href="nav2">Containers</a></li>
-          <li><a href="nav3">Forms</a></li>
-          <li><a href="nav4">Tables</a></li>
-          <li><a href="nav5">Images</a></li>
-          <li><a href="nav6">Advanced Components</a></li>
-          <li><a href="nav7">Page Examples</a></li>
+          <li><a href="#nav">Introdução</a></li>
+          <li><a href="#nav0">Typography</a></li>
+          <li><a href="#nav1">Basic Components</a></li>
+          <li><a href="#nav2">Containers</a></li>
+          <li><a href="#nav3">Forms</a></li>
+          <li><a href="#nav4">Tables</a></li>
+          <li><a href="#nav5">Images</a></li>
+          <li><a href="#nav6">Advanced Components</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
   <div class="wrapper hidden-print">
-  	<div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
+  	<div class="header header-filter" style="background-image: url('https://unsplash.it/1000/350/?random');">
   		<div class="container">
   			<div class="row">
   				<div class="col-md-6 col-md-offset-3">
@@ -107,11 +108,16 @@
                 <h1 class="visible-print-block">UI Prototype</h1><br>
                 <h2>1. Introdução</h2>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
-                <p><code>html tag</code> <code class="cssclass">css class</code>
+                <div class="row lowmargin">
+                  <div class="col-md-3 hidden-xs hidden-sm hidden-print"><a href="https://getbootstrap.com" target="_blank"><img src="assets/img/bootstrap-logo.png" class="img-responsive"/></a></div>
+                  <div class="col-md-9 col-xs-12 col-sm-12">
+                  <p>Neste protótipo pretende-se demonstrar algumas das principais funcionalidades e componentes que estão presentes na biblioteca do Bootstrap.</p>
+                  <p>O <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> é uma framework open-source utilizada mundialmente para design e desenvolvimento front-end de aplicações web e sites. Esta framework é
+                  actualmente a mais popular e utilizada para desenvolvimentos responsive e mobile first.</p>
+                  <p>As principais vantagens de se adoptar por esta framework são a maior facilidade de desenvolvimento, estrutura responsive, consistência entre browsers e plataformas,
+                    liberdade de customização e a grande comunidade de suporte.</p>
+                  </div>
+                </div>
               </div>
           </div>
           <div id="nav0" class="main main-raised">
@@ -121,11 +127,8 @@
 
                 <!-- HEADINGS -->
                 <h3 id="nav0_1">2.1. Headings</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
-                <p>Lorem ipsum dolor <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code> e <code>h6</code>.</p>
+                <p>Todas as tags HTML5 para os títulos estão disponíveis (desde "h1" até "h6").</p>
+                <p><code>h1</code> <code>h2</code> <code>h3</code> <code>h4</code> <code>h5</code> <code>h6</code></p>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="well">
@@ -151,8 +154,7 @@
 
                 <!-- INLINE TEXT ELEMENTS -->
                 <h3 id="nav0_2">2.2. Inline Text Elements</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Estes elementos são utilizados para formatar texto em linha de acordo com diversas necessidades.</p>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="well">
@@ -182,8 +184,7 @@
 
                 <!-- ALIGNMENT -->
                 <h3 id="nav0_3">2.3. Alignment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Através destas 5 classes é facil alinhar texto dentro de um determinado elemento.</p>
                 <p><code class="cssclass">"text-left"</code> <code class="cssclass">"text-center"</code>
                 <code class="cssclass">"text-right"</code> <code class="cssclass">"text-justify"</code> <code class="cssclass">"text-nowrap"</code></p>
                 <div class="row">
@@ -209,8 +210,7 @@
 
                 <!-- TRANSFORMATION -->
                 <h3 id="nav0_4">2.4. Transformation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Também através de classes CSS disponibilizadas pelo Bootstrap é possível efectuar transformações ao texto rapidamente.</p>
                 <p><code class="cssclass">"text-lowercase"</code> <code class="cssclass">"text-uppercase"</code> <code class="cssclass">"text-capitalize"</code></p>
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -231,8 +231,7 @@
 
                 <!-- BLOCKQUOTE -->
                 <h3 id="nav0_5">2.5. Blockquote</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>O blockquote é um elemento criado originalmente pelo Bootstrap e é utilizado com o objectivo de citar outra fonte.</p>
                 <p><code>blockquote</code> <code class="cssclass">"blockquote-reverse"</code></p>
                 <div class="row nomargin-bottom">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -267,8 +266,8 @@
               <!-- LISTS -->
               <div class="row"></div>
               <h3 id="nav0_6">2.6. Lists</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <p>Estão disponíveis 5 estilos diferentes e fácil implementação para as listas. Nas listas verticais é possível ter listas desordenadas, ordenadas,
+               sem estilo nos marcadores, com descrição horizontal e com descrição vertical. </p>
               <p><code>ul</code> <code>ol</code> <code>li</code> <code>dl</code> <code>dt</code> <code>dd</code> <code class="cssclass">"list-unstyled"</code>
               <code class="cssclass">"list-inline"</code> <code class="cssclass">"dl-horizontal"</code></p>
               <!-- LIST > UNORDERED -->
@@ -400,8 +399,8 @@
           <div class="row lowmargin">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <h3 id="nav0_7">2.7. Code</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip. <code>code</code></p>
+              <p>A tag HTML "code" serve para apresentar uma zona de código.<p>
+                <p><code>code</code></p>
               <pre>
 &lt;code&gt;Code is here&lt;code&gt;
               </pre>
@@ -416,8 +415,6 @@
             <hr>
             <!-- BUTTONS -->
             <h3 id="nav1_1">3.1. Buttons</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
             <p><code>a</code> <code>button</code> <code>input</code></code></p>
             <br>
             <div class="well"><ul class="list-inline linelist">
@@ -433,7 +430,7 @@
             </pre>
             <div class="row lowmargin"></div>
             <h4>3.1.1. Options</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <p>Os botões podem (à semelhança de quase todos os basic components do Bootstrap), ser customizados de acordo com as variáveis default, primary, success, info, warning e danger.</p>
             <p><code class="cssclass">"btn-default"</code> <code class="cssclass">"btn-primary"</code>
             <code class="cssclass">"btn-success"</code> <code class="cssclass">"btn-info"</code>
             <code class="cssclass">"btn-warning"</code> <code class="cssclass">"btn-danger"</code>
@@ -457,7 +454,7 @@
 
               <div class="row lowmargin"></div>
               <h4>3.1.2. Sizes</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+              <p>Além das classes anteriores para alterar ao nível da cor, os botões podem ser diferenciados pelo seu tamanho. Para isso o Bootstrap utiliza as variáveis lg, sm e xs (para o tamanho default/normal basta apenas utilizar a classe "btn").</p>
               <p><code class="cssclass">"btn-lg"</code> <code class="cssclass">"btn-sm"</code>
               <code class="cssclass">"btn-xs"</code></p><br>
                   <div class="well">
@@ -477,7 +474,7 @@
 
                 <div class="row lowmargin"></div>
                 <h4>3.1.3. States</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                <p>Utilizando as classes "active" e "disabled" é possível alterar o estado destes elementos.</p>
                 <p><code class="cssclass">"active"</code> <code class="cssclass">"disabled"</code></p><br>
                     <div class="well">
                       <ul class="list-inline linelist">
@@ -492,7 +489,7 @@
 
                   <div class="row lowmargin"></div>
                   <h4>3.1.4. Groups</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                  <p>Com a classe "btn-group" é possível agrupar vários botões e de vários tamanhos.</p>
                   <p><code class="cssclass">"btn-group-lg"</code> <code class="cssclass">"btn-group"</code>
                   <code class="cssclass">"btn-group-sm"</code> <code class="cssclass">"btn-group-xs"</code></p><br>
                       <div class="well">
@@ -501,7 +498,7 @@
                               <button type="button" class="btn btn-default">Button 1</button>
                               <button type="button" class="btn btn-default">Button 2</button>
                             </div></li>
-                            <li><div class="btn-group btn-group" role="group">
+                            <li><div class="btn-group" role="group">
                               <button type="button" class="btn btn-default">Button 1</button>
                               <button type="button" class="btn btn-default">Button 2</button>
                             </div></li>
@@ -521,7 +518,7 @@
  &lt;button type="button" class="btn btn-default"&gt;Button 2&lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class="btn-group btn-group" role="group"&gt;
+&lt;div class="btn-group" role="group"&gt;
  &lt;button type="button" class="btn btn-default"&gt;Button 1&lt;/button&gt;
  &lt;button type="button" class="btn btn-default"&gt;Button 2&lt;/button&gt;
 &lt;/div&gt;
@@ -538,7 +535,7 @@
                     </pre>
                     <div class="row lowmargin"></div>
                     <h5>Vertical Button Groups</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <p>Estes grupos podem também ser utilizados na vertical. Para isso basta acrescentar a classe "btn-group-vertical". O tamanho continua a poder ser customizável.</p>
                     <p><code class="cssclass">"btn-group-vertical"</code></p><br>
                     <div class="row lowmargin">
                       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -561,7 +558,8 @@
                   </div>
                   <div class="row lowmargin"></div>
                   <h5>Justified Button Groups</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                  <p>Semelhante ao Button Group normal com a diferença de que se for acrescentada a classe "btn-group-justified", este componente ocupará todo o comprimento do
+                  elemento onde está inserido.</p>
                   <p><code class="cssclass">"btn-group-justified"</code></p><br>
                   <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -584,8 +582,6 @@
 
                 <!-- DROPWDOWNS -->
                 <h3 id="nav1_2">3.2. Dropdowns</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                 <p><code class="cssclass">dropdown-toggle</code> <code class="cssclass">dropdown-menu</code> <code class="cssclass">divider</code></p>
                 <br>
                 <div class="well">
@@ -618,7 +614,7 @@
                 </pre>
                 <div class="row lowmargin"></div>
                 <h4>3.2.1. Split Button Dropdowns</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                <p>Novamente utilizado Button Groups, também é possível ter um dropdown e um botão normal.</p>
                 <p><code class="cssclass">"btn-default"</code> <code class="cssclass">"btn-primary"</code>
                 <code class="cssclass">"btn-success"</code> <code class="cssclass">"btn-info"</code>
                 <code class="cssclass">"btn-warning"</code> <code class="cssclass">"btn-danger"</code>
@@ -658,8 +654,7 @@
                   <!-- LABELS -->
                   <div class="row"></div>
                   <h3 id="nav1_3">3.3. Labels</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                  <p>Como acontece em quase todos os componentes do Bootstrap, as labels são facilmente customizáveis a nível de cor e tamanho com as variáveis base.</p>
                   <p><code class="cssclass">label</code></p>
                   <br>
                   <div class="well">
@@ -682,7 +677,6 @@
                   </pre>
                   <div class="row lowmargin"></div>
                   <h4>3.3.1 Labels Text Size</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p><br>
                       <div class="well">
                         <h1>Example heading <span class="label label-default">New</span></h1>
                         <h2>Example heading <span class="label label-default">New</span></h2>
@@ -705,8 +699,7 @@
                     <!-- TOOLTIP -->
                     <div class="row"></div>
                     <h3 id="nav1_4">3.4. Tooltip</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <p>As Tooltips podem ser utilizadas em diversos componentes diferentes (sempre nesta forma de mouse over). Neste caso são apresentadas em botões porque normalmente é onde fazem mais sentido. Através do "data-placement" é facilmente definida a sua orientação.</p>
                     <p><code class="jsfunction">data-toggle="tooltip"</code> <code class="jsfunction">data-placement="left"</code>
                     <code class="jsfunction">data-placement="top"</code> <code class="jsfunction">data-placement="bottom"</code>
                     <code class="jsfunction">data-placement="right"</code></p>
@@ -736,8 +729,7 @@
                     <!-- POPOVER -->
                     <div class="row"></div>
                     <h3 id="nav1_5">3.5. Popover</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <p>Funcionam de forma semelhante às Tooltips, com a diferença de que são activados com o clique e podem conter mais informação.</p>
                     <p><code class="jsfunction">data-container="body"</code> <code class="jsfunction">data-toggle="popover"</code>
                     <code class="jsfunction">data-placement="left"</code> <code class="jsfunction">data-placement="top"</code>
                     <code class="jsfunction">data-placement="bottom"</code> <code class="jsfunction">data-placement="right"</code>
@@ -782,7 +774,7 @@
                     </pre>
                     <div class="row lowmargin"></div>
                     <h4>3.5.1 Dismissible Popover</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <p>Desactivada com um clique em qualquer local. Neste exemplo, este Popover contém o atributo "title".</p>
                     <p><code class="jsfunction">data-trigger="focus"</code></p><br>
                         <div class="well">
                           <a tabindex="0" class="btn btn-lg btn-default" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
@@ -796,8 +788,7 @@
                       <!-- PAGINATION -->
                       <div class="row"></div>
                       <h3 id="nav1_6">3.6. Pagination</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                      <p>A paginação é facilmente criada através deste elemento utilizando um género de button-group com states diferentes para orientar o utilizador na sua navegação.</p>
                       <p><code>nav</code> <code class="cssclass">pagination</code></p>
                       <br>
                       <div class="well">
@@ -844,7 +835,6 @@
                       </pre>
                       <div class="row lowmargin"></div>
                       <h4>3.6.1 Disabled/Active States</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                       <p><code class="cssclass">disabled</code> <code class="cssclass">active</code></p><br>
                           <div class="well">
                             <nav>
@@ -888,7 +878,6 @@
                         </pre>
                         <div class="row lowmargin"></div>
                         <h4>3.6.2 Sizing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                         <p><code class="cssclass">pagination-lg</code> <code class="cssclass">pagination</code> <code class="cssclass">pagination-sm</code></p><br>
                             <div class="well">
                               <ul class="list-inline">
@@ -1008,7 +997,7 @@
                           </pre>
                           <div class="row lowmargin"></div>
                           <h4>3.6.3 Pager</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                          <p>Outro elemento de navegação alternativo.</p>
                           <p><code class="cssclass">pagination-lg</code> <code class="cssclass">pagination</code> <code class="cssclass">pagination-sm</code></p><br>
                               <div class="well">
                                 <nav>
@@ -1065,8 +1054,7 @@
             <hr>
             <!-- NOTIFICATIONS -->
             <h3 id="nav2_1">4.1. Notifications</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <p>Através das classes "alert" é possível criar elementos de notificação (que são descartados pelo clique no "close"). Mais uma vez as variáveis de cor são utilizadas consoante o tipo de notificação.</p>
             <p><code class="cssclass">alert</code> <code class="cssclass">alert-success</code> <code class="cssclass">alert-warning</code>
              <code class="cssclass">alert-danger</code> <code class="cssclass">alert-info</code></p>
             <br>
@@ -1113,8 +1101,7 @@
             <!-- JUMBOTRON -->
             <div class="row"></div>
             <h3 id="nav2_2">4.2. Jumbotron</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <p>Elemento simples que pretende dar destaque a uma determinada área.</p>
             <p><code class="cssclass">jumbotron</code></p>
             <br><br>
               <div class="jumbotron">
@@ -1133,8 +1120,7 @@
             <!-- JUMBOTRON -->
             <div class="row"></div>
             <h3 id="nav2_3">4.3. Panel</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <p>Elemento parente para qualquer tipo de elementos.</p>
             <p><code class="cssclass">panel</code> <code class="cssclass">panel-default</code> <code class="cssclass">panel-body</code></p>
             <br>
             <div class="panel panel-default">
@@ -1151,7 +1137,6 @@
             </pre>
             <div class="row lowmargin"></div>
             <h4>4.3.1 Panel with Heading and Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
             <p><code class="cssclass">panel-heading</code> <code class="cssclass">panel-body</code> <code class="cssclass">panel-title</code></p><br>
             <div class="panel panel-default">
               <div class="panel-heading">Panel heading without title</div>
@@ -1186,7 +1171,6 @@
               </pre>
               <div class="row lowmargin"></div>
               <h4>4.3.2 Panel with Footer</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
               <p><code class="cssclass">panel-footer</code></p><br>
               <div class="panel panel-default">
                 <div class="panel-body">
@@ -1206,8 +1190,7 @@
                 <!-- MODAL -->
                 <div class="row"></div>
                 <h3 id="nav2_4">4.4. Modal</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Os Modais podem ser facilmente utilizados com as classes e funções do Bootstrap. O seu conteúdo, tamanho, componentes e comportamento é facilmente customizado.</p>
                 <p><code class="cssclass">modal</code> <code class="cssclass">fade</code> <code class="cssclass">modal-dialog</code> <code class="cssclass">modal-content</code>
                  <code class="cssclass">modal-header</code> <code class="cssclass">modal-body</code> <code class="cssclass">modal-footer</code> <code class="jsfunction">data-toggle="modal"</code>
                 <code class="jsfunction">data-target="#myModalId"</code></p>
@@ -1247,7 +1230,6 @@
                 </pre>
                 <div class="row lowmargin"></div>
                 <h4>4.4.1 Modal Sizes</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
                 <p><code class="cssclass">modal-lg</code> <code class="cssclass">modal-sm</code></p><br>
                 <div class="well">
                   <ul class="list-inline">
@@ -1282,8 +1264,7 @@
                   <!-- CAROUSEL -->
                   <div class="row"></div>
                   <h3 id="nav2_5">4.5. Carousel</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                  <p>Componente utilizado para a apresentação de forma automática de diversos componentes e imagens.</p>
                   <p><code class="cssclass">jumbotron</code></p>
                   <br>
                   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -1299,19 +1280,22 @@
                       <div class="item active">
                         <img src="assets/img/carousel_1.png" alt="...">
                         <div class="carousel-caption">
-                          Lorem ipsum dolor sit amet 1...
+                          <h3 class="h3nomargin">Title 1</h3>
+                          <p>Lorem ipsum dolor sit amet 1...</p>
                         </div>
                       </div>
                       <div class="item">
                         <img src="assets/img/carousel_2.png" alt="...">
                         <div class="carousel-caption">
-                          Lorem ipsum dolor sit amet 2...
+                          <h3 class="h3nomargin">Title 2</h3>
+                          <p>Lorem ipsum dolor sit amet 3...</p>
                         </div>
                       </div>
                       <div class="item">
                         <img src="assets/img/carousel_3.png" alt="...">
                         <div class="carousel-caption">
-                          Lorem ipsum dolor sit amet 3...
+                          <h3 class="h3nomargin">Title 3</h3>
+                          <p>Lorem ipsum dolor sit amet 3...</p>
                         </div>
                       </div>
                     </div>
@@ -1340,19 +1324,22 @@
   &lt;div class="item active"&gt;
    &lt;img src="..." alt="..."&gt;
    &lt;div class="carousel-caption"&gt;
-    Lorem ipsum dolor sit amet 1...
+    &lt;h3&gt;Title&lt;/&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet 1...&lt;/p&gt;
    &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="item"&gt;
    &lt;img src="..." alt="..."&gt;
    &lt;div class="carousel-caption"&gt;
-    Lorem ipsum dolor sit amet 2...
+    &lt;h3&gt;Title&lt;/&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet 1...&lt;/p&gt;
    &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="item"&gt;
    &lt;img src="..." alt="..."&gt;
    &lt;div class="carousel-caption"&gt;
-    Lorem ipsum dolor sit amet 3...
+    &lt;h3&gt;Title&lt;/&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet 1...&lt;/p&gt;
    &lt;/div&gt;
   &lt;/div&gt;
  &lt;/div&gt;
@@ -1374,60 +1361,574 @@
       </div>
 
 
-      <!-- EXCEPTION! MODAL HTML -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      <div id="nav3" class="main main-raised">
+          <div class="section">
+            <h2>5. Forms</h2>
+            <hr>
+            <!-- NOTIFICATIONS -->
+            <h3 id="nav3_1">5.1. Checkbox</h3>
+            <p><code>input</code> <code class="cssclass">checkbox</code> <code class="cssclass">disabled</code></p>
+            <br>
+            <div class="well">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Option one is enabled
+                </label>
+              </div>
+              <div class="checkbox disabled">
+                <label>
+                  <input type="checkbox" value="" disabled>
+                  Option two is disabled
+                </label>
+              </div>
             </div>
-            <div class="modal-body">
-              Modal content here...
+            <pre class="premargin">
+&lt;div class="checkbox"&gt;
+ &lt;label&gt;
+  &lt;input type="checkbox" value=""&gt;
+  Option one is enabled &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox disabled"&gt;
+ &lt;label&gt;
+  &lt;input type="checkbox" value="" disabled&gt;
+  Option two is disabled
+ &lt;/label&gt;
+&lt;/div&gt;
+            </pre>
+
+            <!-- JUMBOTRON -->
+            <div class="row"></div>
+            <h3 id="nav3_2">5.2. Radio Buttons</h3>
+            <p><code>input</code> <code class="cssclass">radio</code> <code class="cssclass">disabled</code></p>
+            <br>
+            <div class="well">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Option two can be something else and selecting it will deselect option one
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                  Option three is disabled
+                </label>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <pre class="premargin">
+&lt;div class="radio"&gt;
+ &lt;label&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+  Option two can be something else and selecting it will deselect option one
+ &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio disabled"&gt;
+ &lt;label&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled&gt;
+  Option three is disabled
+ &lt;/label&gt;
+&lt;/div&gt;
+            </pre>
+
+            <!-- TOGGLE BUTTONS -->
+            <div class="row"></div>
+            <h3 id="nav3_3">5.3. Toggle Buttons</h3>
+            <p>Para usar os Toggle Buttons pode ser utilizado código complementar adaptado para o Bootstrap. <a href="http://www.bootstraptoggle.com/" target="_blank">Bootstrap Toggle.</a></p>
+            <p><code>input</code> <code class="cssclass">checkbox</code> <code class="cssclass">disabled</code> <code class="jsfunction">data-toggle="toggle"</code>
+            <code class="jsfunction">data-on="..."</code> <code class="jsfunction">data-off="..."</code> <code class="jsfunction">data-onstyle="color-variable"</code>
+           <code class="jsfunction">data-offstyle="color-variable"</code></p>
+            <br>
+            <div class="well">
+              <ul class="list-inline">
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" data-toggle="toggle">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox disabled">
+                  <label>
+                    <input type="checkbox" disabled data-toggle="toggle">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
+              </li>
             </div>
+            <pre class="premargin">
+&lt;div class="checkbox"&gt;
+ &lt;label&gt;
+  &lt;input type="checkbox" data-toggle="toggle"&gt;
+ &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox disabled"&gt;
+ &lt;label&gt;
+  &lt;input type="checkbox" disabled data-toggle="toggle"&gt;
+ &lt;/label&gt;
+&lt;/div&gt;
+&lt;input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger"&gt;
+            </pre>
+
+                <!-- INPUTS -->
+                <div class="row"></div>
+                <h3 id="nav3_4">5.4. Inputs</h3>
+                <p><code>input</code> <code class="cssclass">form-control</code> <code class="cssclass">fade</code> <code class="cssclass">modal-dialog</code> <code class="cssclass">modal-content</code>
+                 <code class="cssclass">modal-header</code> <code class="cssclass">modal-body</code> <code class="cssclass">modal-footer</code> <code class="jsfunction">data-toggle="modal"</code>
+                <code class="jsfunction">data-target="#myModalId"</code></p>
+                <br>
+                  <div class="well">
+                    <input type="text" class="form-control" placeholder="Text input"><br>
+                    <textarea class="form-control" rows="3" placeholder="Text area"></textarea>
+                  </div>
+                <pre class="premargin">
+&lt;input type="text" class="form-control" placeholder="Text input"&gt;
+&lt;textarea class="form-control" rows="3" placeholder="Text area"&gt;&lt;/textarea&gt;
+                </pre>
+
+                <div class="row lowmargin"></div>
+                <h4>5.4.1 Input Sizes with Icons</h4>
+                <p><code class="cssclass">input-group-lg</code> <code class="cssclass">input-group</code> <code class="cssclass">input-group-sm</code></p><br>
+                <div class="well">
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+                  </div><br>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                  </div><br>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+                  </div>
+                </div>
+                  <pre class="premargin">
+&lt;div class="input-group input-group-lg"&gt;
+ &lt;span class="input-group-addon" id="sizing-addon1"&gt;@&lt;/span&gt;
+ &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1"&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;div class="input-group"&gt;
+ &lt;span class="input-group-addon" id="sizing-addon2"&gt;@&lt;/span&gt;
+ &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2"&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;div class="input-group input-group-sm"&gt;
+ &lt;span class="input-group-addon" id="sizing-addon3"&gt;@&lt;/span&gt;
+ &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3"&gt;
+&lt;/div&gt;
+                  </pre>
+
           </div>
-        </div>
       </div>
 
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
+      <div id="nav4" class="main main-raised">
+          <div class="section">
+            <h2>6. Tables</h2>
+            <hr>
+            <!-- TABLES -->
+            <h3 id="nav4_1">6.1. Simple Table</h3>
+            <p>Tabela responsive com a utilização de ícones da biblioteca <a href="http://fontawesome.io" target="_blank">Font-Awesome</a> para os tamanhos "xs" e "sm" e recorrendo à classe "hidden" nas linhas para ocultar/mostrar
+              conteúdo.</p>
+            <p><code>table</code> <code class="cssclass">table</code> <code>thead</code> <code>tbody</code> <code>tr</code> <code>th</code></p>
+            <br>
+            <div class="well">
+              <table class="table">
+                <thead>
+                  <tr class="hidden-xs hidden-sm">
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                  </tr>
+                  <tr class="hidden-md hidden-lg">
+                    <th>Name</th>
+                    <th class="text-right">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hidden-xs hidden-sm">
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>976543245</td>
+                  </tr>
+                  <tr class="hidden-md hidden-lg">
+                    <td>John Doe</td>
+                    <td class="text-right"><i class="fa fa-envelope"></i> <i class="fa fa-phone"></i></td>
+                  </tr>
+                  <tr class="hidden-xs hidden-sm">
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>976543245</td>
+                  </tr>
+                  <tr class="hidden-md hidden-lg">
+                    <td>Mary Moe</td>
+                    <td class="text-right"><i class="fa fa-envelope"></i> <i class="fa fa-phone"></i></td>
+                  </tr>
+                  <tr class="hidden-xs hidden-sm">
+                    <td>July</td>
+                    <td>Doley</td>
+                    <td>july@example.com</td>
+                    <td>976543245</td>
+                  </tr>
+                  <tr class="hidden-md hidden-lg">
+                    <td>July Doley</td>
+                    <td class="text-right"><i class="fa fa-envelope"></i> <i class="fa fa-phone"></i></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="modal-body">
-              Large modal content here...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <pre class="premargin">
+&lt;table class="table"&gt;
+ &lt;thead&gt;
+  &lt;tr class="hidden-xs hidden-sm"&gt;
+   &lt;th&gt;Firstname&lt;/th&gt;
+   &lt;th&gt;Lastname&lt;/th&gt;
+   &lt;th&gt;Email&lt;/th&gt;
+   &lt;th&gt;Phone&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class="hidden-md hidden-lg"&gt;
+   &lt;th&gt;Name&lt;/th&gt;
+   &lt;th class="text-right"&gt;Actions&lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+  &lt;tr class="hidden-xs hidden-sm"&gt;
+   &lt;td&gt;John&lt;/td&gt;
+   &lt;td&gt;Doe&lt;/td&gt;
+   &lt;td&gt;john@example.com&lt;/td&gt;
+   &lt;td&gt;976543245&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="hidden-md hidden-lg"&gt;
+   &lt;td&gt;John Doe&lt;/td&gt;
+   &lt;td class="text-right"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; &lt;i class="fa fa-phone"&gt;&lt;/i&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+            </pre>
+
+            <!-- JUMBOTRON -->
+            <div class="row"></div>
+            <h3 id="nav4_2">6.2. Table Styles</h3>
+            <p>O Boostrap dispõe de diversas classes css para permitir alterar a estrutura e o estilo de uma tabela normal.</p><br>
+            <ul class="list-unstyled">
+              <li><b>Table-striped:</b> Background cinza em determinadas linhas;<li>
+            </ul>
+            <p><code class="cssclass">table-striped</code></p>
+<pre>
+&lt;table class="table table-striped"&gt;
+ ...
+&lt;/table&gt;
+
+</pre><br>
+            <ul class="list-unstyled">
+              <li><b>Table-bordered:</b> Mostra todas as linhas da tabela;<li>
+            </ul>
+            <p><code class="cssclass">table-bordered</code></p>
+<pre>
+&lt;table class="table table-bordered"&gt;
+ ...
+&lt;/table&gt;
+
+</pre><br>
+            <ul class="list-unstyled">
+              <li><b>Table-hover:</b> Mouse over com background cinza nas linhas;<li>
+            </ul>
+            <p><code class="cssclass">table-hover</code></p>
+<pre>
+&lt;table class="table table-hover"&gt;
+ ...
+&lt;/table&gt;
+
+</pre><br>
+            <ul class="list-unstyled">
+              <li><b>Table-condensed:</b> Reduz o espaçamento (padding) das células para metade, compactando assim a tabela;<li>
+            </ul>
+            <p><code class="cssclass">table-condensed</code></p>
+<pre>
+&lt;table class="table table-condensed"&gt;
+ ...
+&lt;/table&gt;
+
+</pre>
+
           </div>
-        </div>
-      </div>
-      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              Small modal content here...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
       </div>
 
+      <div id="nav5" class="main main-raised">
+          <div class="section">
+            <h2>7. Images</h2>
+            <hr>
+            <!-- Images -->
+            <h3 id="nav5_1">7.1. Responsive Images</h3>
+            <p>A utilização de imagens no Bootstrap pode ser responsive caso seja utilizada a classe "img-responsive". Esta classe aplica o comprimento máximo,
+            altura automática e display em bloco para que a imagem ocupe toda a área ou elemento em que está inserida.</p>
+            <p><code>img</code> <code class="cssclass">img-responsive</code></p>
+            <br>
+              <img src="https://unsplash.it/1000/350/?random" class="img-responsive"></img>
+            <pre class="premargin">
+&lt;img src="..." class="img-responsive"&gt;&lt;/img&gt;
+            </pre>
+
+            <!-- IMAGE SHAPES -->
+            <div class="row"></div>
+            <h3 id="nav5_2">7.2. Image Shapes</h3>
+            <p>Através das classes "img-rounded", "img-circle" e "img-thumbnail" é possível dar diversas formas a qualquer imagem.</p>
+            <p><code class="cssclass">img-rounded</code> <code class="cssclass">img-circle</code> <code class="cssclass">img-thumbnail</code></p>
+            <br>
+            <div class="well" style="padding:40px;">
+              <div class="row row-lowmargin" style="margin:0px;">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <img src="https://unsplash.it/600/600/?random" class="img-rounded img-responsive" style="margin-bottom:20px; margin-top: 0px; padding-top:0px;">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <img src="https://unsplash.it/600/600/?random" class="img-circle img-responsive" style="margin-bottom:20px;">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <img src="https://unsplash.it/600/600/?random" class="img-thumbnail img-responsive">
+                </div>
+              </div>
+            </div>
+
+            <pre class="premargin">
+ &lt;img src="..." class="img-rounded"&gt;
+ &lt;img src="..." class="img-circle"&gt;
+ &lt;img src="..." class="img-thumbnail"&gt;
+            </pre>
+
+            <!-- PICTURE ELEMENT -->
+            <div class="row"></div>
+            <h3 id="nav5_3">7.3. Picture Element</h3>
+            <p>O elemento &lt;picture&gt; informa o browser da versão da imagem que deve ser carregada de acordo com algum critério, como por exemplo o viewport size ou o tipo de imagem suportado.</p>
+            <p><code>picture</code> <code>source</code> <code>img</code></p>
+            <br>
+            <div class="well" style="padding:40px;">
+              <picture>
+                <source media="(min-width: 650px)" srcset="assets/img/kitten-large.png">
+                <source media="(min-width: 465px)" srcset="assets/img/kitten-medium.png">
+                <img src="assets/img/kitten-small.png" class="img-responsive">
+              </picture>
+            </div>
+
+            <pre class="premargin">
+&lt;picture&gt;
+ &lt;source media="(min-width: 650px)" srcset="assets/img/kitten-large.png"&gt;
+ &lt;source media="(min-width: 465px)" srcset="assets/img/kitten-medium.png"&gt;
+ &lt;img src="assets/img/kitten-small.png"&gt;
+&lt;/picture&gt;
+            </pre>
+          </div>
+      </div>
+
+      <div id="nav6" class="main main-raised">
+          <div class="section">
+            <h2>8. Advanced Components</h2>
+            <hr>
+            <!-- Images -->
+            <h3 id="nav6_1">8.1. Complete Form</h3>
+            <p>Utilização de "form-groups" para conjugar vários elementos básicos de uma área de preenchimento.</p>
+            <p><code>form</code> <code class="cssclass">form-group</code></p>
+            <br>
+            <div class="well">
+              <form>
+                <div class="form-group">
+                  <label for="InputUsername">Username</label>
+                  <input type="email" class="form-control" id="InputUsername" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="InputPassword">Password</label>
+                  <input type="password" class="form-control" id="InputPassword" placeholder="Your Password">
+                </div>
+                <div class="form-group">
+                  <label for="Ammount">Ammount</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="Montante" placeholder="0,00">
+                    <div class="input-group-addon">€</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="ChooseFileType">File Type</label>
+                  <select class="form-control" id="ChooseFileType">
+                    <option>JPG</option>
+                    <option>PNG</option>
+                    <option>GIF</option>
+                    <option>PDF</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Comments">Comments</label>
+                  <textarea class="form-control" rows="3" placeholder="Comments here..." id="Comments"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="FileUpload">File Upload</label>
+                  <input type="file" id="FileUpload">
+                  <p class="help-block">Example of help text.</p>
+                </div>
+                <div class="form-group">
+                  <label for="RadioChoose">Notifications</label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="RadioChoose" id="RadioChoose" value="option1" aria-label="...">
+                      Email
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                      SMS
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Checkbox">Terms of Service</label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="Checkbox"> Lorem ipsum dolor sit amet.
+                    </label>
+                  </div>
+                </div>
+                <br>
+                <nav aria-label="...">
+                  <ul class="pager">
+                    <li class="previous"><a href="#"><span aria-hidden="true"></span> Back</a></li>
+                    <li class="next"><a href="#">Confirm <span aria-hidden="true"></span></a></li>
+                  </ul>
+                </nav>
+              </form>
+              <hr>
+              <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#CompleteForm">Código HTML</button>
+            </div>
+
+            <!-- PRODUCT HEADER -->
+            <div class="row"></div>
+            <h3 id="nav6_2">8.2. Product Header</h3>
+            <p>Exemplo de um cabeçalho para o detalhe de um determinado produto/conta/serviço.</p>
+            <p><code class="cssclass">productheader</code> <code class="cssclass">content</code> <code class="cssclass">type</code>
+            <code class="cssclass">type-left</code> <code class="cssclass">editname</code> <code class="cssclass">currency</code>
+            <code class="cssclass">btn-productheader</code></p>
+            <br>
+
+            <div class="productheader">
+              <div class="content">
+                <div class="row">
+                  <div class="col-md-8 col-lg-6 col-sm-7 col-xs-12">
+                    <span class="type">Contrato</span>
+                    <h2>Contrato Lorem Ipsum <span class="editname"><i class="fa fa-pencil"></i></span></h2>
+                    <h5>Completo com recurso</h5>
+                  </div>
+                  <div class="col-md-4 col-lg-6 text-right col-xs-12 col-sm-5">
+                    <span class="type type-left">Conta Corrente</span>
+                    <h2>12.000,00 <span class="currency">EUR</span></h2>
+                  </div>
+                </div>
+                <div class="row hidden-xs hidden-sm">
+                  <div class="col-md-4 col-lg-4">
+                    <h4><span>Conta de Suporte</span> 7890231012</h4>
+                  </div>
+                  <div class="col-md-8 col-lg-8 text-right">
+                    <h4><span>Créditos Tomados</span> 5.500,00 EUR</h4>
+                    <h4><span>Disponibilidades</span> 10.230,00 EUR</h4>
+                  </div>
+                </div>
+                    <hr class="hidden-xs hidden-sm">
+                    <div class="row">
+                      <div class="hidden-sm col-md-12 col-lg-12 hidden-xs text-right">
+                        <ul class="list-inline">
+                          <li><a class="btn btn-productheader">Incluir devedores</a></li>
+                          <li><a class="btn btn-productheader">Pedir adiantamento</a></li>
+                          <li><a class="btn btn-productheader">Cessão de créditos</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#ProductHeader">Código HTML</button>
+
+            <!-- SEARCH -->
+            <div class="row"></div>
+            <h3 id="nav6_3">8.3. Search</h3>
+            <p>Exemplo de um search básico para páginas de consulta de movimentos, extratos, histórico de operações, entre outras.</p>
+            <p><code class="cssclass">search</code> <code class="cssclass">search-input</code></p>
+            <br>
+
+            	<div class="search row">
+                    <div class="col-md-12">
+                        <div id="search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control input-lg" placeholder="Pesquisar..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-lg" type="button">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#"><h5>Pesquisa avançada</h5></a>
+                    </div>
+            	</div>
+
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#Search">Código HTML</button>
+
+            <!-- SEARCH -->
+            <div class="row"></div>
+            <h3 id="nav6_4">8.3. Search Advanced</h3>
+            <p>Exemplo de um search avançado para páginas de consulta de movimentos, extratos, histórico de operações, entre outras.</p>
+            <p><code class="cssclass">search</code> <code class="cssclass">search-input</code></p>
+            <br>
+
+            <div class="well search search-advanced">
+              <div id="search-input">
+                  <div class="input-group col-md-12">
+                      <input type="text" class="form-control input-lg" placeholder="Pesquisar..." />
+                  </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="input1">Tipo de Movimento</label>
+                    <select class="form-control">
+                      <option>Débito</option>
+                      <option>Crédito</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="input2">Data de Lançamento</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="20/02/2016"/>
+                        <span class="input-group-addon btn-calendar">
+                            <i class="fa fa-calendar"></i>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="input3">Montante</label>
+                          <input type="text" class="form-control" placeholder="20/02/2016"/>
+                    </div>
+                    <button class="btn btn-primary btn-block"><i class="fa fa-search"></i> Pesquisar</button>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#SearchAdvanced">Código HTML</button>
+
+          </div>
+        </div>
+
+        <div class="backtotop"><a href="#" class="hidden-xs hidden-sm">Voltar ao topo <i class="fa fa-chevron-up"></i></a></div>
 
 
     </div>
@@ -1486,34 +1987,36 @@
                 <a href="#nav4">Tables</a>
                 <ul class="nav nav-stacked">
                     <li><a href="#nav4_1">Simple Table</a></li>
-                    <li><a href="#nav4_2">Simple Table with Actions</a></li>
-                    <li><a href="#nav4_3">Table Styles</a></li>
+                    <li><a href="#nav4_2">Table Styles</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#nav5">Images</a>
                 <ul class="nav nav-stacked">
-                    <li><a href="#nav5_1">Picture Element</a></li>
+                    <li><a href="#nav5_1">Responsive Images</a></li>
+                    <li><a href="#nav5_2">Image Shapes</a></li>
+                    <li><a href="#nav5_3">Picture Element</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#nav6">Advanced Components</a>
                 <ul class="nav nav-stacked">
-                    <li><a href="#nav6_1">Account Selector</a></li>
+                    <li><a href="#nav6_1">Complete Form</a></li>
                     <li><a href="#nav6_2">Product Header</a></li>
                     <li><a href="#nav6_3">Search</a></li>
                     <li><a href="#nav6_4">Search Advanced</a></li>
-                    <li><a href="#nav6_5">SAFe</a></li>
+  <!--                  <li><a href="#nav6_5">Account Selector</a></li>
+                    <li><a href="#nav6_5">SAFe</a></li> -->
                 </ul>
             </li>
-            <li>
+      <!--      <li>
                 <a href="#nav7">Page Examples</a>
                 <ul class="nav nav-stacked">
                     <li><a href="#nav7_1">Transferência Nacional</a></li>
                     <li><a href="#nav7_2">Consulta de Movimentos</a></li>
                     <li><a href="#nav7_3">Detalhe de Conta</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
 </nav>
 
@@ -1523,7 +2026,293 @@
 
     </div>
   </div>
-</div>
+
+
+  <!-- ///////// modals //////// modals //////// modals /////// modals ///// modals ///// modals /////// modals /////// -->
+
+  <!-- DEFAULT -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">×</span>
+      </button>
+      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+     </div>
+     <div class="modal-body">
+      Lorem ipsum dolor sit amet...
+     </div>
+     <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- LARGE -->
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+       </button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+       Lorem ipsum dolor sit amet...
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+     </div>
+   </div>
+  </div>
+
+  <!-- SMALL -->
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+       </button>
+       <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+       Lorem ipsum dolor sit amet...
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+     </div>
+   </div>
+  </div>
+
+
+  <!-- COMPLETE FORM -->
+  <div id="CompleteForm" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Complete Form</h4>
+        </div>
+        <div class="modal-body">
+          <pre>
+&lt;form&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="InputUsername"&gt;Username&lt;/label&gt;
+&lt;input type="email" class="form-control" id="InputUsername" placeholder="Your Email"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="InputPassword"&gt;Password&lt;/label&gt;
+&lt;input type="password" class="form-control" id="InputPassword" placeholder="Your Password"&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="Ammount"&gt;Ammount&lt;/label&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" class="form-control" id="Montante" placeholder="0,00"&gt;
+&lt;div class="input-group-addon"&gt;€&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="ChooseFileType"&gt;File Type&lt;/label&gt;
+&lt;select class="form-control" id="ChooseFileType"&gt;
+&lt;option&gt;JPG&lt;/option&gt;
+&lt;option&gt;PNG&lt;/option&gt;
+&lt;option&gt;GIF&lt;/option&gt;
+&lt;option&gt;PDF&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="Comments"&gt;Comments&lt;/label&gt;
+&lt;textarea class="form-control" rows="3" placeholder="Comments here..." id="Comments"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="FileUpload"&gt;File Upload&lt;/label&gt;
+&lt;input type="file" id="FileUpload"&gt;
+&lt;p class="help-block"&gt;Example of help text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="RadioChoose"&gt;Notifications&lt;/label&gt;
+&lt;div class="radio"&gt;
+&lt;label&gt;
+&lt;input type="radio" name="RadioChoose" id="RadioChoose" value="option1" aria-label="..."&gt;
+Email
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+&lt;label&gt;
+&lt;input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."&gt;
+SMS
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+&lt;label for="Checkbox"&gt;Terms of Service&lt;/label&gt;
+&lt;div class="checkbox"&gt;
+&lt;label&gt;
+&lt;input type="checkbox" id="Checkbox"&gt; Lorem ipsum dolor sit amet.
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT HEADER -->
+  <div id="ProductHeader" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Product Header</h4>
+        </div>
+        <div class="modal-body">
+          <pre>
+&lt;div class="productheader"&gt;
+&lt;div class="content"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-md-8 col-lg-6 col-sm-7 col-xs-12"&gt;
+&lt;span class="type"&gt;Contrato&lt;/span&gt;
+&lt;h2&gt;Contrato Lorem Ipsum &lt;span class="editname"&gt;&lt;i class="fa fa-pencil"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h5&gt;Completo com recurso&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="col-md-4 col-lg-6 text-right col-xs-12 col-sm-5"&gt;
+&lt;span class="type type-left"&gt;Conta Corrente&lt;/span&gt;
+&lt;h2&gt;12.000,00 &lt;span class="currency"&gt;EUR&lt;/span&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row hidden-xs hidden-sm"&gt;
+&lt;div class="col-md-4 col-lg-4"&gt;
+&lt;h4&gt;&lt;span&gt;Conta de Suporte&lt;/span&gt; 7890231012&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class="col-md-8 col-lg-8 text-right"&gt;
+&lt;h4&gt;&lt;span&gt;Créditos Tomados&lt;/span&gt; 5.500,00 EUR&lt;/h4&gt;
+&lt;h4&gt;&lt;span&gt;Disponibilidades&lt;/span&gt; 10.230,00 EUR&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class="hidden-xs hidden-sm"&gt;
+&lt;div class="row"&gt;
+&lt;div class="hidden-sm col-md-12 col-lg-12 hidden-xs text-right"&gt;
+&lt;ul class="list-inline"&gt;
+&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Incluir devedores&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Pedir adiantamento&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Cessão de créditos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div id="Search" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search</h4>
+        </div>
+        <div class="modal-body">
+          <pre>
+&lt;div class="search row"&gt;
+&lt;div class="col-md-12"&gt;
+&lt;div id="search-input"&gt;
+&lt;div class="input-group col-md-12"&gt;
+&lt;input type="text" class="form-control input-lg" placeholder="Pesquisar..." /&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button class="btn btn-lg" type="button"&gt;
+&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;a href="..."&gt;&lt;h5&gt;Pesquisa avançada&lt;/h5&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH ADVANCED -->
+  <div id="SearchAdvanced" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Advanced</h4>
+        </div>
+        <div class="modal-body">
+          <pre>
+&lt;div class="well search search-advanced"&gt;
+ &lt;div id="search-input"&gt;
+  &lt;div class="input-group col-md-12"&gt;
+   &lt;input type="text" class="form-control input-lg" placeholder="Pesquisar..." /&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;hr&gt;
+ &lt;div class="row"&gt;
+  &lt;div class="col-md-4 col-xs-12"&gt;
+   &lt;div class="form-group"&gt;
+    &lt;label for="input1"&gt;Tipo de Movimento&lt;/label&gt;
+    &lt;select class="form-control"&gt;
+     &lt;option&gt;Débito&lt;/option&gt;
+     &lt;option&gt;Crédito&lt;/option&gt;
+    &lt;/select&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4 col-xs-12"&gt;
+   &lt;div class="form-group"&gt;
+    &lt;label for="input2"&gt;Data de Lançamento&lt;/label&gt;
+    &lt;div class="input-group"&gt;
+     &lt;input type="text" class="form-control" placeholder="20/02/2016"/&gt;
+     &lt;span class="input-group-addon btn-calendar"&gt;
+      &lt;i class="fa fa-calendar"&gt;&lt;/i&gt;
+     &lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4 col-xs-12"&gt;
+   &lt;div class="form-group"&gt;
+    &lt;label for="input3"&gt;Montante&lt;/label&gt;
+    &lt;input type="text" class="form-control" placeholder="20/02/2016"/&gt;
+   &lt;/div&gt;
+   &lt;button class="btn btn-primary btn-block"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt; Pesquisar&lt;/button&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- /.container -->
 
@@ -1535,11 +2324,20 @@
       <script src='assets/js/bootstrap.js'></script>
 
       <!-- Switch Hammer default current class to bootstrap default active class -->
+      <script src="../assets/js/bootstrap-datepicker.js"
       <script type="text/javascript">
             $('.current').each(function(){
             $(this).removeClass('current');
             $(this).addClass('active');
             });
+      </script>
+
+      <script>
+        $(document).on('click.nav','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+          $(this).removeClass('in').addClass('collapse');
+          }
+        });
       </script>
 
       <!-- Triger Off canvas action -->
@@ -1560,6 +2358,8 @@
               $('[data-toggle="popover"]').popover()
             })
       </script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 
 </body>
 </html>
