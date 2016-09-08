@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/micon.png">
+	<link rel="icon" type="image/png" href="assets/img/micon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>UI Prototype - Pagamentos - Transferências</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-kit.css" rel="stylesheet"/>
+	<link href="assets/css/style.css" rel="stylesheet"/>
+
+</head>
+
+
+<body>
+
+	<!-- FRAME -->
+	<div id="wrapper">
+
+		<!-- SIDEBAR -->
+		<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+						<li class="sidebar-brand">
+								<a href="#">
+									<object type="image/svg+xml" data="assets/img/M_white.svg" class="logo">
+											logo
+									</object>
+								</a>
+						</li>
+						<li class="first">
+								<a href="#"><i class="material-icons">favorite</i> <span>Favoritos</span></a>
+						</li>
+						<li>
+								<a href="index.html"><i class="material-icons">dashboard</i> <span>Centro de Controlo</span></a>
+						</li>
+						<li>
+								<a href="contasaordem.html"><i class="material-icons">account_balance_wallet</i> <span>Contas</span></a>
+						</li>
+						<li>
+							<a href="transferencias.html"><i class="material-icons">payment</i> <span>Pagamentos</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">attach_money</i> <span>Cobranças</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">language</i> <span>Internacional</span></a>
+						</li>
+						<li>
+							<a href="factoring_contratos.html"><i class="material-icons">card_travel</i> <span>Factoring</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">store</i> <span>Confirming</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons">insert_drive_file</i> <span>Gestão de Ficheiros</span></a>
+						</li>
+				</ul>
+				<div class="sidebar-footer">
+					<a href="#"><h6><i class="material-icons">phone</i> M Contacto</h6></a>
+				</div>
+		</div>
+
+		<!-- NAVBAR TOP -->
+		<nav class="navbar navbar-white">
+			<div class="container-fluid">
+				<div class="navbar-header">
+						<a href="#menu-toggle" id="menu-toggle" class="hidden-sm">
+							<button type="button" class="navbar-toggle collapsed" aria-expanded="false">
+								<i class="material-icons">menu</i>
+							</button></a>
+							<a href="#pablo" class="navbar-toggle collapsed hidden-md hidden-lg">
+								<i class="material-icons">search</i>
+							</a>
+							<a href="#pablo" class="navbar-toggle-right collapsed hidden-sm hidden-md hidden-lg">
+								<i class="material-icons">account_circle</i>
+							</a>
+							<a href="#pablo" class="navbar-toggle-right collapsed hidden-sm hidden-md hidden-lg">
+								<i class="material-icons">chat_bubble</i>
+							</a>
+							<a href="#pablo" class="navbar-toggle-right collapsed hidden-sm hidden-md hidden-lg">
+								<i class="material-icons">notifications</i>
+							</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<form class="navbar-form navbar-left">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="material-icons">search</i>
+							</span>
+							<input type="text" class="form-control" placeholder="Pesquisar..." class="navbar-white-search">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empresa Lorem Ipsum, Lda <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Empresa ABCD</a></li>
+								<li><a href="#">John Doe Store</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+						<li>
+								<a href="#pablo">
+									<i class="material-icons">notifications</i>
+								</a>
+						</li>
+						<li>
+								<a href="#pablo">
+									<i class="material-icons">chat_bubble</i>
+								</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="material-icons">account_circle</i> <span class="hidden-sm">John Doe</span> <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Agenda</a></li>
+								<li><a href="#">Perfil</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Configurações</a></li>
+							</ul>
+						</li>
+						<li role="separator" class="divider_vertical"></li>
+						<li>
+								<a href="#pablo">
+									<i class="material-icons">exit_to_app</i>
+								</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+			<!-- PAGE CONTENT -->
+			<div id="page-content-wrapper">
+				<div class="container-fluid">
+
+					<!-- HEADER -->
+					<div class="row">
+						<div class="col-md-8 col-sm-8 col-xs-12">
+							<h2>Transferências</h2>
+							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua.</p>
+							</div>
+							<div class="col-md-4 col-sm-4 hidden-xs">
+								<div class="card card-top">
+									<div class="content">
+										<p><strong>Lorem ipsum dolor</strong> <span class="label label-default">New</span></p>
+										<p>Lorem ipsum dolor sit amet et consecteur elit sed. <a href="#">Click me</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+
+								<!-- TABS -->
+								<div class="card card-plain">
+									<div class="header">
+										<div class="nav-tabs-navigation">
+											<div class="nav-tabs-wrapper">
+												<ul class="nav nav-tabs" data-tabs="tabs">
+													<li class="active"><a href="#transf_nacionais" data-toggle="tab">Nacionais</a></li>
+													<li><a href="#transf_internacionais" data-toggle="tab">Internacionais</a></li>
+													<li><a href="#transf_lote" data-toggle="tab">Por lote</a></li>
+													<li class="hidden-xs hidden-sm"><a href="#transf_ccc" data-toggle="tab">Conta Corrente Caucionada</a></li>
+													<li class="hidden-md hidden-lg"><a href="#transf_ccc" data-toggle="tab">C. C. Caucionada</a></li>
+													<li><a href="#transf_agexecucao" data-toggle="tab">Agentes de Execução</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<!-- CONTENT -->
+									<div class="content">
+										<div class="tab-content">
+
+											<!-- Início -->
+											<div class="tab-pane active" id="transf_nacionais">
+
+												<!-- account selectors -->
+
+												<div class="accountselector" id="accountselector">
+													<div class="panel panel-default panel-horizontal">
+														<div class="panel-body">
+															<div class="card hidden-md hidden-lg text-center">
+																<button class="btn btn-primary" data-toggle="modal" data-target="#accountselector_mobile">Escolher conta</button>
+																<p>Lorem ipsum dolor sit amet et dolor ipsum sit consecteur...</p>
+															</div>
+															<div class="row hidden-xs hidden-sm">
+																<div class="col-md-3 nopad-left">
+																	<div class="card card-blue">
+																		<h4>Conta à Ordem 1</h4>
+																		<p class="number">213342905</p>
+																		<p class="saldo text-right">1.550,00 <span>EUR</span></p>
+																	</div>
+																</div>
+																<div class="col-md-3">
+																	<a id="cardexample_1" style="cursor:pointer;"><div class="card card-green">
+																		<h4>Conta à Ordem 2</h4>
+																		<p class="number">900657891</p>
+																		<p class="saldo text-right">2.000,00 <span>EUR</span></p>
+																	</div></a>
+																</div>
+																<div class="col-md-3">
+																	<div class="card card-yellow">
+																		<h4>Conta Fornecedores</h4>
+																		<p class="number">214567092</p>
+																		<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+																	</div>
+																</div>
+																<div class="col-md-3 nopad-right">
+																	<div class="card card-yellow">
+																		<h4>Conta Fornecedores</h4>
+																		<p class="number">214567092</p>
+																		<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="panel-footer text-center hidden-sm hidden-xs">
+															<a id="plus" style="cursor:pointer;">
+																<i class="fa fa-plus"></i><br>
+																<span>CONTAS</span>
+															</a>
+															<a id="cancel" style="cursor:pointer;">
+																<i class="fa fa-times"></i><br>
+																<span>CANCELAR</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="accountselector_selected" id="accountselector_selected">
+													<div class="panel panel-default panel-horizontal">
+														<div class="panel-body">
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="card card-green">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-4 col-xs-6">
+																				<h4>Conta à Ordem 2</h4>
+																				<p class="number">900657891</p>
+																			</div>
+																			<div class="col-md-8 col-sm-8 col-xs-6">
+																				<div class="col-md-6 col-sm-6 text-right">
+																					<span>SALDO CONTABILÍSTICO</span>
+																					<p class="saldo">2.000,00 <span>EUR</span></p>
+																				</div>
+																				<div class="col-md-6 col-sm-6 hidden-xs text-right">
+																					<span>SALDO AUTORIZADO</span>
+																					<p class="saldo">2.000,00 <span>EUR</span></p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="panel-footer text-center hidden-sm hidden-xs">
+															<a id="change" style="cursor:pointer;">
+																<i class="fa fa-refresh"></i><br>
+																<span>ALTERAR  </span>
+															</a>
+														</div>
+													</div>
+													<p class="text-right hidden-md hidden-lg">
+														<button class="btn btn-link" data-toggle="modal" data-target="#accountselector_mobile"><i class="fa fa-refresh"></i> Alterar conta</button>
+													</p>
+												</div>
+												<div class="accountselector_dropdown" id="accountselector_dropdown">
+													<div class="panel panel-default panel-horizontal">
+														<div class="panel-body">
+															<div class="scrollable">
+																<div class="card card-blue">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<h4>Conta à Ordem 1</h4>
+																			<p class="number">213342905</p>
+																		</div>
+																		<div class="col-md-8 text-right">
+																			<div class="col-md-6">
+																				<span>SALDO CONTABILÍSTICO</span>
+																				<p class="saldo">1.550,00 <span>EUR</span></p>
+																			</div>
+																			<div class="col-md-6">
+																				<span>SALDO AUTORIZADO</span>
+																				<p class="saldo">1.550,00 <span>EUR</span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<a id="cardexample_2" style="cursor:pointer;"><div class="card card-green">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<h4>Conta à Ordem 2</h4>
+																			<p class="number">900657891</p>
+																		</div>
+																		<div class="col-md-8 text-right">
+																			<div class="col-md-6">
+																				<span>SALDO CONTABILÍSTICO</span>
+																				<p class="saldo">2.000,00 <span>EUR</span></p>
+																			</div>
+																			<div class="col-md-6">
+																				<span>SALDO AUTORIZADO</span>
+																				<p class="saldo">2.000,00 <span>EUR</span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div></a>
+																<div class="card card-yellow">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<h4>Conta Fornecedores</h4>
+																			<p class="number">214567092</p>
+																		</div>
+																		<div class="col-md-8 text-right">
+																			<div class="col-md-6">
+																				<span>SALDO CONTABILÍSTICO</span>
+																				<p class="saldo">12.800,00 <span>EUR</span></p>
+																			</div>
+																			<div class="col-md-6">
+																				<span>SALDO AUTORIZADO</span>
+																				<p class="saldo">12.800,00 <span>EUR</span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card card-primary">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<h4>Conta à Ordem 3</h4>
+																			<p class="number">950242905</p>
+																		</div>
+																		<div class="col-md-8 text-right">
+																			<div class="col-md-6">
+																				<span>SALDO CONTABILÍSTICO</span>
+																				<p class="saldo">550,00 <span>EUR</span></p>
+																			</div>
+																			<div class="col-md-6">
+																				<span>SALDO AUTORIZADO</span>
+																				<p class="saldo">550,00 <span>EUR</span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card card-default">
+																	<div class="row">
+																		<div class="col-md-4">
+																			<h4>Conta Estado</h4>
+																			<p class="number">670901241</p>
+																		</div>
+																		<div class="col-md-8 text-right">
+																			<div class="col-md-6">
+																				<span>SALDO CONTABILÍSTICO</span>
+																				<p class="saldo">2.100,00 <span>EUR</span></p>
+																			</div>
+																			<div class="col-md-6">
+																				<span>SALDO AUTORIZADO</span>
+																				<p class="saldo">2.100,00 <span>EUR</span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<!-- Transaction card -->
+														<div class="card transaction_card">
+															<div class="ccontent">
+																<h3>Dados da Operação</h3>
+
+																<!-- Transaction tabs -->
+																<ul class="nav nav-pills" role="tablist">
+																	<li class="active">
+																		<a href="#iban" role="tab" data-toggle="tab">IBAN</a>
+																	</li>
+																	<li>
+																		<a href="#contamillennium" role="tab" data-toggle="tab" aria-expanded="false">Conta Millennium</a>
+																	</li>
+																	<li>
+																		<a href="#minhascontas" role="tab" data-toggle="tab" aria-expanded="true">Entre as minhas contas</a>
+																	</li>
+																	<li>
+																		<a href="#payments" role="tab" data-toggle="tab">Payments</a>
+																	</li>
+																</ul>
+
+																<div class="content">
+																	<div class="tab-content">
+
+																		<!-- IBAN -->
+																		<div class="tab-pane active" id="iban">
+																				<div class="row">
+																					<div class="col-md-8">
+
+																						<!-- inputs -->
+																						<div class="transaction_card_inputs">
+																							<div class="row">
+																								<div class="col-md-9 col-sm-9 col-xs-9">
+																									<div class="form-group label-floating">
+																										<label class="control-label">Nome do Beneficiário</label>
+																										<input type="text" class="form-control">
+																									</div>
+																								</div>
+																								<div class="col-md-3 col-sm-3 col-xs-3">
+																									<button class="btn btn-primary btn-sm beneficiario"><i class="material-icons">assignment_ind</i> Beneficiário</button>
+																								</div>
+																							</div>
+																							<div class="row">
+																								<div class="col-md-12 col-sm-12 col-xs-9">
+																									<div class="form-group label-floating">
+																										<label class="control-label">IBAN</label>
+																										<input type="text" class="form-control">
+																									</div>
+																								</div>
+																							</div>
+																							<div class="row">
+																								<div class="col-md-5 col-sm-4 col-xs-4">
+																									<div class="form-group label-floating">
+																										<label class="control-label">Montante</label>
+																										<input type="text" class="form-control">
+																									</div>
+																								</div>
+																								<div class="col-md-2 col-sm-3 col-xs-3">
+																									<select class="form-control" value="Vas">
+																										<option value="Moeda" disabled>Moeda</option>
+																										<option>EUR</option>
+																										<option>USD</option>
+																										<option>GBP</option>
+																										<option>JPY</option>
+																									</select>
+																								</div>
+																								<div class="col-md-5 col-sm-5 col-xs-5">
+																									<div class="togglebutton urgente">
+																										<label>
+																											<span>Urgente</span>
+																											<input type="checkbox">
+																										</label>
+																									</div>
+																								</div>
+																							</div>
+																							<textarea class="form-control" placeholder="Descritivo conta destino" rows="2"></textarea>
+																							<textarea class="form-control" placeholder="Descritivo conta origem" rows="2"></textarea>
+																						</div>
+
+																						<!-- agendar -->
+																						<div class="transaction_card_agendar">
+																							<div class="subcard subcard-default">
+																								<div class="col-md-1 col-xs-2 col-sm-1"><i class="material-icons">event</i></div>
+																								<div class="col-md-7 col-xs-10 col-sm-11">Pode agendar esta operação para ser realizada mais tarde.</div>
+																								<div class="col-md-4 col-xs-12 col-sm-12 text-right">
+																									<button class="btn btn-default">Agendar</button>
+																								</div>
+																							</div>
+																						</div>
+
+																						<!-- precario -->
+																						<div class="transaction_card_precario">
+																							<div class="subcard subcard-default">
+																								<div class="col-md-1 col-xs-2 col-sm-1"><i class="material-icons">receipt</i></div>
+																								<div class="col-md-7 col-xs-10 col-sm-11">Esta operação não tem custos.</div>
+																								<div class="col-md-4 col-xs-12 col-sm-12 text-right">
+																									<button class="btn btn-default">Preçário</button>
+																								</div>
+																							</div>
+																						</div>
+																						<!-- disclaimer -->
+																						<div class="transaction_card_disclaimer">
+																							<hr>
+																							<p class="title">Lorem ipsum dolor sit amet et consecteur</p>
+																							<p>Lorem ipsum dolor sit amet, duo esse nostrud an, ut vel agam utamur constituam. Modo vero modus pro id.
+																								Ne pro quot possit, et nam eius solum, sit ad eius officiis. Aeterno voluptaria ut nam, ad clita commune cum,
+																								alia civibus ex usu. Delectus recteque at usu, per indoctum torquatos ad.
+																								Pri adhuc graecis ne, illud saepe contentiones vix an. Per ornatus phaedrum id, id sed amet facete dicunt.
+																								Postea graeci vis ea, eos everti denique explicari id, vim at idque liber liberavisse. Ius ad alii accusam,
+																								movet volumus molestiae nam ad, quo no saepe noster forensibus.</p>
+																						</div>
+
+																					</div>
+																					<div class="col-md-4 hidden-sm hidden-xs">
+																						<!-- help right -->
+																						<div class="subcard subcard-default">
+																							<p class="title">Adicionar Beneficiário</p>
+																							<p>Neste passo da operação poderá introduzir manualmente o nome do beneficiário ou escolher um beneficiário já existente
+																								da sua lista e para o qual deseja realizar esta operação.</p>
+																						</div>
+																					</div>
+																				</div>
+
+																					<div class="transaction_card_actions">
+																						<hr>
+																						<div class="row">
+																							<div class="col-md-6 col-sm-6 col-xs-6"><button class="btn btn-default">Cancelar</button></div>
+																							<div class="col-md-6 col-sm-6 col-xs-6 text-right"><button class="btn btn-primary">Continuar</button></div>
+																						</div>
+																				</div>
+
+																	</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer hidden-xs">
+			<div class="row">
+					<div class="col-md-12 text-center">
+						<ul class="list-inline">
+							<li><h6>Apoio ao cliente</h6></li>
+							<li><h6>Segurança</h6></li>
+							<li><h6>Preçário</h6></li>
+							<li><h6>Contactos</h6></li>
+						</ul>
+					</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+				<!-- ACCOUNT SELECTOR MOBILE MODAL -->
+			  <div id="accountselector_mobile" class="modal fade" role="dialog">
+			    <div class="modal-dialog modal-lg accountselector_modal">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Escolher conta</h4>
+			        </div>
+			        <div class="modal-body">
+			          <div class="scrollable">
+			                <div class="card card-yellow">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Conta à Ordem 1</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <a style="cursor:pointer;" id="cardexample_3"><div class="card card-blue" data-dismiss="modal">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>A minha conta 2</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div></a>
+			                <div class="card card-primary">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Lorem Ipsum Dolor</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="card card-green">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Conta Estado</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="card card-green">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Conta Estado</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="card card-green">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Conta Estado</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="card card-green">
+			                  <div class="row">
+			                    <div class="col-sm-4 col-xs-6">
+			                      <h4>Conta Estado</h4>
+			                      <p class="number">670901241</p>
+			                    </div>
+			                    <div class="col-xs-6 text-right hidden-sm">
+			                      <span>SALDO CONTABILÍSTICO</span>
+			                      <p class="saldo">2.100,00 <span>EUR</span></p>
+			                    </div>
+			                    <div class="col-sm-8 text-right hidden-xs">
+			                      <div class="col-sm-6">
+			                        <span>SALDO CONTABILÍSTICO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                      <div class="col-sm-6">
+			                        <span>SALDO AUTORIZADO</span>
+			                        <p class="saldo">2.100,00 <span>EUR</span></p>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			              </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+
+			</body>
+
+			<!--   Core JS Files   -->
+			<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+			<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+			<script src="assets/js/material.min.js"></script>
+			<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+			<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+			<script src="assets/js/material-kit.js" type="text/javascript"></script>
+			<script>
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+			</script>
+
+			</html>

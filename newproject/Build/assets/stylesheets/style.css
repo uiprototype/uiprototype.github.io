@@ -6290,3 +6290,301 @@ button.close {
   margin-bottom: 40px; }
   .backtotop a:hover {
     text-decoration: none; }
+
+.marginli li {
+  margin-bottom: 5px; }
+
+@media (max-width: 768px) {
+  .jumbotron {
+    text-align: center;
+    padding: 10px; }
+    .jumbotron h1 {
+      font-size: 30px; }
+    .jumbotron p {
+      font-size: 18px; } }
+.tab-content {
+  padding: 20px 0px 0px 0px; }
+
+.btn-circle {
+  width: 79px;
+  height: 79px;
+  text-align: center;
+  padding: 13px 0;
+  font-size: 30px;
+  line-height: 2.00;
+  border-radius: 70px; }
+
+.accountselector a:hover {
+  text-decoration: none; }
+.accountselector .row {
+  margin: 0px; }
+.accountselector .col-md-3 {
+  padding: 7px; }
+.accountselector .nopad-left {
+  padding-left: 0px; }
+.accountselector .nopad-right {
+  padding-right: 0px; }
+.accountselector .panel.panel-horizontal {
+  display: table;
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #D8D8D8;
+  margin-bottom: 0px; }
+.accountselector .panel.panel-horizontal > .panel-heading, .accountselector .panel.panel-horizontal > .panel-body, .accountselector .panel.panel-horizontal > .panel-footer {
+  display: table-cell; }
+.accountselector .panel.panel-horizontal > .panel-heading, .accountselector .panel.panel-horizontal > .panel-footer {
+  width: 10%;
+  border: 0;
+  vertical-align: middle; }
+.accountselector .panel.panel-horizontal > .panel-footer {
+  border-left: 1px solid #f0f0f0;
+  border-radius: 0px; }
+  .accountselector .panel.panel-horizontal > .panel-footer i {
+    font-size: 50px; }
+  .accountselector .panel.panel-horizontal > .panel-footer span {
+    color: #888;
+    font-size: 11px;
+    font-weight: 400; }
+.accountselector .card {
+  background-color: #fcfcfc;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 5px #ddd; }
+  .accountselector .card h4 {
+    font-size: 14px; }
+  .accountselector .card .number {
+    margin-top: 0px;
+    color: #888;
+    font-size: 13px;
+    font-weight: 400; }
+  .accountselector .card .saldo {
+    font-weight: 400;
+    font-size: 16px; }
+    .accountselector .card .saldo span {
+      font-size: 11px;
+      font-weight: 600; }
+.accountselector .card:hover {
+  opacity: 0.7; }
+.accountselector .card-primary {
+  border-left: 4px solid #d1005d; }
+.accountselector .card-default {
+  border-left: 4px solid #ccc; }
+.accountselector .card-green {
+  border-left: 4px solid #2EDE5E; }
+.accountselector .card-blue {
+  border-left: 4px solid #2E96DE; }
+.accountselector .card-yellow {
+  border-left: 4px solid #EAED21; }
+
+.accountselector_dropdown {
+  margin-top: -1px; }
+  .accountselector_dropdown .scrollable {
+    overflow-y: auto;
+    height: 300px;
+    width: auto; }
+  .accountselector_dropdown a:hover {
+    text-decoration: none; }
+  .accountselector_dropdown .row {
+    margin: 0px; }
+  .accountselector_dropdown .panel.panel-horizontal {
+    display: table;
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #D8D8D8;
+    background-color: #f0f0f0; }
+  .accountselector_dropdown .panel.panel-horizontal > .panel-heading, .accountselector_dropdown .panel.panel-horizontal > .panel-body, .accountselector_dropdown .panel.panel-horizontal > .panel-footer {
+    display: table-cell; }
+  .accountselector_dropdown .panel.panel-horizontal > .panel-heading, .accountselector_dropdown .panel.panel-horizontal > .panel-footer {
+    width: 10%;
+    border: 0;
+    vertical-align: middle; }
+  .accountselector_dropdown .panel.panel-horizontal > .panel-footer {
+    border-left: 1px solid #f0f0f0;
+    border-radius: 0px; }
+    .accountselector_dropdown .panel.panel-horizontal > .panel-footer i {
+      font-size: 50px; }
+    .accountselector_dropdown .panel.panel-horizontal > .panel-footer span {
+      color: #888;
+      font-size: 11px;
+      font-weight: 400; }
+  .accountselector_dropdown .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    .accountselector_dropdown .card h4 {
+      font-size: 18px;
+      margin: 0px; }
+    .accountselector_dropdown .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 13px;
+      font-weight: 400; }
+    .accountselector_dropdown .card .saldo {
+      font-weight: 400;
+      font-size: 16px; }
+    .accountselector_dropdown .card span {
+      font-size: 11px;
+      font-weight: 600; }
+    .accountselector_dropdown .card p {
+      margin: 0px; }
+  .accountselector_dropdown .card-primary {
+    border-left: 4px solid #d1005d; }
+  .accountselector_dropdown .card-default {
+    border-left: 4px solid #ccc; }
+  .accountselector_dropdown .card-green {
+    border-left: 4px solid #2EDE5E; }
+  .accountselector_dropdown .card-blue {
+    border-left: 4px solid #2E96DE; }
+  .accountselector_dropdown .card-yellow {
+    border-left: 4px solid #EAED21; }
+
+.accountselector_selected .scrollable {
+  overflow-y: auto;
+  height: 300px;
+  width: auto; }
+.accountselector_selected a:hover {
+  text-decoration: none; }
+.accountselector_selected .row {
+  margin: 0px; }
+.accountselector_selected .col-md-12 {
+  padding: 0; }
+.accountselector_selected .panel.panel-horizontal {
+  display: table;
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #D8D8D8; }
+.accountselector_selected .panel.panel-horizontal > .panel-heading, .accountselector_selected .panel.panel-horizontal > .panel-body, .accountselector_selected .panel.panel-horizontal > .panel-footer {
+  display: table-cell; }
+.accountselector_selected .panel.panel-horizontal > .panel-heading, .accountselector_selected .panel.panel-horizontal > .panel-footer {
+  width: 10%;
+  border: 0;
+  vertical-align: middle; }
+.accountselector_selected .panel.panel-horizontal > .panel-footer {
+  border-left: 1px solid #f0f0f0;
+  border-radius: 0px; }
+  .accountselector_selected .panel.panel-horizontal > .panel-footer i {
+    font-size: 50px; }
+  .accountselector_selected .panel.panel-horizontal > .panel-footer span {
+    color: #888;
+    font-size: 11px;
+    font-weight: 400; }
+.accountselector_selected .card {
+  background-color: #fcfcfc;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 5px #ddd;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .accountselector_selected .card h4 {
+    font-size: 20px;
+    margin: 0px; }
+  .accountselector_selected .card .number {
+    margin-top: 0px;
+    color: #888;
+    font-size: 13px;
+    font-weight: 400; }
+  .accountselector_selected .card .saldo {
+    font-weight: 400;
+    font-size: 16px; }
+  .accountselector_selected .card span {
+    font-size: 11px;
+    font-weight: 600; }
+  .accountselector_selected .card p {
+    margin: 0px; }
+.accountselector_selected .card-primary {
+  border-left: 4px solid #d1005d; }
+.accountselector_selected .card-default {
+  border-left: 4px solid #ccc; }
+.accountselector_selected .card-green {
+  border-left: 4px solid #2EDE5E; }
+.accountselector_selected .card-blue {
+  border-left: 4px solid #2E96DE; }
+.accountselector_selected .card-yellow {
+  border-left: 4px solid #EAED21; }
+
+@media (max-width: 768px) {
+  .accountselector_selected .card h4 {
+    font-size: 13px;
+    margin: 0px; }
+  .accountselector_selected .card .number {
+    margin-top: 0px;
+    color: #888;
+    font-size: 12px;
+    font-weight: 400; }
+  .accountselector_selected .card .saldo {
+    font-weight: 400;
+    font-size: 12px; }
+  .accountselector_selected .card span {
+    font-size: 9px;
+    font-weight: 600; }
+  .accountselector_selected .card p {
+    margin: 0px; } }
+.accountselector_modal .scrollable {
+  overflow-y: auto;
+  max-height: 480px;
+  width: auto; }
+.accountselector_modal a:hover {
+  text-decoration: none; }
+.accountselector_modal .row {
+  margin: 0px; }
+.accountselector_modal .panel.panel-horizontal {
+  display: table;
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #D8D8D8;
+  background-color: #f0f0f0; }
+.accountselector_modal .panel.panel-horizontal > .panel-heading, .accountselector_modal .panel.panel-horizontal > .panel-body, .accountselector_modal .panel.panel-horizontal > .panel-footer {
+  display: table-cell; }
+.accountselector_modal .panel.panel-horizontal > .panel-heading, .accountselector_modal .panel.panel-horizontal > .panel-footer {
+  width: 10%;
+  border: 0;
+  vertical-align: middle; }
+.accountselector_modal .panel.panel-horizontal > .panel-footer {
+  border-left: 1px solid #f0f0f0;
+  border-radius: 0px; }
+  .accountselector_modal .panel.panel-horizontal > .panel-footer i {
+    font-size: 50px; }
+  .accountselector_modal .panel.panel-horizontal > .panel-footer span {
+    color: #888;
+    font-size: 11px;
+    font-weight: 400; }
+.accountselector_modal .card {
+  background-color: #fcfcfc;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 5px #ddd;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+  .accountselector_modal .card h4 {
+    font-size: 13px;
+    margin: 0px; }
+  .accountselector_modal .card .number {
+    margin-top: 0px;
+    color: #888;
+    font-size: 12px;
+    font-weight: 400; }
+  .accountselector_modal .card .saldo {
+    font-weight: 400;
+    font-size: 12px; }
+  .accountselector_modal .card span {
+    font-size: 9px;
+    font-weight: 600; }
+  .accountselector_modal .card p {
+    margin: 0px; }
+.accountselector_modal .card-primary {
+  border-left: 4px solid #d1005d; }
+.accountselector_modal .card-default {
+  border-left: 4px solid #ccc; }
+.accountselector_modal .card-green {
+  border-left: 4px solid #2EDE5E; }
+.accountselector_modal .card-blue {
+  border-left: 4px solid #2E96DE; }
+.accountselector_modal .card-yellow {
+  border-left: 4px solid #EAED21; }

@@ -16,32 +16,8 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-      
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
       <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-      <link href="../assets/stylesheets/font-awesome.css" rel="stylesheet">
+      <link href="assets/stylesheets/font-awesome.css" rel="stylesheet">
 
 </head>
 
@@ -417,7 +393,12 @@
             <h3 id="nav1_1">3.1. Buttons</h3>
             <p><code>a</code> <code>button</code> <code>input</code></code></p>
             <br>
-            <div class="well"><ul class="list-inline linelist">
+            <div class="well hidden-xs"><ul class="list-inline linelist">
+            <li><a class="btn btn-default" href="#" role="button">Link</a></li>
+            <li><button class="btn btn-default" type="submit">Button</button></li>
+            <li><input class="btn btn-default" type="button" value="Input"></li>
+            <li><input class="btn btn-default" type="submit" value="Submit"></li></ul></div>
+            <div class="well hidden-md hidden-lg hidden-sm"><ul class="list-unstyled linelist">
             <li><a class="btn btn-default" href="#" role="button">Link</a></li>
             <li><button class="btn btn-default" type="submit">Button</button></li>
             <li><input class="btn btn-default" type="button" value="Input"></li>
@@ -435,7 +416,14 @@
             <code class="cssclass">"btn-success"</code> <code class="cssclass">"btn-info"</code>
             <code class="cssclass">"btn-warning"</code> <code class="cssclass">"btn-danger"</code>
             <code class="cssclass">"btn-link"</code></p><br>
-                <div class="well"><ul class="list-inline linelist"><li><button type="button" class="btn btn-default">Default</button></li>
+                <div class="well hidden-xs"><ul class="list-inline linelist"><li><button type="button" class="btn btn-default">Default</button></li>
+                <li><button type="button" class="btn btn-primary">Primary</button></li>
+                <li><button type="button" class="btn btn-success">Success</button></li>
+                <li><button type="button" class="btn btn-info">Info</button></li>
+                <li><button type="button" class="btn btn-warning">Warning</button></li>
+                <li><button type="button" class="btn btn-danger">Danger</button></li>
+                <li><button type="button" class="btn btn-link">Link</button></li></ul></div>
+                <div class="well hidden-md hidden-lg hidden-sm"><ul class="list-unstyled linelist"><li><button type="button" class="btn btn-default">Default</button></li>
                 <li><button type="button" class="btn btn-primary">Primary</button></li>
                 <li><button type="button" class="btn btn-success">Success</button></li>
                 <li><button type="button" class="btn btn-info">Info</button></li>
@@ -457,8 +445,16 @@
               <p>Além das classes anteriores para alterar ao nível da cor, os botões podem ser diferenciados pelo seu tamanho. Para isso o Bootstrap utiliza as variáveis lg, sm e xs (para o tamanho default/normal basta apenas utilizar a classe "btn").</p>
               <p><code class="cssclass">"btn-lg"</code> <code class="cssclass">"btn-sm"</code>
               <code class="cssclass">"btn-xs"</code></p><br>
-                  <div class="well">
+                  <div class="well hidden-xs">
                     <ul class="list-inline linelist">
+                        <li><button type="button" class="btn btn-default btn-lg">Large button</button></li>
+                        <li><button type="button" class="btn btn-default">Default button</button></li>
+                        <li><button type="button" class="btn btn-default btn-sm">Small button</button></li>
+                        <li><button type="button" class="btn btn-default btn-xs">Extra small button</button></li>
+                    </ul>
+                  </div>
+                  <div class="well hidden-md hidden-lg hidden-sm">
+                    <ul class="list-unstyled linelist">
                         <li><button type="button" class="btn btn-default btn-lg">Large button</button></li>
                         <li><button type="button" class="btn btn-default">Default button</button></li>
                         <li><button type="button" class="btn btn-default btn-sm">Small button</button></li>
@@ -476,8 +472,14 @@
                 <h4>3.1.3. States</h4>
                 <p>Utilizando as classes "active" e "disabled" é possível alterar o estado destes elementos.</p>
                 <p><code class="cssclass">"active"</code> <code class="cssclass">"disabled"</code></p><br>
-                    <div class="well">
+                    <div class="well hidden-xs">
                       <ul class="list-inline linelist">
+                          <li><button type="button" class="btn btn-default active">Button Active</button></li>
+                          <li><button type="button" class="btn btn-default disabled">Button Disabled</button></li>
+                      </ul>
+                    </div>
+                    <div class="well hidden-md hidden-lg hidden-sm">
+                      <ul class="list-unstyled linelist">
                           <li><button type="button" class="btn btn-default active">Button Active</button></li>
                           <li><button type="button" class="btn btn-default disabled">Button Disabled</button></li>
                       </ul>
@@ -492,8 +494,28 @@
                   <p>Com a classe "btn-group" é possível agrupar vários botões e de vários tamanhos.</p>
                   <p><code class="cssclass">"btn-group-lg"</code> <code class="cssclass">"btn-group"</code>
                   <code class="cssclass">"btn-group-sm"</code> <code class="cssclass">"btn-group-xs"</code></p><br>
-                      <div class="well">
+                      <div class="well hidden-xs hidden-sm">
                         <ul class="list-inline linelist">
+                            <li><div class="btn-group btn-group-lg" role="group">
+                              <button type="button" class="btn btn-default">Button 1</button>
+                              <button type="button" class="btn btn-default">Button 2</button>
+                            </div></li>
+                            <li><div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default">Button 1</button>
+                              <button type="button" class="btn btn-default">Button 2</button>
+                            </div></li>
+                            <li><div class="btn-group btn-group-sm" role="group">
+                              <button type="button" class="btn btn-default">Button 1</button>
+                              <button type="button" class="btn btn-default">Button 2</button>
+                            </div></li>
+                            <li><div class="btn-group btn-group-xs" role="group">
+                              <button type="button" class="btn btn-default">Button 1</button>
+                              <button type="button" class="btn btn-default">Button 2</button>
+                            </div></li>
+                        </ul>
+                      </div>
+                      <div class="well hidden-md hidden-lg">
+                        <ul class="list-unstyled linelist">
                             <li><div class="btn-group btn-group-lg" role="group">
                               <button type="button" class="btn btn-default">Button 1</button>
                               <button type="button" class="btn btn-default">Button 2</button>
@@ -614,7 +636,7 @@
                 </pre>
                 <div class="row lowmargin"></div>
                 <h4>3.2.1. Split Button Dropdowns</h4>
-                <p>Novamente utilizado Button Groups, também é possível ter um dropdown e um botão normal.</p>
+                <p>Novamente utilizando Button Groups, também é possível ter um dropdown e um botão normal.</p>
                 <p><code class="cssclass">"btn-default"</code> <code class="cssclass">"btn-primary"</code>
                 <code class="cssclass">"btn-success"</code> <code class="cssclass">"btn-info"</code>
                 <code class="cssclass">"btn-warning"</code> <code class="cssclass">"btn-danger"</code>
@@ -657,8 +679,18 @@
                   <p>Como acontece em quase todos os componentes do Bootstrap, as labels são facilmente customizáveis a nível de cor e tamanho com as variáveis base.</p>
                   <p><code class="cssclass">label</code></p>
                   <br>
-                  <div class="well">
+                  <div class="well hidden-xs">
                     <ul class="list-inline">
+                      <li><span class="label label-default">Default</span></li>
+                      <li><span class="label label-primary">Primary</span></li>
+                      <li><span class="label label-success">Success</span></li>
+                      <li><span class="label label-info">Info</span></li>
+                      <li><span class="label label-warning">Warning</span></li>
+                      <li><span class="label label-danger">Danger</span></li>
+                    </ul>
+                  </div>
+                  <div class="well hidden-md hidden-lg hidden-sm">
+                    <ul class="list-unstyled">
                       <li><span class="label label-default">Default</span></li>
                       <li><span class="label label-primary">Primary</span></li>
                       <li><span class="label label-success">Success</span></li>
@@ -704,8 +736,16 @@
                     <code class="jsfunction">data-placement="top"</code> <code class="jsfunction">data-placement="bottom"</code>
                     <code class="jsfunction">data-placement="right"</code></p>
                     <br>
-                    <div class="well">
+                    <div class="well hidden-xs">
                       <ul class="list-inline">
+                        <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button></li>
+                        <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button></li>
+                        <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button></li>
+                        <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button></li>
+                      </ul>
+                    </div>
+                    <div class="well hidden-lg hidden-md hidden-sm">
+                      <ul class="list-unstyled marginli">
                         <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button></li>
                         <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button></li>
                         <li><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button></li>
@@ -735,8 +775,24 @@
                     <code class="jsfunction">data-placement="bottom"</code> <code class="jsfunction">data-placement="right"</code>
                   <code class="jsfunction">data-content="..."</code></p>
                     <br>
-                    <div class="well">
+                    <div class="well hidden-xs hidden-sm">
                       <ul class="list-inline">
+                        <li><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                          Popover on left
+                        </button></li>
+                        <li><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                          Popover on top
+                        </button></li>
+                        <li><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                          Popover on bottom
+                        </button></li>
+                        <li><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                          Popover on right
+                        </button></li>
+                      </ul>
+                    </div>
+                    <div class="well hidden-md hidden-lg">
+                      <ul class="list-inline marginli">
                         <li><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
                           Popover on left
                         </button></li>
@@ -1107,7 +1163,8 @@
               <div class="jumbotron">
                 <h1>Hello, world!</h1>
                 <p>Lorem impsum dolor sit amet et consecteur...</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-primary btn-lg hidden-xs hidden-sm" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-primary hidden-md hidden-lg" href="#" role="button">Learn more</a></p>
               </div>
             <pre class="premargin">
 &lt;div class="jumbotron"&gt;
@@ -1406,7 +1463,13 @@
               <div class="radio">
                 <label>
                   <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Option two can be something else and selecting it will deselect option one
+                  Option one
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Option two
                 </label>
               </div>
               <div class="radio disabled">
@@ -1439,7 +1502,7 @@
             <code class="jsfunction">data-on="..."</code> <code class="jsfunction">data-off="..."</code> <code class="jsfunction">data-onstyle="color-variable"</code>
            <code class="jsfunction">data-offstyle="color-variable"</code></p>
             <br>
-            <div class="well">
+            <div class="well hidden-xs">
               <ul class="list-inline">
               <li>
                 <div class="checkbox">
@@ -1458,6 +1521,25 @@
               <li>
                 <input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
               </li>
+            </ul>
+            </div>
+            <div class="well hidden-sm hidden-md hidden-lg">
+              <ul class="list-unstyled">
+              <li>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" data-toggle="toggle">
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox disabled">
+                  <label>
+                    <input type="checkbox" disabled data-toggle="toggle">
+                  </label>
+                </div>
+              </li>
+            </ul>
             </div>
             <pre class="premargin">
 &lt;div class="checkbox"&gt;
@@ -1877,7 +1959,7 @@
             <hr>
             <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#Search">Código HTML</button>
 
-            <!-- SEARCH -->
+            <!-- SEARCH ADVANCED-->
             <div class="row"></div>
             <h3 id="nav6_4">8.3. Search Advanced</h3>
             <p>Exemplo de um search avançado para páginas de consulta de movimentos, extratos, histórico de operações, entre outras.</p>
@@ -1924,6 +2006,296 @@
 
             <hr>
             <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#SearchAdvanced">Código HTML</button>
+
+
+            <!-- SAFE -->
+            <div class="row"></div>
+            <h3 id="nav6_5">8.4. SAFe</h3>
+            <p>Exemplo de um componente para a escolha do tipo de confirmação de uma operação. Este estará numa página ou modal de confirmação.</p>
+            <p><code class="cssclass">search</code> <code class="cssclass">search-input</code></p>
+            <br>
+            <div class="row lowmargin">
+              <div class="col-md-4 hidden-sm hidden-xs"></div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="well">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS</a></li>
+                    <li role="presentation"><a href="#token" aria-controls="token" role="tab" data-toggle="tab">Token</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="sms">
+                      <div class="form-group">
+                        <p>Lorem ipsum dolor sit amet et consec teur et dolor sit amet.</p>
+                        <input type="email" class="form-control" id="InputSMS" placeholder="Insira o código SMS">
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="token">
+                      <div class="form-group">
+                        <p>Lorem ipsum dolor sit amet et consec teur et dolor sit amet.</p>
+                        <input type="email" class="form-control" id="InputSMS" placeholder="Insira o Token">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 hidden-sm hidden-xs"></div>
+            </div>
+
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#SAFe">Código HTML</button>
+
+
+            <!-- SELECTOR CONTA -->
+            <div class="row"></div>
+            <h3 id="nav6_6">8.5. Account Selector</h3>
+            <p>Widget para escolha da conta a utilizar numa determinada operação.</p>
+            <p><code class="cssclass">search</code> <code class="cssclass">search-input</code></p>
+            <br>
+
+            <div class="accountselector" id="accountselector">
+              <div class="panel panel-default panel-horizontal">
+                <div class="panel-body">
+                  <div class="card hidden-md hidden-lg">
+                    <button class="btn btn-link" data-toggle="modal" data-target="#accountselector_mobile">Escolher conta</button>
+                    <p style="padding-left: 12px;">Lorem ipsum dolor sit amet et dolor ipsum sit consecteur...</p>
+                  </div>
+                  <div class="row hidden-xs hidden-sm">
+                      <div class="col-md-3 nopad-left">
+                        <div class="card card-blue">
+                          <h4>Conta à Ordem 1</h4>
+                          <p class="number">213342905</p>
+                          <p class="saldo text-right">1.550,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card card-green" id="cardexample_1">
+                          <h4>Conta à Ordem 2</h4>
+                          <p class="number">900657891</p>
+                          <p class="saldo text-right">2.000,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card card-yellow">
+                          <h4>Conta Fornecedores</h4>
+                          <p class="number">214567092</p>
+                          <p class="saldo text-right">12.800,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3 nopad-right">
+                        <div class="card card-yellow">
+                          <h4>Conta Fornecedores</h4>
+                          <p class="number">214567092</p>
+                          <p class="saldo text-right">12.800,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="panel-footer text-center hidden-sm hidden-xs">
+                  <a id="plus">
+                    <i class="fa fa-plus"></i><br>
+                    <span>CONTAS</span>
+                  </a>
+                  <a id="cancel">
+                    <i class="fa fa-times"></i><br>
+                    <span>CANCELAR</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accountselector_selected" id="accountselector_selected">
+              <div class="panel panel-default panel-horizontal">
+                <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="card card-green">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                              <h4>Conta à Ordem 2</h4>
+                              <p class="number">900657891</p>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-6">
+                              <div class="col-md-6 col-sm-6 text-right">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">2.000,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6 col-sm-6 hidden-xs text-right">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">2.000,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="panel-footer text-center hidden-sm hidden-xs">
+                  <a id="change">
+                    <i class="fa fa-refresh"></i><br>
+                    <span>ALTERAR  </span>
+                  </a>
+                </div>
+              </div>
+              <p class="text-right hidden-md hidden-lg">
+                <button class="btn btn-link" data-toggle="modal" data-target="#accountselector_mobile"><i class="fa fa-refresh"></i> Alterar conta</button>
+              </p>
+            </div>
+
+            <div class="accountselector_dropdown" id="accountselector_dropdown">
+              <div class="panel panel-default panel-horizontal">
+                <div class="panel-body">
+                  <div class="scrollable">
+                        <div class="card card-blue">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>Conta à Ordem 1</h4>
+                              <p class="number">213342905</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                              <div class="col-md-6">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">1.550,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">1.550,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-green" id="cardexample_2">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>Conta à Ordem 2</h4>
+                              <p class="number">900657891</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                              <div class="col-md-6">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">2.000,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">2.000,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-yellow">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>Conta Fornecedores</h4>
+                              <p class="number">214567092</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                              <div class="col-md-6">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">12.800,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">12.800,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-primary">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>Conta à Ordem 3</h4>
+                              <p class="number">950242905</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                              <div class="col-md-6">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">550,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">550,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-default">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <h4>Conta Estado</h4>
+                              <p class="number">670901241</p>
+                            </div>
+                            <div class="col-md-8 text-right">
+                              <div class="col-md-6">
+                                <span>SALDO CONTABILÍSTICO</span>
+                                <p class="saldo">2.100,00 <span>EUR</span></p>
+                              </div>
+                              <div class="col-md-6">
+                                <span>SALDO AUTORIZADO</span>
+                                <p class="saldo">2.100,00 <span>EUR</span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!--
+                <script>
+                $( document.body ).click(function () {
+                  if ( $( "#accountselector_dropdown" ).is( ":hidden" ) ) {
+                    $( "" ).slideDown( "slow" );
+                  } else {
+                    $( "div" ).hide();
+                  }
+                });
+              </script> -->
+<!--
+            <div class="accountselector">
+              <div class="panel panel-default panel-horizontal">
+                <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <div class="card card-yellow">
+                          <h4>Conta à Ordem 2</h4>
+                          <p class="number">213342905</p>
+                          <p class="saldo text-right">2.550,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card card-yellow">
+                          <h4>Conta à Ordem 2</h4>
+                          <p class="number">213342905</p>
+                          <p class="saldo text-right">2.550,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card card-yellow">
+                          <h4>Conta à Ordem 2</h4>
+                          <p class="number">213342905</p>
+                          <p class="saldo text-right">2.550,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card card-yellow">
+                          <h4>Conta à Ordem 2</h4>
+                          <p class="number">213342905</p>
+                          <p class="saldo text-right">2.550,00 <span>EUR</span></p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="panel-footer text-center">
+                  <a id="loadmore">
+                    <i class="fa fa-plus"></i><br>
+                    <span>CONTAS</span>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+
+            <hr>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#SAFe">Código HTML</button>
 
           </div>
         </div>
@@ -2005,6 +2377,8 @@
                     <li><a href="#nav6_2">Product Header</a></li>
                     <li><a href="#nav6_3">Search</a></li>
                     <li><a href="#nav6_4">Search Advanced</a></li>
+                    <li><a href="#nav6_5">SAFe</a></li>
+                    <li><a href="#nav6_6">Account Selector</a></li>
   <!--                  <li><a href="#nav6_5">Account Selector</a></li>
                     <li><a href="#nav6_5">SAFe</a></li> -->
                 </ul>
@@ -2105,63 +2479,63 @@
         <div class="modal-body">
           <pre>
 &lt;form&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="InputUsername"&gt;Username&lt;/label&gt;
-&lt;input type="email" class="form-control" id="InputUsername" placeholder="Your Email"&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="InputPassword"&gt;Password&lt;/label&gt;
-&lt;input type="password" class="form-control" id="InputPassword" placeholder="Your Password"&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="Ammount"&gt;Ammount&lt;/label&gt;
-&lt;div class="input-group"&gt;
-&lt;input type="text" class="form-control" id="Montante" placeholder="0,00"&gt;
-&lt;div class="input-group-addon"&gt;€&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="ChooseFileType"&gt;File Type&lt;/label&gt;
-&lt;select class="form-control" id="ChooseFileType"&gt;
-&lt;option&gt;JPG&lt;/option&gt;
-&lt;option&gt;PNG&lt;/option&gt;
-&lt;option&gt;GIF&lt;/option&gt;
-&lt;option&gt;PDF&lt;/option&gt;
-&lt;/select&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="Comments"&gt;Comments&lt;/label&gt;
-&lt;textarea class="form-control" rows="3" placeholder="Comments here..." id="Comments"&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="FileUpload"&gt;File Upload&lt;/label&gt;
-&lt;input type="file" id="FileUpload"&gt;
-&lt;p class="help-block"&gt;Example of help text.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="RadioChoose"&gt;Notifications&lt;/label&gt;
-&lt;div class="radio"&gt;
-&lt;label&gt;
-&lt;input type="radio" name="RadioChoose" id="RadioChoose" value="option1" aria-label="..."&gt;
-Email
-&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class="radio"&gt;
-&lt;label&gt;
-&lt;input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."&gt;
-SMS
-&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="form-group"&gt;
-&lt;label for="Checkbox"&gt;Terms of Service&lt;/label&gt;
-&lt;div class="checkbox"&gt;
-&lt;label&gt;
-&lt;input type="checkbox" id="Checkbox"&gt; Lorem ipsum dolor sit amet.
-&lt;/label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/form&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="InputUsername"&gt;Username&lt;/label&gt;
+   &lt;input type="email" class="form-control" id="InputUsername" placeholder="Your Email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="InputPassword"&gt;Password&lt;/label&gt;
+   &lt;input type="password" class="form-control" id="InputPassword" placeholder="Your Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="Ammount"&gt;Ammount&lt;/label&gt;
+   &lt;div class="input-group"&gt;
+    &lt;input type="text" class="form-control" id="Montante" placeholder="0,00"&gt;
+    &lt;div class="input-group-addon"&gt;€&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="ChooseFileType"&gt;File Type&lt;/label&gt;
+   &lt;select class="form-control" id="ChooseFileType"&gt;
+    &lt;option&gt;JPG&lt;/option&gt;
+    &lt;option&gt;PNG&lt;/option&gt;
+    &lt;option&gt;GIF&lt;/option&gt;
+    &lt;option&gt;PDF&lt;/option&gt;
+   &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="Comments"&gt;Comments&lt;/label&gt;
+   &lt;textarea class="form-control" rows="3" placeholder="Comments here..." id="Comments"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="FileUpload"&gt;File Upload&lt;/label&gt;
+   &lt;input type="file" id="FileUpload"&gt;
+   &lt;p class="help-block"&gt;Example of help text.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="RadioChoose"&gt;Notifications&lt;/label&gt;
+   &lt;div class="radio"&gt;
+    &lt;label&gt;
+     &lt;input type="radio" name="RadioChoose" id="RadioChoose" value="option1" aria-label="..."&gt;
+     Email
+    &lt;/label&gt;
+   &lt;/div&gt;
+   &lt;div class="radio"&gt;
+    &lt;label&gt;
+     &lt;input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."&gt;
+     SMS
+    &lt;/label&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+   &lt;label for="Checkbox"&gt;Terms of Service&lt;/label&gt;
+   &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+     &lt;input type="checkbox" id="Checkbox"&gt; Lorem ipsum dolor sit amet.
+    &lt;/label&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/form&gt;
           </pre>
         </div>
         <div class="modal-footer">
@@ -2182,38 +2556,38 @@ SMS
         <div class="modal-body">
           <pre>
 &lt;div class="productheader"&gt;
-&lt;div class="content"&gt;
-&lt;div class="row"&gt;
-&lt;div class="col-md-8 col-lg-6 col-sm-7 col-xs-12"&gt;
-&lt;span class="type"&gt;Contrato&lt;/span&gt;
-&lt;h2&gt;Contrato Lorem Ipsum &lt;span class="editname"&gt;&lt;i class="fa fa-pencil"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;h5&gt;Completo com recurso&lt;/h5&gt;
-&lt;/div&gt;
-&lt;div class="col-md-4 col-lg-6 text-right col-xs-12 col-sm-5"&gt;
-&lt;span class="type type-left"&gt;Conta Corrente&lt;/span&gt;
-&lt;h2&gt;12.000,00 &lt;span class="currency"&gt;EUR&lt;/span&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row hidden-xs hidden-sm"&gt;
-&lt;div class="col-md-4 col-lg-4"&gt;
-&lt;h4&gt;&lt;span&gt;Conta de Suporte&lt;/span&gt; 7890231012&lt;/h4&gt;
-&lt;/div&gt;
-&lt;div class="col-md-8 col-lg-8 text-right"&gt;
-&lt;h4&gt;&lt;span&gt;Créditos Tomados&lt;/span&gt; 5.500,00 EUR&lt;/h4&gt;
-&lt;h4&gt;&lt;span&gt;Disponibilidades&lt;/span&gt; 10.230,00 EUR&lt;/h4&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr class="hidden-xs hidden-sm"&gt;
-&lt;div class="row"&gt;
-&lt;div class="hidden-sm col-md-12 col-lg-12 hidden-xs text-right"&gt;
-&lt;ul class="list-inline"&gt;
-&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Incluir devedores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Pedir adiantamento&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="btn btn-productheader"&gt;Cessão de créditos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+ &lt;div class="content"&gt;
+  &lt;div class="row"&gt;
+   &lt;div class="col-md-8 col-lg-6 col-sm-7 col-xs-12"&gt;
+    &lt;span class="type"&gt;Contrato&lt;/span&gt;
+    &lt;h2&gt;Contrato Lorem Ipsum &lt;span class="editname"&gt;&lt;i class="fa fa-pencil"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;h5&gt;Completo com recurso&lt;/h5&gt;
+   &lt;/div&gt;
+   &lt;div class="col-md-4 col-lg-6 text-right col-xs-12 col-sm-5"&gt;
+    &lt;span class="type type-left"&gt;Conta Corrente&lt;/span&gt;
+    &lt;h2&gt;12.000,00 &lt;span class="currency"&gt;EUR&lt;/span&gt;&lt;/h2&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row hidden-xs hidden-sm"&gt;
+   &lt;div class="col-md-4 col-lg-4"&gt;
+    &lt;h4&gt;&lt;span&gt;Conta de Suporte&lt;/span&gt; 7890231012&lt;/h4&gt;
+   &lt;/div&gt;
+   &lt;div class="col-md-8 col-lg-8 text-right"&gt;
+    &lt;h4&gt;&lt;span&gt;Créditos Tomados&lt;/span&gt; 5.500,00 EUR&lt;/h4&gt;
+    &lt;h4&gt;&lt;span&gt;Disponibilidades&lt;/span&gt; 10.230,00 EUR&lt;/h4&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr class="hidden-xs hidden-sm"&gt;
+  &lt;div class="row"&gt;
+   &lt;div class="hidden-sm col-md-12 col-lg-12 hidden-xs text-right"&gt;
+    &lt;ul class="list-inline"&gt;
+     &lt;li&gt;&lt;a class="btn btn-productheader"&gt;Incluir devedores&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class="btn btn-productheader"&gt;Pedir adiantamento&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class="btn btn-productheader"&gt;Cessão de créditos&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
 &lt;/div&gt;
           </pre>
         </div>
@@ -2235,19 +2609,56 @@ SMS
         <div class="modal-body">
           <pre>
 &lt;div class="search row"&gt;
-&lt;div class="col-md-12"&gt;
-&lt;div id="search-input"&gt;
-&lt;div class="input-group col-md-12"&gt;
-&lt;input type="text" class="form-control input-lg" placeholder="Pesquisar..." /&gt;
-&lt;span class="input-group-btn"&gt;
-&lt;button class="btn btn-lg" type="button"&gt;
-&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;
-&lt;/button&gt;
-&lt;/span&gt;
+ &lt;div class="col-md-12"&gt;
+  &lt;div id="search-input"&gt;
+   &lt;div class="input-group col-md-12"&gt;
+    &lt;input type="text" class="form-control input-lg" placeholder="Pesquisar..." /&gt;
+    &lt;span class="input-group-btn"&gt;
+     &lt;button class="btn btn-lg" type="button"&gt;
+      &lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;
+     &lt;/button&gt;
+    &lt;/span&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a href="..."&gt;&lt;h5&gt;Pesquisa avançada&lt;/h5&gt;&lt;/a&gt;
+ &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;a href="..."&gt;&lt;h5&gt;Pesquisa avançada&lt;/h5&gt;&lt;/a&gt;
-&lt;/div&gt;
+          </pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAFE -->
+  <div id="SAFe" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SAFe</h4>
+        </div>
+        <div class="modal-body">
+          <pre>
+&lt;ul class="nav nav-tabs" role="tablist"&gt;
+ &lt;li role="presentation" class="active"&gt;&lt;a href="#sms" aria-controls="sms" role="tab" data-toggle="tab"&gt;SMS&lt;/a&gt;&lt;/li&gt;
+ &lt;li role="presentation"&gt;&lt;a href="#token" aria-controls="token" role="tab" data-toggle="tab"&gt;Token&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+ &lt;div role="tabpanel" class="tab-pane fade in active" id="sms"&gt;
+  &lt;div class="form-group"&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet et consec teur et dolor sit amet.&lt;/p&gt;
+   &lt;input type="email" class="form-control" id="InputSMS" placeholder="Insira o código SMS"&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div role="tabpanel" class="tab-pane fade" id="token"&gt;
+  &lt;div class="form-group"&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet et consec teur et dolor sit amet.&lt;/p&gt;
+   &lt;input type="email" class="form-control" id="InputSMS" placeholder="Insira o Token"&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
 &lt;/div&gt;
           </pre>
         </div>
@@ -2314,6 +2725,176 @@ SMS
     </div>
   </div>
 
+  <!-- ACCOUNT SELECTOR MOBILE MODAL -->
+  <div id="accountselector_mobile" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg accountselector_modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Escolher conta</h4>
+        </div>
+        <div class="modal-body">
+          <div class="scrollable">
+                <div class="card card-yellow">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Conta à Ordem 1</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-blue" id="cardexample_3" data-dismiss="modal">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>A minha conta 2</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-primary">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Lorem Ipsum Dolor</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-green">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Conta Estado</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-green">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Conta Estado</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-green">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Conta Estado</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-green">
+                  <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                      <h4>Conta Estado</h4>
+                      <p class="number">670901241</p>
+                    </div>
+                    <div class="col-xs-6 text-right hidden-sm">
+                      <span>SALDO CONTABILÍSTICO</span>
+                      <p class="saldo">2.100,00 <span>EUR</span></p>
+                    </div>
+                    <div class="col-sm-8 text-right hidden-xs">
+                      <div class="col-sm-6">
+                        <span>SALDO CONTABILÍSTICO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                      <div class="col-sm-6">
+                        <span>SALDO AUTORIZADO</span>
+                        <p class="saldo">2.100,00 <span>EUR</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- /.container -->
 
 
@@ -2324,7 +2905,8 @@ SMS
       <script src='assets/js/bootstrap.js'></script>
 
       <!-- Switch Hammer default current class to bootstrap default active class -->
-      <script src="../assets/js/bootstrap-datepicker.js"
+
+
       <script type="text/javascript">
             $('.current').each(function(){
             $(this).removeClass('current');

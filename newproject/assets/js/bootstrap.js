@@ -2336,6 +2336,7 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
+
 // DOCUMENTATION SIDEBAR
   $('body').scrollspy({
     target: '.bs-docs-sidebar',
@@ -2357,6 +2358,47 @@ $(window).scroll(function() {
             'position': 'relative'
         });
     }
+});
+
+// ACCOUNT SELECTOR
+
+$(document).ready(function(){
+
+  $("#cancel").hide();
+  $("#accountselector_dropdown").hide();
+  $("#accountselector_selected").hide();
+
+
+    $("#plus").click(function(){
+        $("#accountselector_dropdown").slideDown();
+        $("#cancel").show();
+        $("#plus").hide();
+    });
+    $("#cancel").click(function(){
+        $("#accountselector_dropdown").slideUp();
+        $("#cancel").hide();
+        $("#plus").show();
+    });
+    $("#cardexample_1").click(function(){
+        $("#accountselector_dropdown").slideUp();
+        $("#accountselector").hide();
+        $("#accountselector_selected").show();
+    });
+    $("#cardexample_2").click(function(){
+        $("#accountselector_dropdown").slideUp();
+        $("#accountselector").hide();
+        $("#accountselector_selected").show();
+    });
+    $("#cardexample_3").click(function(){
+        $("#accountselector").hide();
+        $("#accountselector_selected").show();
+    });
+    $("#change").click(function(){
+        $("#accountselector_selected").hide();
+        $("#accountselector").show();
+        $("#plus").show();
+        $("#cancel").hide();
+    });
 });
 
 }(jQuery);
