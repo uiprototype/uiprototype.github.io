@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/jasny-bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/jasny-bootstrap.css" rel="stylesheet" />
   <link href="assets/css/material-kit.css" rel="stylesheet"/>
 	<link href="assets/css/style.css" rel="stylesheet"/>
 	<link href="assets/css/newstyle.css" rel="stylesheet"/>
@@ -28,28 +28,23 @@
 <body>
 
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" style="">
-		<a class="navmenu-brand navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" href="#">Navbar close
-		</a>
+		<div class="navmenu-brand"><img src="assets/img/logo.png"/></div>
 		<ul class="nav navmenu-nav">
-			<li class="active"><a href="http://www.jasny.net/bootstrap/examples/navmenu/">Slide in</a></li>
-			<li><a href="http://www.jasny.net/bootstrap/examples/navmenu-push/">Push</a></li>
-			<li><a href="http://www.jasny.net/bootstrap/examples/navmenu-reveal/">Reveal</a></li>
-			<li><a href="http://www.jasny.net/bootstrap/examples/navbar-offcanvas/">Off canvas navbar</a></li>
-		</ul>
-		<ul class="nav navmenu-nav">
-			<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Link</a></li>
-			<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Link</a></li>
-			<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Link</a></li>
 			<li class="dropdown">
-				<a href="http://www.jasny.net/bootstrap/examples/navmenu/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-				<ul class="dropdown-menu navmenu-nav">
-					<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Action</a></li>
-					<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Another action</a></li>
-					<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Something else here</a></li>
-					<li class="divider"></li>
-					<li class="dropdown-header">Nav header</li>
-					<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">Separated link</a></li>
-					<li><a href="http://www.jasny.net/bootstrap/examples/navmenu/#">One more separated link</a></li>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">favorite</i> Favoritos <b class="caret"></b></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+				</ul>
+			</li>
+			<li class="active"><a href="index.html"><i class="material-icons">dashboard</i> Centro de Controlo</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">account_balance_wallet</i> Contas <b class="caret"></b></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -61,21 +56,15 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="http://www.jasny.net/bootstrap/examples/navmenu/#">Project name</a>
+		<a class="navbar-brand" href="#">Project name</a>
 	</div>
 
 	<div class="container">
 		<div class="page-header">
-			<h1>Lorem ipsum dolor</h1>
+			<h1>Navmenu Template</h1>
 		</div>
-		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
 		<p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
-		<p>Also take a look at the examples for a navmenu with <a data-toggle="offcanvas" data-target=".navmenu">Toggle sidemenu</a></p>
-		<p class="text-right"><button class="btn btn-primary" data-toggle="offcanvas" data-target=".navmenu">Toggle sidemenu</button>
+		<p>Also take a look at the examples for a navmenu with <a href="#">push effect</a> and <a href="#">reveal effect</a>.</p>
 	</div>
 
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm offcanvas-clone"></div>
