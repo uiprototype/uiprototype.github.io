@@ -71,7 +71,7 @@ body {
   margin-left: 70px;
   margin-top: 11px;
 }
-.navbar-toggle2{
+.navbar-toggle2 {
   background-color: transparent;
   border:0px;
   color: #fff;
@@ -79,6 +79,11 @@ body {
   margin-left: 135px;
   margin-top: 13px;
   vertical-align: middle;
+}
+@media (min-width: 992px) {
+  .navbar-toggle2 {
+    margin-left: 185px;
+  }
 }
 
 .container {
