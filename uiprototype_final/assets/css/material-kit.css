@@ -2445,12 +2445,11 @@ legend {
     margin-top: -20px;
     opacity: 0;
     visibility: hidden;
-    display: block;
   }
   .dropdown.open .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    margin-top: 1px;
+    margin-top: 0px;
   }
 }
 .info {

@@ -140,7 +140,7 @@
 
 .navmenu,
 .navbar-offcanvas {
-  width: 300px;
+  width: 275px;
   height: auto;
   border-width: 1px;
   border-style: solid;
@@ -258,7 +258,7 @@
 .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:hover,
 .navmenu-default .navmenu-nav > .open > a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav > .open > a:focus {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.15);
   color: #fff;
 }
 .navmenu-default .navmenu-nav > .open > a .caret,
@@ -275,7 +275,7 @@
 }
 .navmenu-default .navmenu-nav.dropdown-menu,
 .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
-  background-color: rgba(255,255,255,0.15);
+  background-color: rgba(255,255,255,0.1);
 }
 .navmenu-default .navmenu-nav.dropdown-menu > .divider,
 .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu > .divider {
@@ -294,14 +294,14 @@
   border-left: 3px solid transparent;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 .navmenu-default .navmenu-nav > li > a:hover,
 .navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover,
 .navmenu-default .navmenu-nav > li > a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
   color: #fff;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.15);
   border-left: 3px solid #d1005d;
 }
 .navmenu-default .navmenu-nav > .active > a,
@@ -311,7 +311,7 @@
 .navmenu-default .navmenu-nav > .active > a:focus,
 .navbar-default .navbar-offcanvas .navmenu-nav > .active > a:focus {
   color: #fff;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.15);
   border-left: 3px solid #d1005d;
 }
 .navmenu-default .navmenu-nav > .disabled > a,
