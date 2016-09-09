@@ -29,7 +29,12 @@
 <body>
 
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" style="">
-		<div class="navmenu-brand"><img src="assets/img/logo.png"/ class="logo"></div>
+		<div class="navmenu-brand">
+			<img src="assets/img/logo.png"/ class="logo">
+			<button type="button" class="navbar-toggle2 hidden-md hidden-lg" data-toggle="offcanvas" data-target=".navmenu">
+				<i class="material-icons">close</i>
+			</button>
+		</div>
 		<ul class="nav navmenu-nav">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">favorite</i> Favoritos <b class="caret"></b></a>
@@ -49,10 +54,9 @@
 				</ul>
 			</li>
 		</ul>
-
 	</div>
 
-	<div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+	<div class="navbar navbar-white navbar-fixed-top">
 		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>

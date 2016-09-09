@@ -6,9 +6,10 @@ body {
 }
 
 .navmenu .logo {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
+
 
 .navbar {
   display: block;
@@ -22,6 +23,15 @@ body {
   position: absolute;
   float: left;
   margin-left: 15px;
+}
+.navbar-toggle2{
+  background-color: transparent;
+  border:0px;
+  color: #fff;
+  position:absolute;
+  margin-left: 200px;
+  vertical-align: middle;
+  padding: 5px;
 }
 
 .container {
@@ -41,7 +51,5 @@ body {
   .navmenu {
     padding-top: 0;
   }
-  .navbar {
-    display: none !important; /* IE8 fix */
-  }
+
 }
