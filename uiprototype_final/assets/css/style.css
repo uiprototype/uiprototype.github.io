@@ -1,0 +1,2220 @@
+/* HTML BASICS */
+b, strong {
+  font-weight: 400;
+}
+small {
+  margin-top: 0px;
+  display: block;
+}
+h4, h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+hr {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  vertical-align: middle;
+  padding: 0px 8px;
+}
+@media (max-width:768px) {
+  .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    font-size: 12px;
+  }
+}
+@media (max-width:970px) {
+  .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-fluid {
+    padding: 0px 100px;
+  }
+}
+
+/* PAGE HEADER */
+.page-header {
+  margin:0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+/* ALERT TOP */
+.alert-top {
+  margin:0px;
+  position: fixed;
+  z-index: 1000;
+  top:0;
+  left:0;
+}
+
+/* NAVBAR ADJUSTMENTS */
+.navbar-collapse {
+  padding-left: 0px;
+  margin-left:0px;
+}
+.navbar a {
+  color: #999999;
+}
+.navbar-form {
+  padding-left: 0px;
+}
+.navbar-toggle {
+  float: left;
+}
+.navbar-toggle-right {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.nav-tabs-navigation .label {
+  font-size: 8px;
+  padding: 5px 7px;
+  vertical-align:top;
+}
+  .navbar .navbar-form .form-group .form-control, .navbar .navbar-form .form-control {
+    width: 100%
+  }
+
+/* OTHER */
+.ccontent {
+  padding:15px;
+}
+.ccontent_no_top {
+  padding: 0px 15px 15px 15px;
+}
+.ccontent_no_bottom {
+  padding: 15px 15px 0px 15px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.card-top {
+  margin-bottom: 0px;
+}
+.blue {
+  color: #29b6f6;
+}
+.blue:hover {
+  color: #29b6f6;
+}
+.grey {
+  color: #999999;
+}
+.bg-primary {
+  background-color: #d1005d;
+}
+.circlecard {
+  vertical-align: middle;
+  margin-top: 20px;
+}
+.footer {
+  background-color: #3E4A59;
+  height: 60px;
+}
+.footer h6 {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.footer .list-inline>li{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgba(255,255,255,0.6);
+}
+.footer .list-inline>li:hover{
+  color: #fff;
+}
+
+/* USER WELCOME */
+.user-welcome {
+  padding: 15px;
+  vertical-align: middle;
+}
+.user-welcome .user-initials {
+  width: 60px;
+  height: 60px;
+}
+.user-welcome .user-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+.user-welcome .subcard {
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+}
+.user-welcome .subcard-default {
+  background-color: #f0f0f0;
+}
+.user-welcome .subcard i {
+  font-size: 14px;
+}
+.user-welcome .gestor-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+.user-welcome .gestor-label {
+  font-size: 10px;
+  font-weight: 400;
+  color: #888;
+  display: block;
+}
+.user-welcome .gestor-contactar {
+  font-size: 14px;
+}
+.user-welcome .mcontacto-img {
+  width: 82px;
+  height: 60.58px;
+}
+.user-welcome .btn-contact-gestor {
+  padding: 0px;
+  margin: 0px;
+  will-change: none;
+  transition: none;
+}
+
+@media (max-width: 768px) {
+  .user-welcome .user-actions {
+    margin-top: 30px;
+  }
+  .user-welcome hr {
+    margin:20px 0px 10px 0px;
+  }
+  .navbar {
+    padding-bottom: 0px;
+  }
+}
+
+.card .card-header {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+.form-control-feedback {
+  width: 150px;
+}
+
+/* NAVBAR ADJUST */
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-search {
+}
+
+/* NAV-TABS ADJUST */
+.nav-tabs-cc {
+  margin-bottom: 30px;
+}
+
+/*
+.logo {
+  margin: 15px 0px 15px 15px;
+}
+@media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {
+  .logo {
+    width: 15%;
+    height:15%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 380dpi) {
+  .logo {
+      width: 15%;
+      height:15%;
+  }
+} */
+
+/* NAV PILLS */
+.nav-pills-margin {
+  margin-bottom: 30px;
+}
+
+
+/* SIDEBAR */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #3E4A59;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 15px;
+    line-height: 40px;
+}
+
+.first {
+  margin-top: 30px;
+}
+.sidebar-nav .selected {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border-left: 2px solid #d1005d;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+    border-left: 2px solid transparent;
+}
+
+.sidebar-nav li a span {
+  margin-left: 5px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    border-left: 2px solid #d1005d;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 70px;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #d1005d;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+    border-left: 2px solid transparent;
+}
+.sidebar-footer {
+  height: 60px;
+  width: 250px;
+  background-color: rgba(255,255,255,0.2);
+  bottom:0;
+  left:0;
+  padding: 20px;
+  position: absolute;
+  width: 250px;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-footer h6 {
+    text-transform: none;
+    margin:0px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.sidebar-footer a {
+  color: rgba(255,255,255,0.6);
+
+}
+.sidebar-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar-footer i {
+  vertical-align: middle;
+}
+@media (max-height: 515px) {
+  .sidebar-footer {
+    display:none;
+  }
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.divider_vertical {
+  height: 30px;
+  width: 1px;
+  position: relative;
+  background-color: #d8d8d8;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* CC Ultimas Op */
+.ccultimasop .ccultimasop-op {
+  margin-bottom: 10px;
+}
+.ccultimasop i {
+  color: #999;
+}
+.ccultimasop span {
+  display: inline-block;
+}
+.ccultimasop .date {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ccultimasop .type {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ccultimasop .type:hover {
+  text-decoration: underline;
+}
+.ccultimasop .status {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+.ccultimasop .description {
+  font-size: 12px;
+  color: #222;
+}
+.ccultimasop hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* CC Agenda */
+.ccagenda .ccagenda-ag {
+  margin-bottom: 10px;
+}
+.ccagenda i {
+  color: #d1005d;
+}
+.ccagenda span {
+  display: inline-block;
+}
+.ccagenda .date {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ccagenda .type {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ccagenda .status {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+.ccagenda .description {
+  font-size: 12px;
+  color: #222;
+}
+.ccagenda hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* CC Notificações */
+.ccnotificacoes .ccnotificacoes-not {
+  margin-bottom: 10px;
+}
+.ccnotificacoes i {
+  color: #999;
+}
+.ccnotificacoes span {
+  display: inline-block;
+}
+.ccnotificacoes .date {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+.ccnotificacoes .type {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ccnotificacoes .type:hover {
+  text-decoration: underline;
+}
+.ccnotificacoes .status {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
+.ccnotificacoes .description {
+  font-size: 12px;
+  color: #222;
+}
+.ccnotificacoes hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* MOV Search */
+.movsearch {
+  margin-bottom: 5px;
+}
+.movsearch .movsearch-not {
+  margin-bottom: 10px;
+}
+.movsearch i {
+  color: #d1005d;
+}
+
+/* MOV Search Advanced */
+.movsearch_advanced {
+  margin-top: 0px;
+}
+
+/* MOV Table */
+.movtable {
+  margin-top: 10px;
+}
+.movtable .loadmore {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+.movtable .actions {
+text-align: right;
+}
+.movtable .description {
+  font-size: 12px;
+  color: #222;
+}
+.movtable hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* PEN Sign */
+.pensign {
+  margin-top: 10px;
+}
+.pensign .actions {
+text-align: right;
+}
+.pensign hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.pensign h5 {
+  margin-bottom: 10px;
+}
+
+/* PEN Table */
+.pentable {
+  margin-top: 10px;
+}
+.pentable .actions {
+text-align: right;
+}
+.pentable hr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.pentable h5 {
+  margin-bottom: 10px;
+}
+
+/* SEARCH */
+/*
+.search h5 {
+    color: #d1005d;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 15px;
+}
+.search a:hover {
+    color: #b80052;
+    text-decoration: none;
+}
+
+.search-advanced .row {
+    padding: 0;
+    margin: 0;
+}
+#search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #d1005d;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+    color: #b80052;
+}
+
+#search-input .glyphicon-search{
+    font-size: 23px;
+} */
+
+
+/* ACCOUNT SELECTOR */
+.accountselector_title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 300;
+  color: #999;
+}
+.accountselector_title span {
+  color: #d1005d;
+}
+
+.accountselector a:hover {
+      text-decoration: none;
+}
+.accountselector .row {
+      margin: 0px;
+}
+.accountselector .col-md-3 {
+      padding:7px;
+}
+.accountselector .nopad-left {
+      padding-left:0px;
+}
+.accountselector .nopad-right {
+      padding-right: 0px;
+}
+.accountselector .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+      margin-bottom: 0px;
+}
+.accountselector .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+      display:table-cell;
+}
+.accountselector .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+      width: 10%;
+      border:0;
+      vertical-align: middle;
+}
+.accountselector .panel.panel-horizontal > .panel-footer {
+      border-left: 1px solid #f0f0f0;
+      border-radius:0px;
+}
+.accountselector .panel.panel-horizontal > .panel-footer i {
+        font-size: 50px;
+}
+.accountselector .panel.panel-horizontal > .panel-footer span {
+        color: #888;
+        font-size: 11px;
+        font-weight: 400;
+}
+.accountselector .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-bottom: 0px;
+}
+.accountselector .card h4 {
+      font-size: 14px;
+}
+.accountselector .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 13px;
+      font-weight: 400;
+}
+.accountselector .card .saldo {
+      font-weight: 400;
+      font-size: 16px;
+}
+.accountselector .card .saldo span {
+        font-size: 11px;
+        font-weight: 600;
+  }
+.accountselector .card:hover {
+    opacity: 0.7;
+}
+.accountselector .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountselector .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountselector .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountselector .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountselector .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+/* Account Selector _ Dropdown */
+.accountselector_dropdown {
+    margin-top: -1px;
+}
+.accountselector_dropdown .scrollable {
+      overflow-y: auto;
+      height: 300px;
+      width: auto;
+}
+
+.accountselector_dropdown a:hover {
+      text-decoration: none;
+}
+.accountselector_dropdown .row {
+      margin: 0px;
+}
+.accountselector_dropdown .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+      background-color: #f0f0f0;
+}
+.accountselector_dropdown .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+      display:table-cell;
+}
+.accountselector_dropdown .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+      width: 10%;
+      border:0;
+      vertical-align: middle;
+}
+.accountselector_dropdown .panel.panel-horizontal > .panel-footer {
+      border-left: 1px solid #f0f0f0;
+      border-radius:0px;
+}
+.accountselector_dropdown .panel.panel-horizontal > .panel-footer i {
+        font-size: 50px;
+}
+.accountselector_dropdown .panel.panel-horizontal > .panel-footer span {
+        color: #888;
+        font-size: 11px;
+        font-weight: 400;
+}
+.accountselector_dropdown .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.accountselector_dropdown .card h4 {
+      font-size: 18px;
+      margin: 0px;
+}
+.accountselector_dropdown .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 13px;
+      font-weight: 400;
+}
+.accountselector_dropdown .card .saldo {
+      font-weight: 400;
+      font-size: 16px;
+}
+.accountselector_dropdown .card span {
+      font-size: 11px;
+      font-weight: 600;
+}
+.accountselector_dropdown .card p {
+      margin: 0px;
+}
+.accountselector_dropdown .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountselector_dropdown .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountselector_dropdown .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountselector_dropdown .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountselector_dropdown .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+/* Account Selector _ Selected Account */
+.accountselector_selected .scrollable {
+      overflow-y: auto;
+      height: 300px;
+      width: auto;
+}
+
+.accountselector_selected a:hover {
+      text-decoration: none;
+}
+
+.accountselector_selected .row {
+      margin: 0px;
+}
+.accountselector_selected .col-md-12 {
+      padding: 0;
+}
+
+.accountselector_selected .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+}
+
+.accountselector_selected .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+      display:table-cell;
+}
+.accountselector_selected .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+      width: 10%;
+      border:0;
+      vertical-align: middle;
+}
+.accountselector_selected .panel.panel-horizontal > .panel-footer {
+      border-left: 1px solid #f0f0f0;
+      border-radius:0px;
+}
+.accountselector_selected .panel.panel-horizontal > .panel-footer i{
+        font-size: 50px;
+}
+.accountselector_selected .panel.panel-horizontal > .panel-footer span{
+        color: #888;
+        font-size: 11px;
+        font-weight: 400;
+}
+.accountselector_selected .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.accountselector_selected .card h4 {
+      font-size: 20px;
+      margin: 0px;
+}
+.accountselector_selected .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 13px;
+      font-weight: 400;
+}
+.accountselector_selected .card .saldo {
+      font-weight: 400;
+      font-size: 16px;
+}
+.accountselector_selected .card span {
+      font-size: 11px;
+      font-weight: 600;
+}
+.accountselector_selected .card p {
+      margin: 0px;
+}
+
+.accountselector_selected .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountselector_selected .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountselector_selected .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountselector_selected .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountselector_selected .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+@media (max-width: 768px) {
+  .accountselector_selected .card h4 {
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 400;
+  }
+  .accountselector_selected .card .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 14px;
+        font-weight: 400;
+  }
+  .accountselector_selected .card .saldo {
+        font-weight: 400;
+        font-size: 16px;
+  }
+  .accountselector_selected .card span {
+        font-size: 9px;
+        font-weight: 600;
+  }
+  .accountselector_selected .card p {
+        margin: 0px;
+  }
+}
+
+/* Account Selector _ Modal */
+.accountselector_modal .scrollable {
+      overflow-y: auto;
+      max-height: 480px;
+      width: auto;
+}
+
+.accountselector_modal a:hover {
+      text-decoration: none;
+}
+
+.accountselector_modal .row {
+      margin: 0px;
+}
+
+.accountselector_modal .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+      background-color: #f0f0f0;
+}
+
+.accountselector_modal .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-body, .panel.panel-horizontal > .panel-footer {
+      display:table-cell;
+}
+.accountselector_modal .panel.panel-horizontal > .panel-heading, .panel.panel-horizontal > .panel-footer {
+      width: 10%;
+      border:0;
+      vertical-align: middle;
+}
+.accountselector_modal .panel.panel-horizontal > .panel-footer {
+      border-left: 1px solid #f0f0f0;
+      border-radius:0px;
+}
+.accountselector_modal .panel.panel-horizontal > .panel-footer i {
+        font-size: 50px;
+}
+.accountselector_modal .panel.panel-horizontal > .panel-footer span {
+        color: #888;
+        font-size: 11px;
+        font-weight: 400;
+  }
+
+.accountselector_modal .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.accountselector_modal .close {
+  font-size: 20px;
+}
+.accountselector_modal .card h4 {
+      font-size: 16px;
+      margin: 0px;
+      font-weight: 400;
+}
+.accountselector_modal .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 14px;
+      font-weight: 400;
+}
+.accountselector_modal .card .saldo {
+      font-weight: 400;
+      font-size: 16px;
+}
+.accountselector_modal .card span {
+      font-size: 9px;
+      font-weight: 600;
+}
+.accountselector_modal .card p {
+      margin: 0px;
+}
+
+.accountselector_modal .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountselector_modal .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountselector_modal .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountselector_modal .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountselector_modal .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+
+/* Transactions Forms */
+.transaction_card {
+  margin-top: 30px;
+}
+.transaction_card h5 {
+  margin-bottom: 15px;
+}
+
+
+
+
+.transaction_card_inputs {}
+
+.transaction_card_inputs .form-group {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.transaction_card_inputs .togglebutton label {
+  color: #AAAAAA;
+  font-weight: 500;
+}
+.transaction_card_inputs .togglebutton span {
+  margin-right: 10px;
+}
+.transaction_card_inputs .col-md-4 {
+  padding: 0px;
+  margin:0px;
+}
+.transaction_card_inputs .urgente {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.transaction_card_inputs .beneficiario {
+  margin-top: 31px;
+}
+.transaction_card_agendar {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .transaction_card_agendar .subcard-default{
+    min-height: 162px;
+    padding: 20px 0px 0px;
+  }
+  .transaction_card_precario .subcard-default{
+    min-height: 162px;
+    padding: 20px 0px 0px;  }
+}
+.transaction_card_precario {
+  font-size: 14px;
+  font-weight: 400;
+}
+.transaction_card_disclaimer {
+  margin-top: 20px;
+}
+.transaction_card_disclaimer p {
+  font-size: 12px;
+}
+.transaction_card_disclaimer .title {
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.subcard {
+  padding: 20px 15px 15px 15px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.01), 0 3px 1px -2px rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.subcard h5 {
+  font-size: 18px;
+}
+.transaction_card_actions {
+  padding: 15px;
+}
+.subcard-primary {
+  background-color: #d1005d;
+}
+.subcard-default {
+  background-color: #f0f0f0;
+}
+.subcard-transparent {
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+.subcard-transparent-primary {
+  background-color: transparent;
+  border: 1px solid #d1005d;
+}
+
+/* Account cards */
+/* List view */
+.accountlist_accounts .scrollable {
+      overflow-y: auto;
+      height: 300px;
+      width: auto;
+}
+
+.accountlist_accounts a:hover {
+      text-decoration: none;
+}
+
+.accountlist_accounts .row {
+      margin: 0px;
+}
+.accountlist_accounts .col-md-12 {
+      padding: 0;
+}
+
+.accountlist_accounts .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+}
+
+.accountlist_accounts .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.accountlist_accounts .card:hover {
+  opacity:0.9;
+}
+.accountlist_accounts .card h4 {
+      font-size: 20px;
+      margin: 0px;
+}
+.accountlist_accounts .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 13px;
+      font-weight: 400;
+}
+.accountlist_accounts .card .saldo {
+      font-weight: 500;
+      font-size: 18px;
+}
+.accountlist_accounts .card span {
+      font-size: 11px;
+      font-weight: 500;
+}
+.accountlist_accounts .card p {
+      margin: 0px;
+}
+
+.accountlist_accounts .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountlist_accounts .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountlist_accounts .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountlist_accounts .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountlist_accounts .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+@media (max-width: 768px) {
+  .accountlist_accounts .card h4 {
+        font-size: 14px;
+        margin: 0px;
+  }
+  .accountlist_accounts .card .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 12px;
+        font-weight: 400;
+  }
+  .accountlist_accounts .card .saldo {
+        font-weight: 400;
+        font-size: 13px;
+  }
+  .accountlist_accounts .card span {
+        font-size: 9px;
+        font-weight: 600;
+  }
+  .accountlist_accounts .card p {
+        margin: 0px;
+  }
+}
+
+/* Grid view */
+
+.accountgrid_accounts a:hover {
+      text-decoration: none;
+}
+
+.accountgrid_accounts .row {
+      margin: 0px;
+}
+.accountgrid_accounts .first-of-line {
+  padding-left:0px;
+}
+.accountgrid_accounts .middle-of-line {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+.accountgrid_accounts .last-of-line {
+  padding-right:0px;
+}
+
+.accountgrid_accounts .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.accountgrid_accounts .card:hover {
+  opacity:0.9;
+}
+.accountgrid_accounts .saldo1 {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.accountgrid_accounts .value1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.accountgrid_accounts .moeda1 {
+  font-size: 14px;
+}
+.accountgrid_accounts .saldo2 {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #888;
+}
+.accountgrid_accounts .value2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #888;
+}
+.accountgrid_accounts .moeda2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+}
+.accountgrid_accounts .btn{
+  padding: 10px 5px;
+  margin: 0px;
+}
+@media (max-width: 970px) {
+  .accountgrid_accounts .first-of-line {
+    padding:7px;
+  }
+  .accountgrid_accounts .middle-of-line {
+    padding:7px;
+  }
+  .accountgrid_accounts .last-of-line {
+    padding:7px;
+  }
+}
+.accountgrid_accounts .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.accountgrid_accounts .card-default {
+    border-left: 4px solid #ccc;
+}
+.accountgrid_accounts .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.accountgrid_accounts .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.accountgrid_accounts .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+/*Account List Search */
+.accountlist_search {
+  padding: 15px;
+}
+.accountlist_search .search {
+  font-size: 40px;
+  vertical-align: middle;
+  padding: 10px;
+  color: #c8c8c8;
+}
+@media (max-width: 768px) {
+  .accountlist_search .search_more {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .accountlist_search .btn {
+    padding: 8px 12px;
+  }
+}
+.accountlist_search .btn .material-icons{
+  font-size: 18px;
+}
+.accountlist_search .btn-default {
+  background-color: transparent;
+  color: #333;
+}
+.accountlist_search .btn-default:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+.accountlist_search .btn-default:focus {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Account List Header */
+.accountlist_header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.accountlist_header .accounts {
+  font-size: 25px;
+}
+.accountlist_header .accounts span {
+  font-weight: 400;
+}
+.accountlist_header .accounts .btn {
+  font-size: 10px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  box-shadow: none;
+  margin: 0px;
+}
+.accountlist_header .accounts .btn i{
+  margin-right: 5px;
+}
+.accountlist_header .accounts .btn-default {
+  background-color: #999;
+  color: #f0f0f0;
+}
+.accountlist_header .accounts .btn-default:hover {
+  background-color: #adadad;
+}
+.accountlist_header .accounts .btn-primary:hover {
+  background-color: #ee0a6f;
+}
+.accountlist_header .accounts .btn:hover {
+  box-shadow: none;
+}
+.accountlist_header .accountnumber {
+  margin-top: 5px;
+}
+.accountlist_header .infos {
+  margin-top: 0px;
+}
+.accountlist_header .infos .totais{
+  font-weight: 400;
+}
+.accountlist_header .infos .valores{
+  font-weight: 400;
+  font-size: 20px;
+}
+.accountlist_header .infos .moeda {
+  font-weight: 400;
+}
+.accountlist_header .infos p {
+  font-weight: 400;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .accountlist_header .accounts {
+    font-size: 20px;
+  }
+  .accountlist_header .infos {
+    margin-top: 10px;
+  }
+  .accountlist_header .infos .totais{
+    font-weight: 400;
+  }
+  .accountlist_header .infos .valores{
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .accountlist_header .infos .moeda {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .accountlist_header .infos p {
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .accountlist_header .infos hr {
+background-color: #ccc;
+height: 1px;
+  }
+}
+
+.accountlist_search_more {
+  padding: 15px;
+}
+
+/* Account Header */
+
+.account_header .row {
+margin: 0;
+}
+.account_header .col-md-12 {
+      padding: 0;
+}
+
+.account_header .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+}
+
+.account_header .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.account_header .card:hover {
+  opacity:0.9;
+}
+.account_header .card .type {
+  font-size: 10px;
+  color: #888;
+  font-weight: 400;
+}
+.account_header .card h4 {
+      font-size: 25px;
+      margin: 0px;
+}
+.account_header .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 16px;
+      font-weight: 300;
+}
+.account_header .card .saldo {
+      font-weight: 500;
+      font-size: 18px;
+}
+
+.account_header .card p {
+      margin: 0px;
+}
+
+.account_header .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.account_header .card-default {
+    border-left: 4px solid #ccc;
+}
+.account_header .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.account_header .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.account_header .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+@media (max-width: 768px) {
+  .account_header .card h4 {
+        font-size: 22px;
+        margin: 0px;
+  }
+  .account_header .card .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 16px;
+        font-weight: 400;
+  }
+  .account_header .card .saldo {
+        font-weight: 400;
+        font-size: 13px;
+  }
+  .account_header .card .maisinfo {
+        font-weight: 400;
+        font-size: 13px;
+  }
+  .account_header .card p {
+        margin: 0px;
+  }
+}
+.account_header .saldo1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.account_header .value1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.account_header .moeda1 {
+  font-size: 18px;
+}
+.account_header .saldo2 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #888;
+}
+.account_header .value2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #888;
+}
+.account_header .moeda2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+.account_header .accountiban:first-of-type {
+  padding-top: 30px;
+}
+.account_header .btn {
+  font-size: 10px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  box-shadow: none;
+  margin: 20px 5px 20px 5px;
+  font-weight: 500;
+}
+.account_header .btn-default {
+  background-color: transparent;
+  color: #d1005d;
+  border: 2px solid #d1005d;
+}
+.account_header .btn-default:hover {
+  background-color: #d1005d;
+  color: #fff;
+}
+.account_header .btn:hover {
+  box-shadow: none;
+}
+
+/* Account Sub Header */
+.account_sub_header {
+  margin-bottom: 20px;
+}
+.account_sub_header .row {
+margin: 0;
+}
+.account_sub_header .col-md-12 {
+      padding: 0;
+}
+
+.account_sub_header .panel.panel-horizontal {
+      display:table;
+      width:100%;
+      border-radius:0px;
+      border: 1px solid #D8D8D8;
+}
+
+.account_sub_header .card {
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 5px #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.account_sub_header .card:hover {
+  opacity:0.9;
+}
+.account_sub_header .card .type {
+  font-size: 10px;
+  color: #888;
+  font-weight: 400;
+}
+.account_sub_header .card h4 {
+      font-size: 22px;
+      margin: 0px;
+}
+.account_sub_header .card .number {
+      margin-top: 0px;
+      color: #888;
+      font-size: 14px;
+      font-weight: 300;
+}
+.account_sub_header .card .saldo {
+      font-weight: 500;
+      font-size: 16px;
+}
+.account_sub_header .card .value2 {
+      font-weight: 400;
+      font-size: 16px;
+}
+
+.account_sub_header .card-primary {
+    border-left: 4px solid #d1005d;
+}
+.account_sub_header .card-default {
+    border-left: 4px solid #ccc;
+}
+.account_sub_header .card-green {
+    border-left: 4px solid #2EDE5E;
+}
+.account_sub_header .card-blue {
+      border-left: 4px solid #2E96DE;
+}
+.account_sub_header .card-yellow {
+      border-left: 4px solid #EAED21;
+}
+
+@media (max-width: 768px) {
+  .account_sub_header .card h4 {
+        font-size: 18px;
+        margin: 0px;
+  }
+  .account_sub_header .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 12px;
+        font-weight: 400;
+  }
+  .account_sub_header .card .saldo1 {
+        font-weight: 400;
+        font-size: 10px;
+  }
+  .account_sub_header .card .value1 {
+        font-weight: 500;
+        font-size: 18px;
+  }
+  .account_sub_header .card .maisinfo {
+        font-weight: 400;
+        font-size: 13px;
+  }
+  .account_sub_header .card p {
+        margin: 0px;
+  }
+  .account_sub_header .card .saldo2 {
+        font-size: 10px;
+  }
+  .account_sub_header .card .value2 {
+        font-size: 14px;
+  }
+}
+.account_sub_header .saldo1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.account_sub_header .value1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.account_sub_header .moeda1 {
+  font-size: 16px;
+}
+.account_sub_header .saldo2 {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #888;
+}
+.account_sub_header .value2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #888;
+}
+.account_sub_header .moeda2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+}
+
+/* Account details */
+/*Saldos*/
+.ccposicao .ccposicao-pos {
+  margin-bottom: 10px;
+}
+.ccposicao-pos .btn {
+  margin-top: 30px;
+}
+.ccposicao i {
+  color: #999;
+}
+.ccposicao span {
+  display: inline-block;
+}
+.ccposicao .saldo {
+  font-size: 14px;
+  font-weight: 300;
+}
+.ccposicao .value {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}
+.ccposicao .moeda {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #999;
+  font-weight: 400;
+}
+.ccposicao hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/*Documentos*/
+.ccdocumentos_formatodigital {
+  padding: 20px;
+}
+.ccdocumentos_formatodigital .estado{
+  font-size: 12px;
+  font-weight: 300;
+  display:block;
+  margin-top: 10px;
+}
+.ccdocumentos_formatodigital .estado_activo{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.ccdocumentos_formatodigital h4 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+.ccdocumentos_formatodigital .circle_on {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  vertical-align: middle;
+  background-color: #2EDE5E;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+/* Ult Extratos */
+.ccdocumentos_ultextratos .ccdocumentos_ultextratos-pos {
+  margin-bottom: 10px;
+}
+.ccdocumentos_ultextratos i {
+  color: #999;
+}
+.ccdocumentos_ultextratos .date {
+  color: #999;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.ccdocumentos_ultextratos .extrato {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ccdocumentos_ultextratos .extrato:hover {
+  text-decoration: underline;
+}
+.ccdocumentos_ultextratos hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ccdocumentos_ultextratos .btn {
+  margin-top: 0px;
+  padding:5px;
+  margin-bottom:0px;
+}
+.ccdocumentos_ultextratos ul {
+  margin-bottom: 0px;
+}
+.ccdocumentos_ultextratos .btn .material-icons{
+  font-size: 20px;
+  padding: 0px;
+}
+
+/*Ult Faturas Notas Lanç */
+.ccdocumentos_ultfaturas .ccdocumentos_ultfaturas-pos {
+  margin-bottom: 10px;
+}
+.ccdocumentos_ultfaturas i {
+  color: #999;
+}
+.ccdocumentos_ultfaturas .date {
+  color: #999;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.ccdocumentos_ultfaturas .type {
+font-size: 12px;
+}
+.ccdocumentos_ultfaturas .fatura {
+  font-size: 14px;
+  font-weight: 400;
+}
+.ccdocumentos_ultfaturas .extrato:hover {
+  text-decoration: underline;
+}
+.ccdocumentos_ultfaturas hr {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ccdocumentos_ultfaturas .btn {
+  margin-top: 0px;
+  padding:5px;
+  margin-bottom:0px;
+}
+.ccdocumentos_ultfaturas ul {
+  margin-bottom: 0px;
+}
+.ccdocumentos_ultfaturas .btn .material-icons{
+  font-size: 20px;
+  padding: 0px;
+}
+
+/*Detalhes*/
+.ccdetalhes {
+  padding: 20px;
+}
+.ccdetalhes .title1, .ccdetalhes .info1, .ccdetalhes .title2 {
+text-transform: uppercase;
+}
+.ccdetalhes .title1, .ccdetalhes .title2 {
+  font-weight: 400;
+  color: #888;
+  font-size: 12px;
+}
+.ccdetalhes .info1 {
+  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ccdetalhes .info2 {
+  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ccdetalhes .space {
+  height: 30px;
+  position: relative;
+}
+.ccdetalhes p {
+  margin:0px;
+}
+.ccdetalhes hr {
+  margin: 30px 0px 30px 0px;
+}
+@media (max-width: 768px) {
+  .ccdetalhes .title1, .ccdetalhes .title2 {
+
+  }
+}
+
+/*FACTORING*/
+/*Consolidacao*/
+.consolidacao {
+  padding: 20px;
+}
+.consolidacao h4 {
+  margin-bottom: 30px;
+}
+.consolidacao .title1, .consolidacao .info1, .consolidacao .title2, .consolidacao .title3 {
+text-transform: uppercase;
+}
+.consolidacao .title1, .consolidacao .title2 {
+  font-weight: 400;
+  color: #888;
+  font-size: 12px;
+}
+.consolidacao .info1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.consolidacao .info2 {
+  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
+}
+.consolidacao .info3 {
+  font-weight: 400;
+  font-size: 11px;
+}
+.consolidacao .moeda3 {
+  font-size: 10px;
+}
+.consolidacao .moeda {
+  font-size: 14px;
+}
+.consolidacao .moeda2 {
+  font-size: 12px;
+}
+.consolidacao .title3 {
+  font-size: 11px;
+  font-weight: 400;
+  color: #888;
+}
+.consolidacao .space {
+  height: 30px;
+  position: relative;
+}
+.consolidacao p {
+  margin:0px;
+}
+.consolidacao hr {
+  margin: 20px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+  .consolidacao .title1, .consolidacao .title2 {
+  }
+}
+
+
+/* Detalhe contrato */
+
+/* card sizing */
+@media(min-width:970px){
+  #contrato_carteira {
+    min-height:285px;
+  }
+  #contrato_contacorrente {
+    min-height: 468px;
+  }
+  #devedor_prazos {
+    min-height: 243px;
+  }
+}
+
+#carteiracreditos {
+  margin-top: 40px;
+}
+
+.card_search {
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+  background-color: rgba(0,0,0,0.02);
+}
+.table li{
+  font-size: 20px;
+  color: #888;
+  margin:5px 0px 5px 0px;
+  text-align: center;
+}
+.table li .danger {
+  color: #D24D57;
+}
+.table li .success {
+  color: #87D37C;
+}
+.table li .warning {
+  color: #F4D03F;
+}
+.table li .information {
+  color: #59ABE3;
+}
+
+/* CC Calendar */
+
+.calendar-events {
+  margin-top: 20px;
+}
+.calendar-events .type {
+  font-size: 12px;
+}
+.calendar-events .description {
+  font-size: 10px;
+  font-weight: 400;
+  color: #888;
+  text-transform: uppercase;
+}
+.calendar-events hr {
+  margin-top: 10px;
+}
+
+
+ .cc_calendar .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+   border-top: 0px;
+}
+
+div.cc_calendar {
+    margin: 0;
+    padding: 0;
+}
+
+div.cc_calendar .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.cc_calendar .table th,
+div.cc_calendar .table td {
+    padding: 4px 2px;
+    text-align: center;
+}
+
+div.cc_calendar .table tr th,
+div.cc_calendar .table tr td {
+    background-color: #ffffff;
+}
+
+div.cc_calendar .table tr.calendar-month-header th {
+    background-color: #fff;
+    color: #d1005d;
+}
+
+div.cc_calendar .table tr.calendar-month-header th span {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+div.cc_calendar .table tr.calendar-dow-header th {
+    background-color: #fff;
+}
+
+div.cc_calendar .table tr:last-child {
+    border-bottom: 0px solid #dddddd;
+}
+
+div.cc_calendar .table tr.calendar-month-header th {
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+div.cc_calendar .table-bordered tr.calendar-month-header th {
+    border-left: 0;
+    border-right: 0;
+}
+
+div.cc_calendar .table-bordered tr.calendar-month-header th:first-child {
+    border-left: 0px solid #dddddd;
+}
+
+div.cc_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    color: #d1005d;
+}
+
+div.cc_calendar tr.calendar-dow-header th,
+div.cc_calendar tr.calendar-dow td {
+    width: 14%;
+}
+
+div.cc_calendar .table tr td div.day {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* actions and events */
+div.cc_calendar .table tr td.event div.day,
+div.cc_calendar ul.legend li.event {
+    background-color: #fff0c3;
+}
+
+div.cc_calendar .table tr td.dow-clickable,
+div.cc_calendar .table tr td.event-clickable {
+    cursor: pointer;
+}
+
+/* badge */
+div.cc_calendar .badge-today,
+div.cc_calendar div.legend span.badge-today {
+    background-color: #357ebd;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.cc_calendar .badge-event,
+div.cc_calendar div.legend span.badge-event {
+    background-color: #ff9b08;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.cc_calendar .badge-event {
+    font-size: 0.95em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+/* legend */
+div.cc_calendar div.legend {
+    margin-top: 5px;
+    text-align: right;
+}
+
+div.cc_calendar div.legend span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div.cc_calendar div.legend span.legend-text:after,
+div.cc_calendar div.legend span.legend-block:after,
+div.cc_calendar div.legend span.legend-list:after,
+div.cc_calendar div.legend span.legend-spacer:after {
+    content: ' ';
+}
+
+div.cc_calendar div.legend span.legend-spacer {
+    padding-left: 25px;
+}
+
+div.cc_calendar ul.legend > span {
+    padding-left: 2px;
+}
+
+div.cc_calendar ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.cc_calendar ul.legend li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+div.cc_calendar ul.legend
+div.cc_calendar ul.legend li:first-child {
+    margin-left: 7px;
+}
+
+div.cc_calendar ul.legend li:last-child {
+    margin-right: 5px;
+}
+
+div.cc_calendar div.legend span.badge {
+    font-size: 0.9em;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* responsive */
+@media (max-width: 979px) {
+    div.cc_calendar .table th,
+    div.cc_calendar .table td {
+        padding: 2px 1px;
+    }
+}

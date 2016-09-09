@@ -23,168 +23,54 @@
 
 <body>
 
-	<div class="row">
-		<div class="side-menu">
-		  <nav class="navbar navbar-default" role="navigation">
-		    <div class="navbar-header">
-		        <div class="brand-wrapper">
-		            <button type="button" class="navbar-toggle">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
-		            <div class="brand-name-wrapper">
+	<!-- FRAME -->
+	<div id="wrapper">
+
+			<!-- SIDEBAR -->
+			<div id="sidebar-wrapper">
+					<ul class="sidebar-nav">
+							<li class="sidebar-brand">
 									<a href="#">
-										<img src="assets/img/logo.png" class="logo"/>
+										<object type="image/svg+xml" data="assets/img/M_white.svg" class="logo img-responsive">
+												logo
+										</object>
 									</a>
-		            </div>
-								<div class="navbar-icons hidden-md hidden-lg hidden-sm">
-									<ul class="list-inline">
-										<li><i class="material-icons">notifications</i></li>
-										<li><i class="material-icons">chat_bubble</i></li>
-										<li><i class="material-icons">account_circle</i></li>
-										<li><a data-toggle="collapse" href="#search" id="search-trigger"><i class="material-icons">search</i></a></li>
-									</ul>
-								</div>
-		            <div id="search" class="panel-collapse collapse hidden-md hidden-lg">
-		                <div class="panel-body">
-		                    <form role="search">
-		                        <div class="form-group mobile-search-form">
-		                            <input type="text" class="form-control" placeholder="Search">
-		                        </div>
-		                        <i class="chevron-right"></i>
-		                    </form>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="side-menu-container">
-		        <ul class="nav navbar-nav">
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#favoritos_dropdown">
-												<i class="material-icons">favorite</i> Favoritos <span class="caret"></span>
-										</a>
+							</li>
+							<li class="first">
+									<a href="#"><i class="material-icons">favorite</i> <span>Favoritos</span></a>
+							</li>
+							<li>
+									<a href="index.html"><i class="material-icons">dashboard</i> <span>Centro de Controlo</span></a>
+							</li>
+							<li>
+									<a href="contasaordem.html"><i class="material-icons">account_balance_wallet</i> <span>Contas</span></a>
+							</li>
+							<li>
+								<a href="transferencias.html"><i class="material-icons">payment</i> <span>Pagamentos</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="material-icons">attach_money</i> <span>Cobranças</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="material-icons">language</i> <span>Internacional</span></a>
+							</li>
+							<li>
+								<a href="factoring_contratos.html"><i class="material-icons">card_travel</i> <span>Factoring</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="material-icons">store</i> <span>Confirming</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="material-icons">insert_drive_file</i> <span>Gestão de Ficheiros</span></a>
+							</li>
+					</ul>
+					<div class="sidebar-footer">
+						<a href="#"><h6><i class="material-icons">phone</i> M Contacto</h6></a>
+					</div>
+			</div>
 
-										<!-- Dropdown level 1 -->
-										<div id="favoritos_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-		            <li class="active"><a href="#"><i class="material-icons">dashboard</i> Centro de Controlo</a></li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#contas_dropdown">
-												<i class="material-icons">account_balance_wallet</i> Contas <span class="caret"></span>
-										</a>
-
-										<!-- Dropdown level 1 -->
-										<div id="contas_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#pagamentos_dropdown">
-												<i class="material-icons">payment</i> Pagamentos <span class="caret"></span>
-										</a>
-										<div id="pagamentos_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#cobrancas_dropdown">
-												<i class="material-icons">attach_money</i> Cobranças <span class="caret"></span>
-										</a>
-										<div id="cobrancas_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#internacional_dropdown">
-												<i class="material-icons">language</i> Internacional <span class="caret"></span>
-										</a>
-										<div id="internacional_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#factoring_dropdown">
-												<i class="material-icons">card_travel</i> Factoring <span class="caret"></span>
-										</a>
-										<div id="factoring_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#confirming_dropdown">
-												<i class="material-icons">store</i> Confirming <span class="caret"></span>
-										</a>
-										<div id="confirming_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-								<li class="panel panel-default" id="dropdown">
-										<a data-toggle="collapse" href="#ficheiros_dropdown">
-												<i class="material-icons">insert_drive_file</i> Gestão de Ficheiros <span class="caret"></span>
-										</a>
-										<div id="ficheiros_dropdown" class="panel-collapse collapse">
-												<div class="panel-body">
-														<ul class="nav navbar-nav">
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-																<li><a href="#">Link</a></li>
-														</ul>
-												</div>
-										</div>
-								</li>
-		        </ul>
-		    </div>
-			</nav>
-	  </div>
-
-		<div class="side-body">
-			<nav class="navbar navbar-white hidden-xs">
+			<!-- NAVBAR TOP -->
+			<nav class="navbar navbar-white">
 				<div class="container-fluid">
 					<div class="navbar-header">
 							<a href="#menu-toggle" id="menu-toggle" class="hidden-sm">
@@ -255,7 +141,9 @@
 				</div>
 			</nav>
 
-			<div class="container-fluid">
+			<!-- PAGE CONTENT -->
+			<div id="page-content-wrapper">
+					<div class="container-fluid">
 
 							<!-- PAGE HEADER -->
 							<div class="page-header">
@@ -896,9 +784,9 @@
 							    <div role="tabpanel" class="tab-pane" id="historico">...</div>
   							</div>
 							</div>
-			</div>
-		</div>
-	</div>
+
+					</div>  <!-- container-fluid -->
+			</div>  <!-- page-content wrapper -->
 
 			<footer class="footer hidden-xs">
 				<div class="row">
@@ -913,6 +801,7 @@
 				</div>
 			</footer>
 
+	</div> <!-- wrapper -->
 
 </body>
 
