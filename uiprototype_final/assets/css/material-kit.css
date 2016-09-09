@@ -2449,7 +2449,7 @@ legend {
   .dropdown.open .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 1px;
   }
 }
 .info {

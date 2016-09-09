@@ -3,17 +3,61 @@ html, body {
 }
 body {
   padding: 50px 0 0 0;
+  margin-top: 50px;
 }
 
 .navmenu .logo {
-  width: 30px;
-  height: 30px;
+  padding: 11px 20px;
 }
 
-
+.navbar-small {
+    text-align: right;
+    background-color: #d1005d;
+}
+.navbar-small a {
+  color: #fff;
+}
+.navbar-small .logo {
+  position: absolute;
+  top:11px;
+  left: 20px;
+}
+.navbar-large {
+    background-color: #fff;
+    padding-left: 300px;
+}
+.navbar-large .search-area {
+  text-align: left;
+  }
+.navbar-large .form-group {
+    margin-top:5px;
+}
+.navbar-large .search-area i {
+  color: #888;
+}
+.navbar-large a {
+  color: #888;
+}
 .navbar {
   display: block;
-  text-align: center;
+}
+.navbar-small .action-area {
+  padding: 13px 15px;
+  margin-top:0px;
+  text-align: right;
+}
+.navbar-large .action-area {
+  padding: 13px 15px;
+  margin-top:0px;
+  text-align: right;
+}
+.navbar-large .action-area .dropdown-toggle {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.navbar-large .action-area .dropdown-toggle:hover {
+  text-decoration: none;
 }
 .navbar-brand {
   display: inline-block;
@@ -22,16 +66,17 @@ body {
 .navbar-toggle {
   position: absolute;
   float: left;
-  margin-left: 15px;
+  margin-left: 70px;
+  margin-top: 11px;
 }
 .navbar-toggle2{
   background-color: transparent;
   border:0px;
   color: #fff;
   position:absolute;
-  margin-left: 200px;
+  margin-left: 185px;
+  margin-top: 13px;
   vertical-align: middle;
-  padding: 5px;
 }
 
 .container {
