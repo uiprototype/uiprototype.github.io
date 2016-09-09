@@ -146,6 +146,12 @@
   border-style: solid;
   border-radius: 4px;
 }
+@media (max-width: 991px) {
+  .navmenu,
+  .navbar-offcanvas {
+    width: 250px;
+  }
+}
 .navmenu-fixed-left,
 .navmenu-fixed-right,
 .navbar-offcanvas {
