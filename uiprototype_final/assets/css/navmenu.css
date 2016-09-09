@@ -76,13 +76,13 @@ body {
   border:0px;
   color: #fff;
   position:absolute;
-  margin-left: 135px;
+  margin-left: 130px;
   margin-top: 13px;
   vertical-align: middle;
 }
 @media (min-width: 992px) {
   .navbar-toggle2 {
-    margin-left: 185px;
+    margin-left: 180px;
   }
 }
 
