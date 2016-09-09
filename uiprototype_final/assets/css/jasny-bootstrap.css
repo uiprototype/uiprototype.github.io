@@ -191,6 +191,7 @@
   vertical-align: middle !important;
   font-size: 16px;
   padding-bottom: 3px;
+  margin-right: 5px;
 }
 .navbar-offcanvas .navbar-nav {
   margin: 0;
@@ -477,7 +478,7 @@
     display: block;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .offcanvas-sm {
     display: none;
   }
