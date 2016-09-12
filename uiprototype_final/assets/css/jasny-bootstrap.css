@@ -250,6 +250,7 @@
   font-size: 12px;
   margin: 0px;
   border-left: 2px solid transparent;
+  text-transform: none;
 }
 .navmenu-default .navmenu-nav > .dropdown > .dropdown-menu a:hover{
   border-left: 2px solid #d1005d;

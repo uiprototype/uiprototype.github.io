@@ -152,6 +152,7 @@ $(document).ready(function(){
   $("#cancel").hide();
   $("#accountselector_dropdown").hide();
   $("#accountselector_selected").hide();
+  $("#navbar-small_search").hide();
   $("#togglelist").hide();
   $("#accounts_grid").hide();
 
@@ -202,6 +203,9 @@ $(document).ready(function(){
         $("#accountselector").show();
         $("#plus").show();
         $("#cancel").hide();
+    });
+    $("#search_icon").click(function(){
+        $("#navbar-small_search").toggle();
     });
 });
 
