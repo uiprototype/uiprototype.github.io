@@ -2713,6 +2713,11 @@ h2.title {
   text-transform: uppercase;
   font-size: 12px;
 }
+@media (max-width: 1024px){
+  .nav-tabs > li > a {
+    font-size: 10px;
+  }
+}
 .nav-tabs > li > a:hover {
   background-color: transparent;
   border: 0;

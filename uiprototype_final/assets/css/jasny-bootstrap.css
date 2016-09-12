@@ -160,6 +160,7 @@
   top: 0;
   bottom: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 0;
 }
 .navmenu-fixed-left,
