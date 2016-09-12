@@ -202,4 +202,20 @@ body {
 
 #navbar-small_search .form-control, #navbar-small_search .form-group .form-control {
     background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+    color: #fff;
+}
+#navbar-small_search .form-control::-moz-placeholder,
+#navbar-small_search .form-group .form-control::-moz-placeholder {
+  color: rgba(255,255,255,0.8);
+  font-weight: 400;
+}
+#navbar-small_search .form-control:-ms-input-placeholder,
+#navbar-small_search .form-group .form-control:-ms-input-placeholder {
+  color: rgba(255,255,255,0.8);
+  font-weight: 400;
+}
+#navbar-small_search .form-control::-webkit-input-placeholder,
+#navbar-small_search .form-group .form-control::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.8);
+  font-weight: 400;
 }
