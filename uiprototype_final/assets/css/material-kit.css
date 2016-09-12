@@ -2779,7 +2779,7 @@ h2.title {
     border-radius: 0px;
   }
 }
-@media (max-width: 970px){
+@media (max-width: 768px){
   .nav-tabs > li > a {
     font-size: 10px;
   }
