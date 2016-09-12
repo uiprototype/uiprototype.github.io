@@ -2640,6 +2640,38 @@ h6, .h6 {
   font-size: 1em;
   text-transform: uppercase;
 }
+@media (max-width:1024px){
+  h1, .h1 {
+    font-size: 3.6em;
+    line-height: 1.15em;
+  }
+
+  h2, .h2 {
+    font-size: 2.4em;
+  }
+
+  h3, .h3 {
+    font-size: 1.625em;
+    line-height: 1.4em;
+    margin: 20px 0 10px;
+  }
+
+  h4, .h4 {
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  h5, .h5 {
+    font-size: 1.0em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  h6, .h6 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+}
 
 .title,
 .card-title,
@@ -2743,11 +2775,13 @@ h2.title {
     margin: 0;
     padding: 0px;
   }
-  .nav-tabs > li > a {
-    font-size: 10px;
-  }
   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border-radius: 0px;
+  }
+}
+@media (max-width: 970px){
+  .nav-tabs > li > a {
+    font-size: 10px;
   }
 }
 
