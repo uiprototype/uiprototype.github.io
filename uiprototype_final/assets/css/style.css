@@ -1218,7 +1218,7 @@ text-align: right;
       border-left: 4px solid #EAED21;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 361px) {
   .accountlist_accounts .card h4 {
         font-size: 14px;
         margin: 0px;
@@ -1235,6 +1235,30 @@ text-align: right;
   }
   .accountlist_accounts .card span {
         font-size: 9px;
+        font-weight: 600;
+  }
+  .accountlist_accounts .card p {
+        margin: 0px;
+  }
+}
+@media (max-width: 360px) {
+  .accountlist_accounts .card h4 {
+        font-size: 11px;
+        margin: 0px;
+        font-weight: 500;
+  }
+  .accountlist_accounts .card .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 12px;
+        font-weight: 400;
+  }
+  .accountlist_accounts .card .saldo {
+        font-weight: 400;
+        font-size: 13px;
+  }
+  .accountlist_accounts .card span {
+        font-size: 8px;
         font-weight: 600;
   }
   .accountlist_accounts .card p {
@@ -1426,7 +1450,7 @@ text-align: right;
   text-transform: uppercase;
   font-size: 12px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 361px){
   .accountlist_header .accounts {
     font-size: 20px;
   }
@@ -1451,8 +1475,38 @@ text-align: right;
     font-size: 12px;
   }
   .accountlist_header .infos hr {
-background-color: #ccc;
-height: 1px;
+    background-color: #ccc;
+    height: 1px;
+  }
+}
+
+@media (max-width: 361px){
+  .accountlist_header .accounts {
+    font-size: 20px;
+  }
+  .accountlist_header .infos {
+    margin-top: 10px;
+  }
+  .accountlist_header .infos .totais{
+    font-weight: 400;
+  }
+  .accountlist_header .infos .valores{
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .accountlist_header .infos .moeda {
+    font-weight: 400;
+    font-size: 8px;
+  }
+  .accountlist_header .infos p {
+    font-weight: 400;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  .accountlist_header .infos hr {
+    background-color: #ccc;
+    height: 1px;
   }
 }
 
