@@ -92,6 +92,12 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   will-change: box-shadow, transform;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (max-width:767px){
+  .btn {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+}
 .btn::-moz-focus-inner,
 .navbar .navbar-nav > li > a.btn::-moz-focus-inner {
   border: 0;
