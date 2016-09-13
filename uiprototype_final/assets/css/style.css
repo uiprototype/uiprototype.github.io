@@ -1606,6 +1606,7 @@ margin: 0;
   .account_header .saldo1 {
     margin-top: 10px;
     font-size: 10px;
+    margin-bottom: -5px;
   }
   .account_header .value1 {
     font-size: 14px !important;
