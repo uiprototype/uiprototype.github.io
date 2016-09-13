@@ -561,6 +561,12 @@ hr {
 .movtable .actions {
 text-align: right;
 }
+@media(max-width: 767px){
+  .movtable .actions .btn{
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+}
 .movtable .description {
   font-size: 12px;
   color: #222;
@@ -1394,6 +1400,20 @@ text-align: right;
   color: #333;
 }
 
+@media (max-width:767px){
+  #toggle_search_advanced {
+    font-size: 10px;
+  }
+  #toggle_search_advanced2 {
+    font-size: 10px;
+  }
+  #toggle_search_advanced i{
+    font-size: 12px;
+  }
+  #toggle_search_advanced2 i{
+    font-size: 12px;
+  }
+}
 /* Account List Header */
 .accountlist_header {
   margin-bottom: 20px;
