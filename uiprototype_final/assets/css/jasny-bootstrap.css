@@ -179,7 +179,7 @@
   margin: 10px 0px;
 }
 .navmenu-nav.dropdown-menu {
-  position: static;
+  position: relative;
   margin: 0;
   padding-top: 0;
   float: none;
