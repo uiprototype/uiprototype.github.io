@@ -1596,14 +1596,38 @@ margin: 0;
     margin-top: 10px;
   }
   .account_header .value1 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .account_header .moeda1 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media (max-width: 767px) {
-  
+  .account_header .saldo1 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .account_header .value1 {
+    font-size: 14px !important;
+  }
+  .account_header .moeda1 {
+    font-size: 9px !important;
+  }
+  .account_header .card h4 {
+        font-size: 20px;
+        margin: 0px;
+  }
+  .account_header .card .number {
+        margin-top: 0px;
+        color: #888;
+        font-size: 14px;
+        font-weight: 300;
+  }
+}
+
+.account_header .maisinfo {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .account_header .value1 {
