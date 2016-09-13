@@ -1931,6 +1931,9 @@ margin: 0;
 .ccdocumentos_ultextratos ul {
   margin-bottom: 0px;
 }
+.ccdocumentos_ultextratos ul li{
+  padding:0px;
+}
 .ccdocumentos_ultextratos .btn .material-icons{
   font-size: 20px;
   padding: 0px;
@@ -1970,6 +1973,9 @@ font-size: 12px;
 }
 .ccdocumentos_ultfaturas ul {
   margin-bottom: 0px;
+}
+.ccdocumentos_ultfaturas ul li{
+  padding:0px;
 }
 .ccdocumentos_ultfaturas .btn .material-icons{
   font-size: 20px;
