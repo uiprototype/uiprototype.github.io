@@ -1869,6 +1869,10 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   background-color: #999999;
 }
 
+.nav-pills {
+margin-top: 30px;
+}
+
 .nav-pills > li > a {
   line-height: 24px;
   text-transform: uppercase;
@@ -1878,7 +1882,11 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   text-align: center;
   color: #555555;
   transition: all .3s;
-  margin-top: 30px;
+}
+@media (max-width: 1024px){
+  .nav-pills > li > a {
+    min-width: auto;
+  }
 }
 .nav-pills > li > a:hover {
   background-color: rgba(200, 200, 200, 0.2);

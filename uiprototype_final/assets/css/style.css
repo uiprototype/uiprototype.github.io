@@ -1092,12 +1092,10 @@ text-align: right;
 }
 @media (max-width: 768px) {
   .transaction_card_agendar .subcard-default{
-    min-height: 162px;
-    padding: 20px 0px 0px;
+    padding: 20px 0px 10px 0px;
   }
   .transaction_card_precario .subcard-default{
-    min-height: 162px;
-    padding: 20px 0px 0px;  }
+    padding: 20px 0px 10px 0px;  }
 }
 .transaction_card_precario {
   font-size: 14px;
