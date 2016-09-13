@@ -1534,7 +1534,7 @@ margin: 0;
 
 .account_header .card {
     background-color: #fcfcfc;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     width: 100%;
     height: auto;
     box-shadow: 0px 1px 5px #ddd;
@@ -1584,48 +1584,32 @@ margin: 0;
       border-left: 4px solid #EAED21;
 }
 
-@media (max-width: 768px) {
-  .account_header .card h4 {
-        font-size: 22px;
-        margin: 0px;
-  }
-  .account_header .card .number {
-        margin-top: 0px;
-        color: #888;
-        font-size: 16px;
-        font-weight: 400;
-  }
-  .account_header .card .saldo {
-        font-weight: 400;
-        font-size: 13px;
-  }
-  .account_header .card .maisinfo {
-        font-weight: 400;
-        font-size: 13px;
-  }
-  .account_header .card p {
-        margin: 0px;
-  }
-}
 .account_header .saldo1 {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   font-weight: 400;
-}
-.account_header .value1 {
-  font-size: 28px;
-  font-weight: 500;
-  margin-top: 0px;
+  display: block;
   margin-bottom: 5px;
 }
+@media (max-width: 767px) {
+  .account_header .saldo1 {
+    margin-top: 10px;
+  }
+}
+.account_header .value1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 .account_header .moeda1 {
-  font-size: 18px;
+  font-size: 16px;
 }
 .account_header .saldo2 {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   color: #888;
+  margin-top: 10px;
 }
 .account_header .value2 {
   font-weight: 400;
@@ -1638,7 +1622,7 @@ margin: 0;
   color: #888;
 }
 .account_header .accountiban:first-of-type {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 .account_header .btn {
   font-size: 10px;
