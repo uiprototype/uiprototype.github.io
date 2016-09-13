@@ -1218,7 +1218,7 @@ text-align: right;
       border-left: 4px solid #EAED21;
 }
 
-@media (max-width: 768px) and (min-width: 361px) {
+@media (max-width: 768px) and (min-width: 360px) {
   .accountlist_accounts .card h4 {
         font-size: 14px;
         margin: 0px;
@@ -1480,7 +1480,7 @@ text-align: right;
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 359px){
   .accountlist_header .accounts {
     font-size: 20px;
   }
