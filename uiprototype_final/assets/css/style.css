@@ -1591,11 +1591,21 @@ margin: 0;
   display: block;
   margin-bottom: 5px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   .account_header .saldo1 {
     margin-top: 10px;
   }
+  .account_header .value1 {
+    font-size: 18px;
+  }
+  .account_header .moeda1 {
+    font-size: 12px;
+  }
 }
+@media (max-width: 767px) {
+  
+}
+
 .account_header .value1 {
   font-size: 24px;
   font-weight: 500;
