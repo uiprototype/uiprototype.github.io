@@ -1250,7 +1250,7 @@ text-align: right;
   .accountlist_accounts .card .number {
         margin-top: 0px;
         color: #888;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
   }
   .accountlist_accounts .card .saldo {
@@ -1515,7 +1515,9 @@ text-align: right;
 }
 
 /* Account Header */
-
+.account_header {
+  margin-top: 30px;
+}
 .account_header .row {
 margin: 0;
 }
