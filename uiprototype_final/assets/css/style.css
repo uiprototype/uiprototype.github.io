@@ -18,12 +18,12 @@ hr {
   vertical-align: middle;
   padding: 0px 8px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
-@media (max-width:970px) {
+@media (max-width:1024px) and (min-width:768px){
   .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
     font-size: 13px;
   }
