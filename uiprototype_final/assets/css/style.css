@@ -20,7 +20,7 @@ hr {
 }
 @media (max-width:767px) {
   .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media (max-width:1024px) and (min-width:768px){
