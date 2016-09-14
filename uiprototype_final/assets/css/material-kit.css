@@ -3109,6 +3109,14 @@ h2.title {
   padding-bottom: 16px;
   padding-left: 24px;
 }
+@media (max-width:767px){
+  .modal-content .modal-body {
+    padding:10px;
+  }
+  .modal-content .modal-header {
+    padding:20px 10px 5px 10px;
+  }
+}
 .modal-content .modal-footer {
   border-top: none;
   padding: 7px;
