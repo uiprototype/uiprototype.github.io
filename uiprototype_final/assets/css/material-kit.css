@@ -873,12 +873,7 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
   z-index: 1;
   border-radius: 3px;
 }
-@media (max-width: 767px){
-  .checkbox .checkbox-material .check {
-    width: 15px;
-    height: 15px;
-  }
-}
+
 .checkbox .checkbox-material .check:before {
   position: absolute;
   content: "";
