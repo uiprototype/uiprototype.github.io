@@ -1434,6 +1434,7 @@ text-align: right;
 .accountlist_header {
   margin-bottom: 20px;
   margin-top: 20px;
+  padding: 10px;
 }
 .accountlist_header .accounts {
   font-size: 25px;
