@@ -1385,6 +1385,13 @@ text-align: right;
     padding: 8px 12px;
   }
 }
+
+@media (min-width:1025px){
+  #togglelist, #togglegrid, #togglecolor {
+    padding: 10px 12px;
+  }
+}
+
 .accountlist_search .btn .material-icons{
   font-size: 18px;
 }
