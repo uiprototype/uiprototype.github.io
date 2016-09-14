@@ -1937,6 +1937,8 @@ margin: 0;
 .ccdocumentos_ultextratos .btn .material-icons{
   font-size: 20px;
   padding: 0px;
+  margin:0px;
+  display:inline-block;
 }
 
 /*Ult Faturas Notas Lanç */
