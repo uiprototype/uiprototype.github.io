@@ -1280,6 +1280,22 @@ text-align: right;
         margin: 0px;
   }
 }
+.accountlist_accounts li .btn{
+  padding:0px 4px !important;
+  margin-top: 17px;
+}
+.accountlist_accounts li .btn i{
+  font-size: 20px;
+  vertical-align: middle;
+}
+.accountgrid_accounts li .btn{
+  padding:0px 2px !important;
+  margin-top: 17px;
+}
+.accountgrid_accounts li .btn i{
+  font-size: 20px;
+  vertical-align: middle;
+}
 
 /* Grid view */
 
