@@ -1879,7 +1879,9 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .nav-pills {
 margin-top: 30px;
 }
-
+.nav-pills >li {
+  padding: 0px 5px 0px 0px;
+}
 .nav-pills > li > a {
   line-height: 24px;
   text-transform: uppercase;
@@ -1887,8 +1889,17 @@ margin-top: 30px;
   font-weight: 500;
   min-width: 100px;
   text-align: center;
-  color: #555555;
+  color: #d1005d;
   transition: all .3s;
+  border: 2px solid #d1005d;
+  padding: 5px 12px;
+
+}
+@media (max-width: 767px){
+  .nav-pills > li > a {
+    font-size: 10px;
+    padding: 0px 12px;
+  }
 }
 @media (max-width: 1024px){
   .nav-pills > li > a {
@@ -1906,23 +1917,18 @@ margin-top: 30px;
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   background-color: #d1005d;
   color: #FFFFFF;
-  box-shadow: 0 10px 20px -10px rgba(156, 39, 176, 0.56), 0 4px 10px 0px rgba(0, 0, 0, 0.12), 0 4px 5px -5px rgba(156, 39, 176, 0.2);
 }
 .nav-pills.nav-pills-info > li.active > a, .nav-pills.nav-pills-info > li.active > a:focus, .nav-pills.nav-pills-info > li.active > a:hover {
   background-color: #03a9f4;
-  box-shadow: 0 16px 26px -10px rgba(3, 169, 244, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(3, 169, 244, 0.2);
 }
 .nav-pills.nav-pills-success > li.active > a, .nav-pills.nav-pills-success > li.active > a:focus, .nav-pills.nav-pills-success > li.active > a:hover {
   background-color: #4caf50;
-  box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
 }
 .nav-pills.nav-pills-warning > li.active > a, .nav-pills.nav-pills-warning > li.active > a:focus, .nav-pills.nav-pills-warning > li.active > a:hover {
   background-color: #fbc02d;
-  box-shadow: 0 16px 26px -10px rgba(251, 192, 45, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(251, 192, 45, 0.2);
 }
 .nav-pills.nav-pills-danger > li.active > a, .nav-pills.nav-pills-danger > li.active > a:focus, .nav-pills.nav-pills-danger > li.active > a:hover {
   background-color: #f44336;
-  box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
 }
 
 .tab-space {
