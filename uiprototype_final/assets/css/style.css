@@ -1479,7 +1479,7 @@ text-align: right;
   background-color: #adadad;
 }
 .accountlist_header .accounts .btn-primary:hover {
-  background-color: #ee0a6f;
+  opacity:0.8;
 }
 .accountlist_header .accounts .btn:hover {
   box-shadow: none;
