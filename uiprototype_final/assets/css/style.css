@@ -2151,7 +2151,7 @@ text-transform: uppercase;
 /* Detalhe contrato */
 
 /* card sizing */
-@media(min-width:1025px){
+@media(min-width:768px){
   #contrato_carteira {
     min-height:285px;
   }
