@@ -2153,7 +2153,7 @@ text-transform: uppercase;
 /* card sizing */
 @media(min-width:768px){
   #contrato_carteira {
-    min-height:285px;
+    min-height:281px;
   }
   #contrato_contacorrente {
     min-height: 464px;
