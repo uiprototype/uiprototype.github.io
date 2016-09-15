@@ -1558,6 +1558,9 @@ text-align: right;
 .account_header .dropdown {
   margin-top: 10px;
 }
+.account_header .dropdown-toggle {
+  color: #888;
+}
 .account_header .row {
 margin: 0;
 }
