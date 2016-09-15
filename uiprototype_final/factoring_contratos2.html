@@ -213,14 +213,14 @@
 
 	<div class="container-fluid">
 
-		<!-- HEADER -->
+		<!-- PAGE HEADER -->
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<h2>Contratos</h2>
 				<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 					aliqua.</p>
-				</div>
 			</div>
+		</div>
 
 			<div class="row">
 				<div class="col-lg-12">
@@ -230,38 +230,71 @@
 							<div class="card consolidacao">
 								<h4>Consolidação de contratos</h4>
 								<div class="row">
-									<div class="col-md-4 col-xs-4 col-sm-4">
+									<div class="col-md-4 col-xs-12 col-sm-4">
 										<span class="title1">Conta Corrente</span>
 										<p class="info1">15.000,00 <span class="moeda">EUR</span></p>
+										<div class="space"></div>
 									</div>
-									<div class="col-md-4 col-xs-4 col-sm-4">
+									<div class="col-md-4 col-xs-12 col-sm-4">
 										<span class="title1">Créditos Tomados</span>
 										<p class="info1">12.000,00 <span class="moeda">EUR</span></p>
+										<div class="space"></div>
 									</div>
-									<div class="col-md-4 col-xs-4 col-sm-4">
+									<div class="col-md-4 col-xs-12 col-sm-4">
 										<span class="title1">Disponibilidades</span>
 										<p class="info1">7.000,00 <span class="moeda">EUR</span></p>
+										<div class="space"></div>
 									</div>
 								</div>
-								<hr class="hidden-xs hidden-sm">
+								<hr>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+										<center><a class="btn btn-simple btn-primary loadmore" role="button" data-toggle="collapse" data-parent="#accordion" href="#consolidacao" aria-expanded="false" aria-controls="consolidacao">
+											Mais detalhes <i class="fa fa-chevron-down"></i>
+										</a></center>
+										<div id="consolidacao" class="panel-collapse collapse hidden-md hidden-lg" role="tabpanel">
+											<div class="row">
+												<div class="col-md-3 col-xs-12 col-sm-3">
+													<span class="title2">Tomadas de créditos</span>
+													<p class="info2">11.000,00 <span class="moeda2">EUR</span></p>
+													<div class="space"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col-sm-3">
+													<span class="title2">Adiantamentos</span>
+													<p class="info2">8.500,00 <span class="moeda2">EUR</span></p>
+													<div class="space"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col-sm-3">
+													<span class="title2" id="carteiravin">Carteira Vincenda</span>
+													<p class="info2">10.000,00 <span class="moeda2">EUR</span></p>
+													<span class="title3">Em disputa</span> <span class="info3">1.000,00 <span class="moeda3">EUR</span></span>
+													<div class="space"></div>
+												</div>
+												<div class="col-md-3 col-xs-12 col-sm-3">
+													<span class="title2" id="carteiraven">Carteira Vencida</span>
+													<p class="info2">10.000,00 <span class="moeda2">EUR</span></p>
+													<span class="title3">Em disputa</span> <span class="info3">1.000,00 <span class="moeda3">EUR</span></span>
+													<div class="space"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="row hidden-xs hidden-sm">
-									<div class="col-md-3 col-xs-12 col-sm-12">
+									<div class="col-md-3 col-xs-12 col-sm-3">
 										<span class="title2">Tomadas de créditos</span>
 										<p class="info2">11.000,00 <span class="moeda2">EUR</span></p>
 									</div>
-									<div class="col-md-3 col-xs-12 col-sm-12">
-										<div class="space hidden-md hidden-lg"></div>
+									<div class="col-md-3 col-xs-12 col-sm-3">
 										<span class="title2">Adiantamentos</span>
 										<p class="info2">8.500,00 <span class="moeda2">EUR</span></p>
 									</div>
-									<div class="col-md-3 col-xs-12 col-sm-12">
-										<div class="space hidden-md hidden-lg"></div>
+									<div class="col-md-3 col-xs-12 col-sm-3">
 										<span class="title2">Carteira Vincenda</span>
 										<p class="info2">10.000,00 <span class="moeda2">EUR</span></p>
 										<span class="title3">Em disputa</span> <span class="info3">1.000,00 <span class="moeda3">EUR</span></span>
 									</div>
-									<div class="col-md-3 col-xs-12 col-sm-12">
-										<div class="space hidden-md hidden-lg"></div>
+									<div class="col-md-3 col-xs-12 col-sm-3">
 										<span class="title2">Carteira Vencida</span>
 										<p class="info2">10.000,00 <span class="moeda2">EUR</span></p>
 										<span class="title3">Em disputa</span> <span class="info3">1.000,00 <span class="moeda3">EUR</span></span>
@@ -271,12 +304,12 @@
 
 							<div class="accountlist_header">
 												<div class="row">
-													<div class="col-md-5 col-xs-4 col-sm-4 accounts">
+													<div class="col-md-5 col-xs-6 col-sm-4 accounts">
 															<span>18</span> Contratos
 													</div>
-													<div class="col-md-7 col-sm-8 col-xs-8 accounts text-right">
-														<button class="btn btn-default">Editar lista de contratos</button>
-														<button class="btn btn-primary"><i class="material-icons">note_add</i>Nova Operação</button>
+													<div class="col-md-7 col-sm-8 col-xs-6 accounts text-right">
+														<button class="btn btn-default">Editar lista</button>
+														<button class="btn btn-primary hidden-xs"><i class="material-icons">note_add</i>Nova Operação</button>
 													</div>
 												</div>
 							</div>
@@ -291,14 +324,14 @@
 													</div>
 													<div class="col-md-6 col-xs-12 col-sm-12">
 														<div class="row">
-															<div class="col-md-6 col-xs-5 col-sm-4">
+															<div class="col-md-6 col-xs-8 col-sm-4">
 																<select class="form-control" value="Vas">
 																	<option>Todos</option>
 																	<option>Completo com recurso</option>
 																	<option>Completo sem recurso</option>
 																</select>
 															</div>
-															<div class="col-md-3 col-xs-3 col-sm-3">
+															<div class="col-md-3 col-xs-4 col-sm-3">
 																<select class="form-control" value="Vas">
 																	<option>EUR</option>
 																	<option>USD</option>
@@ -306,7 +339,7 @@
 																	<option>JPY</option>
 																</select>
 															</div>
-															<div class="col-md-3 col-xs-2 col-sm-2">
+															<div class="col-md-3 col-sm-2 hidden-xs">
 																<button type="button" id="togglegrid" class="btn btn-default"><i class="material-icons">apps</i></button>
 																<button type="button" id="togglelist" class="btn btn-default"><i class="material-icons">list</i></button>
 															</div>
@@ -317,488 +350,335 @@
 
 							<!-- account list -->
 							<div class="accountlist_accounts" id="accounts_list">
+									<div class="row">
+										<div class="col-md-12">
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+											<a href="factoring_detalhecontrato.html"><div class="card card-default">
+												<div class="row">
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<h4>123456789</h4>
+														<p class="number">Com recurso</p>
+													</div>
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+															<span>CONTA CORRENTE</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+														<div class="col-md-6 col-sm-6 hidden-xs text-right">
+															<span>CRÉDITOS TOMADOS</span>
+															<p class="saldo">2.000,00 <span>EUR</span></p>
+														</div>
+													</div>
+												</div>
+											</div></a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- account grid -->
+							<div class="accountgrid_accounts hidden-xs" id="accounts_grid">
+								<div class="row">
+									<div class="col-md-4 col-xs-6 first-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
 											<div class="row">
-												<div class="col-md-12">
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
-													<a href="factoring_detalhecontrato.html"><div class="card card-default">
-														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>123456789</h4>
-																<p class="number">Completo com recurso</p>
-															</div>
-															<div class="col-md-6 col-sm-8 col-xs-6">
-																<div class="col-md-6 col-sm-6 text-right">
-																	<span>CONTA CORRENTE</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>CRÉDITOS TOMADOS</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
-																</div>
-															</div>
-															<div class="col-md-2 hidden-xs hidden-sm">
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-share"></i>
-																		</button>
-																</td>
-																<td class="td-actions text-right">
-																		<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																				<i class="fa fa-user-plus"></i>
-																		</button>
-																</td>
-															</div>
-														</div>
-													</div></a>
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
 												</div>
 											</div>
-										</div>
-
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
+											</div>
+										</div></a>
 									</div>
-							<!-- account grid -->
-							<div class="accountgrid_accounts" id="accounts_grid">
-										<div class="row">
-											<div class="col-md-4 col-xs-6 col-sm-6 first-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+									<div class="col-md-4 col-xs-6 middle-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 middle-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 last-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 last-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 first-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 middle-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 first-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 last-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 first-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 middle-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 middle-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
 											</div>
-											<div class="col-md-4 col-xs-6 col-sm-6 last-of-line">
-												<a href="#"><div class="card card-default">
-													<div class="row">
-														<div class="col-md-8 col-sm-12 col-xs-12">
-															<h4>123456789</h4>
-															<p class="number">Completo com recurso</p>
-														</div>
-														<div class="col-md-4 hidden-sm hidden-xs">
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Pedido de adiantamento" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-share"></i>
-																	</button>
-															</td>
-															<td class="td-actions text-right">
-																	<button type="button" rel="tooltip" title="Adicionar devedor" class="btn btn-default btn-simple btn-xs">
-																			<i class="fa fa-user-plus"></i>
-																	</button>
-															</td>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-md-12 text-right">
-															<span class="saldo1">Conta Corrente</span>
-															<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-															<span class="saldo2">Créditos Tomados</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-														</div>
-													</div>
-												</div></a>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 last-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
 											</div>
-										</div>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
+											</div>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 first-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
+											</div>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 middle-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
+											</div>
+										</div></a>
+									</div>
+									<div class="col-md-4 col-xs-6 last-of-line">
+										<a href="factoring_detalhecontratp.html"><div class="card card-default">
+											<div class="row">
+												<div class="col-md-12 col-sm-12 col-xs-12">
+													<h4>123456789</h4>
+													<p class="number">Com recurso</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+													<span class="saldo1">CONTA CORRENTE</span>
+													<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
+													<span class="saldo2">CRÉDITOS TOMADOS</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
+												</div>
+											</div>
+										</div></a>
+									</div>
+								</div>
+
+
+							</div>
 
 
 						</div>
