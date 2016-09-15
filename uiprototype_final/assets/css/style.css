@@ -544,6 +544,9 @@ hr {
 .movsearch i {
   color: #d1005d;
 }
+.movsearch .ccontent_no_bottom {
+  padding: 15px 15px 10px 15px;
+}
 
 /* MOV Search Advanced */
 .movsearch_advanced {
@@ -2169,7 +2172,7 @@ text-transform: uppercase;
 /* card sizing */
 @media(min-width:768px){
   #contrato_carteira {
-    min-height:280px;
+    min-height:281px;
   }
   #contrato_contacorrente {
     min-height: 464px;
@@ -2178,14 +2181,15 @@ text-transform: uppercase;
     min-height: 243px;
   }
 }
-#carteiracreditos {
-  margin-top: 40px;
+#carteiracreditos .movtable {
+  margin-top:0px;
 }
 
 .card_search {
   border-bottom: 1px solid #f0f0f0;
   border-top: 1px solid #f0f0f0;
   background-color: rgba(0,0,0,0.02);
+  margin-bottom: 15px;
 }
 .table li{
   font-size: 20px;
