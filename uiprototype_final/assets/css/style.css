@@ -1555,6 +1555,9 @@ text-align: right;
 .account_header {
   margin-top: 30px;
 }
+.account_header .dropdown {
+  margin-top: 10px;
+}
 .account_header .row {
 margin: 0;
 }
