@@ -248,16 +248,16 @@
 										<p class="accountiban"><b>CONTA DE SUPORTE</b> 0987654321</p>
 									</div>
 									<div class="col-md-6 col-sm-7 text-right col-xs-12">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-6">
-												<span class="saldo1"><span class="hidden-xs">CONTA</span><span class="hidden-md hidden-lg hidden-sm">C.</span> CORRENTE</span>
-												<span class="value1">12.000,00 <span class="moeda1">EUR</span></span>
+											<div class="row">
+												<div class="col-md-6 col-sm-6 col-xs-6">
+													<span class="saldo1"><span class="hidden-xs">CONTA</span><span class="hidden-md hidden-lg hidden-sm">C.</span> CORRENTE</span>
+													<span class="value1">12.000,00 <span class="moeda1">EUR</span></span>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6">
+													<span class="saldo1"><span class="hidden-xs">CRÉDITOS</span><span class="hidden-md hidden-lg hidden-sm">C.</span> TOMADOS</span>
+													<span class="value1">2.000,00 <span class="moeda1">EUR</span></span>
+												</div>
 											</div>
-											<div class="col-md-6 col-sm-6 col-xs-6">
-												<span class="saldo1"><span class="hidden-xs">CRÉDITOS</span><span class="hidden-md hidden-lg hidden-sm">C.</span> TOMADOS</span>
-												<span class="value1">2.000,00 <span class="moeda1">EUR</span></span>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -269,8 +269,8 @@
 								<div class="nav-tabs-navigation">
 									<div class="nav-tabs-wrapper">
 										<ul class="nav nav-tabs" data-tabs="tabs">
-											<li class="active"><a href="#resumo" data-toggle="tab">Resumo</a></li>
-											<li><a href="#devedores" data-toggle="tab">Devedores</a></li>
+											<li><a href="#resumo" data-toggle="tab">Resumo</a></li>
+											<li class="active"><a href="#devedores" data-toggle="tab">Devedores</a></li>
 											<li><a href="#carteiracreditos" data-toggle="tab" class="hidden-sm hidden-xs">Carteira de créditos</a></li>
 											<li><a href="#carteiracreditos" data-toggle="tab" class="hidden-lg hidden-md">Carteira</a></li>
 											<li><a href="#disponibilidades" data-toggle="tab">Disponibilidades</a></li>
@@ -286,7 +286,7 @@
 							<div class="content_no_top">
 								<div class="tab-content">
 
-									<div class="tab-pane fade in active" id="resumo">
+									<div class="tab-pane fade in" id="resumo">
 										<div class="row">
 											<div class="col-md-8 col-sm-7 col-xs-12">
 												<div class="card ccposicao" id="contrato_dados">
@@ -523,490 +523,93 @@
 											</div>
 										</div>
 									</div>
-									<div class="tab-pane fade in" id="devedores">
-										 <div class="accountlist_header">
-															<div class="row">
-																<div class="col-md-5 col-xs-6 col-sm-4 accounts">
-																		<span>18</span> Devedores
-																</div>
-																<div class="col-md-7 col-sm-8 col-xs-6 accounts text-right">
-																	<button class="btn btn-default">Editar lista</button>
-																</div>
-															</div>
-											</div>
-											<div class="accountlist_search card">
-																<div class="row">
-																	<div class="col-md-1 hidden-xs hidden-sm"><i class="material-icons search">search</i></div>
-																	<div class="col-md-9 col-sm-9 col-xs-12">
-																		<div class="form-group label-floating">
-																			<label class="control-label">Pesquisar</label>
-																			<input type="text" class="form-control">
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-3 hidden-xs">
-																				<button type="button" id="togglegrid" class="btn btn-default"><i class="material-icons">apps</i> Grelha</button>
-																				<button type="button" id="togglelist" class="btn btn-default"><i class="material-icons">list</i> Lista</button>
-																	</div>
-																</div>
-											</div>
+									<div class="tab-pane fade in active" id="devedores">
 
-											<!-- account list -->
-											<div class="accountlist_accounts" id="accounts_list">
-													<div class="row">
-														<div class="col-md-12">
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
-															<a href="factoring_detalhedevedor.html"><div class="card card-default">
-																<div class="row">
-																	<div class="col-md-4 col-sm-4 col-xs-6">
-																		<h4>José Exemplo</h4>
-																		<p class="number">233456987</p>
-																	</div>
-																	<div class="col-md-6 col-sm-6 col-xs-6">
-																		<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																			<span>CARTEIRA</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																		<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																			<span>SUB-LIMITE</span>
-																			<p class="saldo">2.000,00 <span>EUR</span></p>
-																		</div>
-																	</div>
-																	<div class="col-md-2 col-sm-2 hidden-xs text-right">
-																		<ul class="list-inline">
-																				<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																						<i class="material-icons">tune</i>
-																				</button></li>
-																		</ul>
-																	</div>
-																</div>
-															</div></a>
+										<div class="account_header">
+											<div class="card card-default">
+												<div class="row">
+													<div class="col-md-12 col-sm-12 col-xs-12">
+														<span class="type">DEVEDOR</span>
+														<h4>José Exemplo</h4>
+														<p class="number">233456987</p>
+														<a href="#" class="maisinfo hidden-sm hidden-md hidden-lg">Mais info</a>
+													</div>
+												</div>
+												<hr>
+												<div class="row">
+													<div class="col-md-4 col-sm-4 hidden-xs">
+														<p class="accountiban"><b>ADESÃO A</b> 20/02/2016</p>
+													</div>
+													<div class="col-md-8 col-sm-8 text-right col-xs-12">
+																	<span class="saldo1">IBAN</span>
+																	<span class="value1">PT50 0033 1234 0000 3456 65434 3</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row detalhe_devedor">
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<div class="card ccposicao" id="devedor_prazos">
+													<div class="ccontent">
+														<div class="row card-header">
+															<div class="col-md-12 col-xs-12 col-sm-12"><h4>Prazos</h4></div>
+														</div>
+														<div class="row ccposicao-pos">
+															<div class="col-md-7 col-sm-8 col-xs-8">
+																<span class="saldo">Prazo de pagamento</span><br>
+															</div>
+															<div class="col-md-5 col-sm-4 col-xs-4 text-right">
+																<span class="value">180 dias</span><br>
+															</div>
+														</div>
+														<hr>
+														<div class="row ccposicao-pos">
+															<div class="col-md-7 col-sm-8 col-xs-12">
+																<span class="saldo">Dias após vencimento (DAV)</span><br>
+															</div>
+															<div class="col-md-5 col-sm-4 col-xs-12 text-right">
+																<span class="value">30 dias</span><br>
+															</div>
 														</div>
 													</div>
 												</div>
-
 											</div>
-											<!-- account grid -->
-											<div class="accountgrid_accounts hidden-xs" id="accounts_grid">
-												<div class="row">
-													<div class="col-md-4 col-xs-6 first-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<div class="card ccposicao" id="devedor_sublimites">
+													<div class="ccontent">
+														<div class="card-header">
+															<h4>Sub-limites</h4>
+														</div>
+														<div class="row ccposicao-pos">
+															<div class="col-md-7 col-sm-8 col-xs-12">
+																<span class="saldo">Sub-limite de adiantamento</span><br>
 															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
+															<div class="col-md-5 col-sm-4 col-xs-12 text-right">
+																<span class="value">2.000,00</span> <span class="moeda">EUR</span><br>
 															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 middle-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
+														</div>
+														<hr>
+														<div class="row ccposicao-pos">
+															<div class="col-md-7 col-sm-8 col-xs-12">
+																<span class="saldo">Sub-limite de cobertura de risco</span><br>
 															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
+															<div class="col-md-5 col-sm-4 col-xs-12 text-right">
+																<span class="value">1.000,00</span> <span class="moeda">EUR</span><br>
 															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 last-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
+														</div>
+														<div class="row ccposicao-pos">
+															<div class="col-md-12 col-xs-12 col-sm-12 text-right">
+																<button type="button" class="btn btn-primary">Alterar sub-limites</button>
 															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 first-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 middle-of-line">
-														<a href="factoring_detalhecontratp.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 last-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 first-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 middle-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
-													</div>
-													<div class="col-md-4 col-xs-6 last-of-line">
-														<a href="factoring_detalhedevedor.html"><div class="card card-default">
-															<div class="row">
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<h4>José Exemplo</h4>
-																	<p class="number">233456987</p>
-																</div>
-																<div class="col-md-4 col-sm-4 hidden-xs text-right">
-																	<ul class="list-inline">
-																			<li><button type="button" rel="tooltip" title="Alterar sub-limite" class="btn btn-default btn-simple btn-xs">
-																					<i class="material-icons">tune</i>
-																			</button></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-12 col-xs-12 col-sm-12 text-right">
-																	<span class="saldo1">CARTEIRA</span>
-																	<h5 class="value1">12.000,00 <span class="moeda1">EUR</span></h5>
-																	<span class="saldo2">SUB-LIMITE</span> <span class="value2">10.000,00</span> <span class="moeda2">EUR</span>
-																</div>
-															</div>
-														</div></a>
+														</div>
 													</div>
 												</div>
-
-
 											</div>
+										</div>
+
+									</div>
+
 									<div class="tab-pane fade in" id="carteiracreditos">
 
 																			<div class="row">
@@ -1476,10 +1079,9 @@
 																	</div>
 									</div>
 
-								</div>
 							</div>
-
 						</div>
+
 					</div>
 				</div>
 			</div>
