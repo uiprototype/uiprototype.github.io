@@ -608,6 +608,268 @@
 											</div>
 										</div>
 
+										<div class="row">
+											<div class="col-md-12">
+												<div class="card movtable">
+													<div class="ccontent">
+
+														<ul class="nav nav-pills nav-pills-margin" role="tablist">
+															<li class="active">
+																<a href="#carteira_emaberto" role="tab" data-toggle="tab">Em aberto</a>
+															</li>
+															<li>
+																<a href="#carteira_todas" role="tab" data-toggle="tab" aria-expanded="false">Todas</a>
+															</li>
+														</ul>
+
+														<div class="row">
+															<div class="col-md-12 card_search">
+																<div class="movsearch">
+																	<div class="ccontent_no_bottom">
+																		<div class="form-group label-floating has-normal">
+																			<label class="control-label">Pesquisar</label>
+																			<input type="text" class="form-control">
+																			<p class="text-right"><a style="cursor:pointer;" id="toggle_search_advanced"><span>
+																				<i class="material-icons">search</i> Pesquisa Avançada
+																			</span></a></p>
+																		</div>
+																	</div>
+																</div>
+																<div class="movsearch_advanced" id="search_advanced">
+																	<div class="ccontent_no_top">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-5 col-xs-12">
+																				<select class="form-control" value="Vas">
+																					<option selected disabled>Estado</option>
+																					<option>Todos</option>
+																					<option>Processado</option>
+																					<option>Lançamento executado</option>
+																					<option>Pendente de autorização</option>
+																					<option>Extornado</option>
+																				</select>
+																			</div>
+																			<div class="col-md-4 col-sm-4 col-xs-12">
+																				<select class="form-control" value="Vas">
+																					<option selected disabled>Tipo de documento</option>
+																					<option>Todos</option>
+																					<option>Fatura</option>
+																					<option>Nota de Lançamento</option>
+																				</select>
+																			</div>
+																			<div class="col-md-4 col-sm-3 col-xs-12">
+																				<div class="form-group">
+																						<input type="text" value="" placeholder="Montante (€)" class="form-control" />
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<table class="table carteiracreditos" id="carteiracreditos">
+																<thead>
+																		<tr>
+																				<th>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</th>
+																				<th>Nº<span class="hidden-xs"> do documento</span></th>
+																				<th>Tipo</th>
+																				<th>Devedor</th>
+																				<th class="text-right">Valor</th>
+																				<th class="text-right hidden-xs">Aberto</th>
+																				<th class="text-right hidden-xs hidden-sm">DAV</th>
+																				<th class="text-center">Estado</th>
+																		</tr>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions text-right">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Lançamento executado">
+																								<i class="fa fa-chevron-circle-up information"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Processado">
+																								<i class="fa fa-check-circle success"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Extornado">
+																								<i class="fa fa-times-circle danger"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Processado">
+																								<i class="fa fa-check-circle success"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Lançamento executado">
+																								<i class="fa fa-chevron-circle-up information"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Pendente de autorização">
+																								<i class="fa fa-exclamation-circle warning"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Extornado">
+																								<i class="fa fa-times-circle danger"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>123456789</td>
+																				<td>Fatura</td>
+																				<td>José Exemplo</td>
+																				<td class="text-right">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																				<td class="text-right hidden-xs hidden-sm">&euro; 2.000,00</td>
+																				<td class="td-actions">
+																						<ul class="list-unstyled"><li rel="tooltip" title="Pendente de autorização">
+																								<i class="fa fa-exclamation-circle warning"></i>
+																						</li></ul>
+																				</td>
+																		</tr>
+																</tbody>
+														</table>
+														<a href="#"><p class="loadmore text-center">Ver mais movimentos <i class="fa fa-chevron-down"></i></p></a>
+														<hr>
+														<div class="actions">
+															<ul class="list-inline">
+															<li><button type="button" class="btn btn-primary">Exportar movimentos</button></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</div>
 
 									<div class="tab-pane fade in" id="carteiracreditos">
