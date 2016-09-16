@@ -1219,6 +1219,23 @@ text-align: right;
 .accountlist_accounts .card p {
       margin: 0px;
 }
+.accountlist_accounts .card i {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top:5px;
+}
+.accountlist_accounts .subaccount {
+  margin-top: 0px;
+  color: #888;
+  font-size: 13px;
+  font-weight: 300;
+  margin-left:0px;
+}
+.accountlist_accounts .subaccount .subaccount_number {
+  margin-top: 0px;
+  color: #888;
+  font-weight: 300;
+}
 
 .accountlist_accounts .card-primary {
     border-left: 4px solid #d1005d;
@@ -2163,6 +2180,24 @@ text-transform: uppercase;
   }
   .consolidacao .moeda2 {
     font-size: 10px;
+  }
+}
+
+.page-overlay {
+    position:absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(255, 255, 255, 0.85);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
+    z-index:1000;
+    color:white;
+}
+@media (max-width:1024px){
+  .page-overlay {
+    left:0;
   }
 }
 

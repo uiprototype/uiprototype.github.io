@@ -82,8 +82,8 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">account_balance_wallet</i> Contas <i class="material-icons">arrow_drop_down</i></a>
 				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
 					<li><a href="#">Visão Global</a></li>
-					<li class="active"><a href="contasaordem.html">Contas à Ordem</a></li>
-					<li><a href="#">Cartões de Crédito</a></li>
+					<li><a href="contasaordem.html">Contas à Ordem</a></li>
+					<li class="active"><a href="cartoescredito.html">Cartões de Crédito</a></li>
 					<li><a href="#">Cartões Pré-Pagos</a></li>
 					<li><a href="#">Crédito e Garantias</a></li>
 					<li><a href="#">Aplicações</a></li>
@@ -143,7 +143,7 @@
 	</div>
 
 	<div class="navbar navbar-small navbar-fixed-top hidden-md hidden-lg">
-		<img src="assets/img/logo.png"/ class="logo">
+		<img src="assets/img/logo.png" class="logo">
 		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -211,12 +211,13 @@
 		</div>
 	</div>
 
+
 	<div class="container-fluid">
 
 		<!-- PAGE HEADER -->
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<h2>Contas à Ordem</h2>
+				<h2>Cartões de Crédito</h2>
 				<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 					aliqua.</p>
 				</div>
@@ -225,15 +226,205 @@
 			<div class="row">
 				<div class="col-lg-12">
 
+					<!-- ACCOUNT SELECTOR -->
+					<div class="accountselector_title">
+						<button type="button" class="btn btn-primary btn-simple">Conta controlo</button>
+					</div>
+					<div class="accountselector" id="accountselector">
+						<div class="panel panel-default panel-horizontal">
+							<div class="panel-body">
+								<div class="card hidden-md hidden-lg text-center">
+									<button class="btn btn-primary" data-toggle="modal" data-target="#accountselector_mobile">Escolher conta</button>
+									<p>Lorem ipsum dolor sit amet et dolor ipsum sit consecteur...</p>
+								</div>
+								<div class="row hidden-xs hidden-sm">
+									<div class="col-md-3 nopad-left">
+										<div class="card card-blue">
+											<h4>Conta à Ordem 1</h4>
+											<p class="number">213342905</p>
+											<p class="saldo text-right">1.550,00 <span>EUR</span></p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<a id="cardexample_1" style="cursor:pointer;"><div class="card card-green">
+											<h4>Conta à Ordem 2</h4>
+											<p class="number">900657891</p>
+											<p class="saldo text-right">2.000,00 <span>EUR</span></p>
+										</div></a>
+									</div>
+									<div class="col-md-3">
+										<div class="card card-yellow">
+											<h4>Conta Fornecedores</h4>
+											<p class="number">214567092</p>
+											<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+										</div>
+									</div>
+									<div class="col-md-3 nopad-right">
+										<div class="card card-yellow">
+											<h4>Conta Fornecedores</h4>
+											<p class="number">214567092</p>
+											<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer text-center hidden-sm hidden-xs">
+								<a id="plus" style="cursor:pointer;">
+									<i class="fa fa-plus"></i><br>
+									<span>CONTAS</span>
+								</a>
+								<a id="cancel" style="cursor:pointer;">
+									<i class="fa fa-times"></i><br>
+									<span>CANCELAR</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="accountselector_selected" id="accountselector_selected">
+						<div class="panel panel-default panel-horizontal">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="card card-green">
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-xs-7">
+													<h4>Conta à Ordem 2</h4>
+													<p class="number">900657891</p>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-5">
+													<div class="col-md-6 col-sm-6 text-right">
+														<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+														<p class="saldo">2.000,00 <span>EUR</span></p>
+													</div>
+													<div class="col-md-6 col-sm-6 hidden-xs text-right">
+														<span>SALDO AUTORIZADO</span>
+														<p class="saldo">2.000,00 <span>EUR</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer text-center hidden-sm hidden-xs">
+								<a id="change" style="cursor:pointer;">
+									<i class="fa fa-refresh"></i><br>
+									<span>ALTERAR  </span>
+								</a>
+							</div>
+						</div>
+						<p class="text-right hidden-md hidden-lg">
+							<button class="btn btn-link" data-toggle="modal" data-target="#accountselector_mobile"><i class="fa fa-refresh"></i> Alterar conta</button>
+						</p>
+					</div>
+					<div class="accountselector_dropdown" id="accountselector_dropdown">
+						<div class="panel panel-default panel-horizontal">
+							<div class="panel-body">
+								<div class="scrollable">
+									<div class="card card-blue">
+										<div class="row">
+											<div class="col-md-4">
+												<h4>Conta à Ordem 1</h4>
+												<p class="number">213342905</p>
+											</div>
+											<div class="col-md-8 text-right">
+												<div class="col-md-6">
+													<span>SALDO CONTABILÍSTICO</span>
+													<p class="saldo">1.550,00 <span>EUR</span></p>
+												</div>
+												<div class="col-md-6">
+													<span>SALDO AUTORIZADO</span>
+													<p class="saldo">1.550,00 <span>EUR</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a id="cardexample_2" style="cursor:pointer;"><div class="card card-green">
+										<div class="row">
+											<div class="col-md-4">
+												<h4>Conta à Ordem 2</h4>
+												<p class="number">900657891</p>
+											</div>
+											<div class="col-md-8 text-right">
+												<div class="col-md-6">
+													<span>SALDO CONTABILÍSTICO</span>
+													<p class="saldo">2.000,00 <span>EUR</span></p>
+												</div>
+												<div class="col-md-6">
+													<span>SALDO AUTORIZADO</span>
+													<p class="saldo">2.000,00 <span>EUR</span></p>
+												</div>
+											</div>
+										</div>
+									</div></a>
+									<div class="card card-yellow">
+										<div class="row">
+											<div class="col-md-4">
+												<h4>Conta Fornecedores</h4>
+												<p class="number">214567092</p>
+											</div>
+											<div class="col-md-8 text-right">
+												<div class="col-md-6">
+													<span>SALDO CONTABILÍSTICO</span>
+													<p class="saldo">12.800,00 <span>EUR</span></p>
+												</div>
+												<div class="col-md-6">
+													<span>SALDO AUTORIZADO</span>
+													<p class="saldo">12.800,00 <span>EUR</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card card-primary">
+										<div class="row">
+											<div class="col-md-4">
+												<h4>Conta à Ordem 3</h4>
+												<p class="number">950242905</p>
+											</div>
+											<div class="col-md-8 text-right">
+												<div class="col-md-6">
+													<span>SALDO CONTABILÍSTICO</span>
+													<p class="saldo">550,00 <span>EUR</span></p>
+												</div>
+												<div class="col-md-6">
+													<span>SALDO AUTORIZADO</span>
+													<p class="saldo">550,00 <span>EUR</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card card-default">
+										<div class="row">
+											<div class="col-md-4">
+												<h4>Conta Estado</h4>
+												<p class="number">670901241</p>
+											</div>
+											<div class="col-md-8 text-right">
+												<div class="col-md-6">
+													<span>SALDO CONTABILÍSTICO</span>
+													<p class="saldo">2.100,00 <span>EUR</span></p>
+												</div>
+												<div class="col-md-6">
+													<span>SALDO AUTORIZADO</span>
+													<p class="saldo">2.100,00 <span>EUR</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<!-- TABS -->
 					<div class="card card-plain">
 						<div class="header">
 							<div class="nav-tabs-navigation">
 								<div class="nav-tabs-wrapper">
 									<ul class="nav nav-tabs" data-tabs="tabs">
-										<li class="active"><a href="#listacontas" data-toggle="tab">Lista de Contas</a></li>
-										<li><a href="#pag_baixovalor" data-toggle="tab">Pagamentos de Baixo Valor</a></li>
-										<li><a href="#fechotpas" data-toggle="tab">Fecho TPAS</a></li>
+										<li class="active"><a href="#listacontas" data-toggle="tab">Lista de cartões</a></li>
+										<li><a href="#pag_baixovalor" data-toggle="tab">Extratos digitais</a></li>
+										<li><a href="#fechotpas" data-toggle="tab">Ajustar limites de cartões</a></li>
 									</ul>
 								</div>
 							</div>
@@ -247,31 +438,14 @@
 								<div class="tab-pane active" id="listacontas">
 
 									<div class="accountlist_header">
-										<div class="row">
-											<div class="col-md-3 col-xs-12 col-sm-12 accounts">
-													<span>6</span> Contas
-											</div>
-											<div class="col-md-9 hidden-xs hidden-sm infos">
-												<div class="row text-right">
-														<div class="col-md-1 totais">Totais</div>
-														<div class="col-md-4"><span class="valores">10.250.853,00</span> <span class="moeda">EUR</span><p>Contabilístico</p></div>
-														<div class="col-md-4"><span class="valores">10.500.000,00</span> <span class="moeda">EUR</span><p>Limite</p></div>
-														<div class="col-md-3 accounts"><button class="btn btn-default">Editar lista</button></div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-12 hidden-md hidden-lg infos">
-												<hr>
-												<div class="row">
-													<div class="col-xs-2 totais">Totais</div>
-													<div class="col-xs-5 text-right">
-														<span class="valores">10.250.853,00</span> <span class="moeda">EUR</span><p>Contabilístico</p>
-													</div>
-													<div class="col-xs-5 text-right">
-														<span class="valores">10.500.000,00</span> <span class="moeda">EUR</span><p>Limite</p>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="row">
+															<div class="col-md-5 col-xs-6 col-sm-4 accounts">
+																	<span>4</span> Cartões
+															</div>
+															<div class="col-md-7 col-sm-8 col-xs-6 accounts text-right">
+																<button class="btn btn-default">Editar lista</button>
+															</div>
+														</div>
 									</div>
 
 									<div class="accountlist_search card">
@@ -286,26 +460,18 @@
 
 												<div class="col-md-7 col-xs-12 col-sm-12">
 													<div class="row">
-															<div class="col-md-4 col-xs-7 col-sm-4">
+															<div class="col-md-5 col-xs-12 col-sm-4">
 																<select class="form-control" value="Vas">
-																	<option>Mais recentes</option>
-																	<option>Mais utilizadas</option>
-																	<option>Saldo (maior)</option>
-																	<option>Saldo (menor)</option>
-																</select>
-															</div>
-															<div class="col-md-2 col-xs-5 col-sm-3">
-																<select class="form-control" value="Vas">
-																	<option>EUR</option>
-																	<option>USD</option>
-																	<option>GBP</option>
-																	<option>JPY</option>
+																	<option disabled selected>Tipo de cartão</option>
+																	<option>VISA</option>
+																	<option>AMEX</option>
+																	<option>Gémeos</option>
 																</select>
 															</div>
 															<div class="col-md-3 hidden-xs col-sm-2 text-right">
 																<button id="togglecolor" class="btn btn-default"><i class="material-icons">color_lens</i> Cor</button>
 															</div>
-															<div class="col-md-3 hidden-xs col-sm-2">
+															<div class="col-md-4 hidden-xs col-sm-2">
 																<button type="button" id="togglegrid" class="btn btn-default"><i class="material-icons">apps</i> Grelha</button>
 																<button type="button" id="togglelist" class="btn btn-default"><i class="material-icons">list</i> Lista</button>
 															</div>
@@ -320,18 +486,19 @@
 												<div class="col-md-12">
 													<a href="detalheconta.html"><div class="card card-green">
 														<div class="row">
-															<div class="col-md-4 col-sm-4 col-xs-6">
-																<h4>Conta à Ordem 1</h4>
-																<p class="number">900657891</p>
+															<div class="col-md-5 col-sm-4 col-xs-6">
+																<span class="subaccount">CONTA GESTÃO <span class="subaccount_number">123456789</span></span>
+																<h4>José Exemplo</h4>
+																<p class="number"><i class="fa fa-cc-visa"></i> * 0104</p>
 															</div>
-															<div class="col-md-8 col-sm-8 col-xs-6">
+															<div class="col-md-7 col-sm-8 col-xs-6">
 																<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-																	<span class="hidden-xs">SALDO</span> <span>CONTABILÍSTICO</span>
+																	<span>SALDO</span>
 																	<p class="saldo">2.000,00 <span>EUR</span></p>
 																</div>
 																<div class="col-md-6 col-sm-6 hidden-xs text-right">
-																	<span>SALDO AUTORIZADO</span>
-																	<p class="saldo">2.000,00 <span>EUR</span></p>
+																	<span>LIMITE</span>
+																	<p class="saldo">3.000,00 <span>EUR</span></p>
 																</div>
 															</div>
 														</div>
