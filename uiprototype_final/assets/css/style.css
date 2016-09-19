@@ -2723,3 +2723,9 @@ div.cc_calendar div.legend span.badge {
     color: #fff;
   }
 }
+
+@media (min-width:768px){
+  #alertas_card, #favoritos_card, #beneficiarios_card {
+    min-height: 332px;
+  }
+}
