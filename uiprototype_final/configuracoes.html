@@ -77,7 +77,7 @@
 					<li><a href="#">Transferência Lorem Ipsum</a></li>
 				</ul>
 			</li>
-			<li class="active"><a href="index.html"><i class="material-icons">dashboard</i> Centro de Controlo</a></li>
+			<li><a href="index.html"><i class="material-icons">dashboard</i> Centro de Controlo</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">account_balance_wallet</i> Contas <i class="material-icons">arrow_drop_down</i></a>
 				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
@@ -195,7 +195,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Agenda</a></li>
-							<li><a href="configuracoes.html">Configurações</a></li>
+							<li class="active"><a href="configuracoes.html">Configurações</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Configurações</a></li>
 						</ul>
@@ -217,7 +217,7 @@
 									<div class="page-header">
 										<div class="row">
 											<div class="col-md-8 col-sm-8 col-xs-12">
-												<h2>Centro de Controlo</h2>
+												<h2>Configurações</h2>
 												<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 													aliqua.</p>
 											</div>
@@ -235,37 +235,116 @@
 									<!-- NAV TABS -->
 									<div>
 										<ul class="nav nav-tabs nav-tabs-cc" role="tablist">
-											<li role="presentation" class="active"><a href="#inicio" aria-controls="inicio" role="tab" data-toggle="tab">Início</a></li>
-											<li role="presentation"><a href="#movimentos" aria-controls="movimentos" role="tab" data-toggle="tab">Movimentos</a></li>
-											<li role="presentation"><a href="#pendentes" aria-controls="pendentes" role="tab" data-toggle="tab">Pendentes</a></li>
-											<li role="presentation"><a href="#historico" aria-controls="historico" role="tab" data-toggle="tab">Histórico</a></li>
+											<li role="presentation" class="active"><a href="#perfil" aria-controls="perfil" role="tab" data-toggle="tab">O meu perfil</a></li>
+											<li role="presentation"><a href="#empresa" aria-controls="empresa" role="tab" data-toggle="tab">Perfil da Empresa</a></li>
+											<li role="presentation"><a href="#alertas" aria-controls="alertas" role="tab" data-toggle="tab">Alertas</a></li>
+											<li role="presentation"><a href="#beneficiarios" aria-controls="beneficiarios" role="tab" data-toggle="tab">Beneficiários</a></li>
 										</ul>
 
 										<!-- NAV TABS CONTENT -->
 										<div class="tab-content">
-											<div role="tabpanel" class="tab-pane fade in active" id="inicio">
-												<div class="card user-welcome">
-													<div class="row">
-														<div class="col-md-1 col-sm-3 col-xs-3">
-															<a href="#"><center><img src="assets/img/jdavatar.png" class="img-circle user-initials"/></center></a>
+											<div role="tabpanel" class="tab-pane fade in active" id="perfil">
+												<div class="row">
+													<div class="col-md-5 col-sm-6 col-xs-12">
+														<div class="card user-details">
+															<div class="row">
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																	<center><img src="assets/img/jdavatar.png" class="img-circle user-initials"/></center>
+																</div>
+																<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+																	<h5 class="user-name">John Doe</h5>
+																	<span class="user-type">Autorizador</span>
+																</div>
+															</div>
+															<hr>
+															<div class="row">
+																<div class="col-md-12">
+																	<div class="detail">
+																		<p class="user-title">Email</p>
+																		<p class="user-info">johndoe@loremipsum.com <a href="#">editar</a></p>
+																	</div>
+																	<div class="detail">
+																		<p class="user-title">Telemóvel</p>
+																		<p class="user-info">912338876 <a href="#">editar</a></p>
+																		<p class="user-info"><a href="#">Associar telemóvel ao SAFe</a></p>
+																	</div>
+																</div>
+															</div>
+															<hr>
+															<div class="row">
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																		<img src="assets/img/jdavatar.png" class="img-circle user-badges"/>
+																		<span class="user-badge-info">Cliente Aplauso</span>
+																</div>
+																<div class="col-md-12 col-sm-12 col-xs-12">
+																		<img src="assets/img/jdavatar.png" class="img-circle user-badges"/>
+																		<span class="user-badge-info">Cliente desde 1989</span>
+																</div>
+															</div>
 														</div>
-														<div class="col-md-5 col-sm-9 col-xs-9">
-															<span class="user-name">John Doe</span>
-															<a href="#"><small><strong>EMPRESA LOREM IPSUM, LDA</strong></small></a>
-															<small class="grey"><strong>Último acesso ontem às 22:39.</strong></small>
+													</div>
+													<div class="col-md-7 col-sm-6 col-xs-12">
+														<div class="card user-access">
+																<div class="row card-header">
+																	<div class="col-md-12 col-xs-12 col-sm-12">
+																		<h4>Acessos pessoais</h4>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-md-6 col-xs-12 col-sm-6">
+																		<div class="detail">
+																			<p class="user-title">Código de Utilizador</p>
+																			<p class="user-info">DJCF8890 <a href="#">alterar</a></p>
+																		</div>
+																	</div>
+																	<div class="col-md-6 col-xs-12 col-sm-6">
+																		<div class="detail">
+																			<p class="user-title">Código Multicanal</p>
+																			<p class="user-info">******* <a href="#">alterar</a></p>
+																		</div>
+																	</div>
+																	<div class="col-md-6 col-xs-12 col-sm-6">
+																		<div class="detail">
+																			<p class="user-title">Data de criação</p>
+																			<p class="user-info">05/01/2001</p>
+																		</div>
+																	</div>
+																	<div class="col-md-6 col-xs-12 col-sm-6">
+																		<div class="detail">
+																			<p class="user-title">Tipo de assinatura</p>
+																			<p class="user-info">B</p>
+																		</div>
+																	</div>
+																</div>
+																<hr>
+																<div class="row">
+																	<div class="col-xs-12 col-sm-12 col-md-12 text-right">
+																		<div class="detail">
+																			<span class="last-access-info">Último acesso ontem às 22:39.</span>
+																			<span class="last-access-device"><i class="fa fa-mobile"></i> MOBILE</span>
+																		</div>
+																	</div>
+																</div>
 														</div>
-														<div class="col-md-3 hidden-sm hidden-xs">
-																<span class="gestor-label">GESTOR</strong></span>
-																<span class="gestor-name">José Exemplo</span>
-																<a href="#"><small><strong>CONTACTAR GESTOR</strong></small></a>
-														</div>
-														<div class="col-md-3 col-sm-12 text-right col-xs-12">
-															<hr class="hidden-md hidden-lg">
-															<button class="btn btn-simple btn-primary hidden-md hidden-lg" type="button">Contactar Gestor</button>
-															<button class="btn btn-primary" type="button">M Contacto</button>
+														<div class="card user-options">
+																<div class="row">
+																	<a href="#"><div class="col-md-4 col-sm-4 col-xs-4 text-center">
+																		<i class="material-icons">settings</i>
+																		<p>Gestão de Contas</p>
+																	</div></a>
+																	<a href="#"><div class="col-md-4 col-sm-4 col-xs-4 text-center">
+																		<i class="material-icons">security</i>
+																		<p><span class="hidden-xs">Novo </span>Certificado Digital</p>
+																	</div></a>
+																	<a href="#"><div class="col-md-4 col-sm-4 col-xs-4 text-center">
+																		<i class="material-icons">smartphone</i>
+																		<p>App M Empresas</p>
+																	</div></a>
+																</div>
 														</div>
 													</div>
 												</div>
+
 												<div class="row">
 													<div class="col-md-7 col-sm-7 col-xs-12">
 														<div class="card ccultimasop">

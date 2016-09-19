@@ -225,7 +225,7 @@
   font-size: 18px;
   line-height: 20px;
   height:51px;
-  background-color: #d1005d;
+  background: linear-gradient(60deg, #d1005d, #c1105f);
 }
 
 .navmenu-default,

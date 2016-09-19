@@ -660,6 +660,12 @@ text-align: right;
     font-size: 23px;
 } */
 
+.no-pad-left{
+  padding-left:0px;
+}
+.no-pad-right {
+  padding-right:0px;
+}
 
 /* ACCOUNT SELECTOR */
 .accountselector_title {
@@ -2581,4 +2587,139 @@ div.cc_calendar div.legend span.badge {
   font-size: 12px !important;
   vertical-align: top;
   margin-left: 5px;
+}
+
+/* CONFIGURAÇOES */
+/*O meu Perfil*/
+
+/* USER details */
+.user-details {
+  padding: 15px;
+  vertical-align: middle;
+  height: 453px;
+}
+.user-details .user-initials {
+  width: 60px;
+  height: 60px;
+}
+.user-details .user-badges {
+  width: 35px;
+  height: 35px;
+  margin: 5px 8px 5px 0px;
+}
+.user-details .user-badge-info {
+  font-size: 12px;
+  font-weight: 400;
+}
+.user-details .user-name {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.user-details .user-type {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+.user-details .detail {
+  padding: 10px 0px;
+}
+.user-details .user-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+.user-details .user-info {
+  font-size: 14px;
+  font-weight: 300;
+}
+.user-details p {
+  margin:0;
+  padding:0;
+}
+@media(max-width:1024px){
+  .user-details {
+    height: 448px;
+  }
+  .user-details .user-badges {
+    margin: 5px 5px 5px 0px;
+  }
+}
+@media(max-width:767px){
+  .user-details .user-badges {
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 0px;
+  }
+}
+
+/*USER access*/
+.user-access {
+  padding: 15px;
+}
+.user-access .detail {
+  padding: 10px 0px;
+}
+.user-access .user-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+.user-access .user-info {
+  font-size: 14px;
+  font-weight: 300;
+}
+.user-access p {
+  margin:0;
+  padding:0;
+}
+.user-access .last-access-info {
+  font-size: 13px;
+  color: #888;
+  display:block;
+}
+.user-access .last-access-device {
+  font-size: 12px;
+  color: #888;
+  font-weight: 400;
+}
+
+.user-options {
+  padding: 15px;
+  background: linear-gradient(60deg, #d1005d, #c1105f);
+}
+.user-options i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.user-options .linktitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+.user-options a {
+  color: rgba(255,255,255,0.8);
+  transition: all .2s;
+}
+.user-options a:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background: rgba(255,255,255,0.5);
+}
+@media (max-width:360px){
+  .user-options p {
+    font-size: 10px;
+    line-height: normal;
+    color: #fff;
+  }
+  .user-options i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+}
+@media (max-width: 1024px){
+  .user-options p {
+    color: #fff;
+  }
+  .user-options i {
+    color: #fff;
+  }
 }
