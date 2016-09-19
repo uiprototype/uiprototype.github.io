@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/micon.png">
+	<link rel="icon" type="image/png" href="assets/img/micon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>UI Prototype</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/jasny-bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/material-kit.css" rel="stylesheet"/>
+	<link href="assets/css/style.css" rel="stylesheet"/>
+	<link href="assets/css/navmenu.css" rel="stylesheet"/>
+</head>
+
+
+<body>
+
+	<!-- NAVMENU, NAVBAR LARGE & NAVBAR SMALL -->
+	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" style="">
+		<div class="navmenu-brand">
+			<img src="assets/img/logo.png"/ class="logo">
+			<button type="button" class="navbar-toggle2 hidden-md hidden-lg" data-toggle="offcanvas" data-target=".navmenu">
+				<i class="material-icons">close</i>
+			</button>
+		</div>
+		<div class="row navmenu-acessorapido hidden-md hidden-lg hidden-sm hidden-xs">
+				<div class="col-md-4 text-center">
+					<div class="circle"><i class="material-icons">credit_card</i></div>
+					<p>Transferências Nacionais</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="circle"><i class="material-icons">language</i></div>
+					<p>Transferências Internacionais</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="circle"><i class="material-icons">credit_card</i></div>
+					<p>Pagamento de Serviços</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="circle"><i class="material-icons">note_add</i></div>
+					<p>Novo Ficheiros</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="circle"><i class="material-icons">attach_money</i></div>
+					<p>Pagamento TSU</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="circle-add"><i class="material-icons">add</i></div>
+				</div>
+				<div class="col-md-6 bottom">
+					<ul class="list-inline">
+						<li><i class="material-icons" style="color: rgba(255,255,255,0.8);">lens</i></li>
+						<li><i class="material-icons">lens</i></li>
+						<li><i class="material-icons">lens</i></li>
+					</ul>
+				</div>
+				<div class="col-md-6 bottom2 text-right">
+					<ul class="list-inline">
+						<li><i class="material-icons">settings</i></li>
+					</ul>
+				</div>
+		</div>
+		<hr>
+		<ul class="nav navmenu-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">favorite</i> Favoritos <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Pagamento Salários</a></li>
+					<li><a href="#">Pagamento Fornecedor Lisboa</a></li>
+					<li><a href="#">Transferência Lorem Ipsum</a></li>
+				</ul>
+			</li>
+			<li><a href="index.html"><i class="material-icons">dashboard</i> Centro de Controlo</a></li>
+			<li class="dropdown active">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">account_balance_wallet</i> Contas <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Visão Global</a></li>
+					<li><a href="contasaordem.html">Contas à Ordem</a></li>
+					<li class="active"><a href="cartoescredito.html">Cartões de Crédito</a></li>
+					<li><a href="#">Cartões Pré-Pagos</a></li>
+					<li><a href="#">Crédito e Garantias</a></li>
+					<li><a href="#">Aplicações</a></li>
+					<li><a href="#">Seguros</a></li>
+					<li><a href="#">Cheques</a></li>
+					<li><a href="#">Gestão de Cheques para Depósito</a></li>
+					<li><a href="#">Consulta de Movimentos</a></li>
+					<li><a href="#">Documentos em Formato Digital</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">payment</i> Pagamentos <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="transferencias.html">Transferências</a></li>
+					<li><a href="servicosmb.html">Serviços Multibanco</a></li>
+					<li><a href="#">Débitos Directos</a></li>
+					<li><a href="#">Estado</a></li>
+					<li><a href="#">Faturação Electrónica</a></li>
+					<li><a href="#">Pedido de Numerário</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">attach_money</i> Cobranças <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Débitos Directos</a></li>
+					<li><a href="#">Outras Cobranças</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">language</i> Internacional <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Transferências</a></li>
+					<li><a href="#">Cash Management</a></li>
+					<li><a href="#">Operações Documentárias</a></li>
+					<li><a href="#">Operações Cambiais</a></li>
+					<li><a href="#">Cheques</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">card_travel</i> Factoring <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Nova Operação</a></li>
+					<li><a href="factoring_contratos.html">Contratos</a></li>
+					<li><a href="#">Pagamento de Faturas</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">store</i> Confirming <i class="material-icons">arrow_drop_down</i></a>
+				<ul class="dropdown-menu navmenu-nav navmenu-dropdown">
+					<li><a href="#">Nova Operação</a></li>
+					<li><a href="#">Área de Compradores</a></li>
+					<li><a href="#">Área de Fornecedores</a></li>
+				</ul>
+			</li>
+			<li><a href="transferencias.html"><i class="material-icons">insert_drive_file</i> Gestão de Ficheiros</a></li>
+		</ul>
+	</div>
+
+	<div class="navbar navbar-small navbar-fixed-top hidden-md hidden-lg">
+		<img src="assets/img/logo.png"/ class="logo">
+		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<ul class="list-inline action-area">
+			<li><a href="#"><i class="material-icons">notifications</i></a></li>
+			<li><a href="#"><i class="material-icons">chat_bubble</i></a></li>
+			<li><a href="#"><i class="material-icons">account_circle</i></a></li>
+			<li><a href="#" data-toggle="collapse" href="#search" id="search_icon"><i class="material-icons">search</i></a></li>
+		</ul>
+		<div id="navbar-small_search">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+								<div class="form-group">
+										<input type="text" class="form-control" placeholder="Pesquisar...">
+								</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="navbar navbar-large navbar-fixed-top hidden-xs hidden-sm">
+		<div class="row">
+			<div class="col-md-5 search-area">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="material-icons">search</i>
+					</span>
+					<input type="text" class="form-control" placeholder="Pesquisar..." class="navbar-white-search">
+				</div>
+			</div>
+			<div class="col-md-7">
+				<ul class="list-inline action-area">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empresa Lorem Ipsum, Lda <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Empresa ABCD</a></li>
+							<li><a href="#">John Doe Store</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="material-icons">notifications</i></a></li>
+					<li><a href="#"><i class="material-icons">chat_bubble</i></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="material-icons">account_circle</i> <span class="hidden-sm">John Doe</span> <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Agenda</a></li>
+							<li><a href="#">Perfil</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Configurações</a></li>
+						</ul>
+					</li>
+					<li style="color:#ccc;">|</li>
+					<li>
+							<a href="#pablo">
+								<i class="material-icons">exit_to_app</i>
+							</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+
+						<div class="account_header">
+							<div class="card card-primary">
+								<div class="row">
+									<div class="col-md-4 col-sm-6 col-xs-6">
+										<span class="type">CARTÃO DE CRÉDITO</span>
+										<h4>José Exemplo</h4>
+										<p class="number"><i class="fa fa-cc-visa"></i> * 0104</p>
+										<a href="#" class="maisinfo hidden-sm hidden-md hidden-lg">Mais info</a>
+									</div>
+									<div class="col-md-8 hidden-xs col-sm-6 text-right">
+										<button class="btn btn-default btn-sm beneficiario"><i class="material-icons">recent_actors</i> Cash Advance</button>
+										<button class="btn btn-default btn-sm beneficiario"><i class="material-icons">av_timer</i> Alterar limite de crédito</button>
+									</div>
+									<div class="col-xs-6 hidden-md hidden-lg hidden-sm text-right">
+										<div class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">more_vert</i>
+											</a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Cash Advance</a></li>
+												<li><a href="#">Alterar limite de crédito</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-6 col-sm-5 hidden-xs">
+										<p class="accountiban"><b>CONTA DETALHE</b> 0987654321</p>
+										<p class="accountiban"><b>CONTA CONTROLO</b> 123456789098</p>
+									</div>
+									<div class="col-md-6 col-sm-7 text-right col-xs-12">
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<span class="saldo1">SALDO</span>
+												<span class="value1">12.000,00 <span class="moeda1">EUR</span></span>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<span class="saldo1">LIMITE</span>
+												<span class="value1">2.000,00 <span class="moeda1">EUR</span></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- TABS -->
+						<div class="card card-plain">
+							<div class="header">
+								<div class="nav-tabs-navigation">
+									<div class="nav-tabs-wrapper">
+										<ul class="nav nav-tabs" data-tabs="tabs">
+											<li class="active"><a href="#movimentos" data-toggle="tab">Movimentos</a></li>
+											<li><a href="#extratosdigitais" data-toggle="tab">Extratos Digitais</a></li>
+											<li><a href="#detalhes" data-toggle="tab">Detalhes</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- CONTENT -->
+							<div class="content">
+								<div class="tab-content">
+
+
+									<div class="tab-pane active" id="movimentos">
+										<div class="row">
+											<div class="col-md-12 col-sm-12 col-xs-12">
+												<div class="card movsearch">
+													<div class="ccontent">
+														<div class="form-group label-floating has-normal">
+															<label class="control-label">Pesquisar</label>
+															<input type="text" class="form-control">
+															<p class="text-right"><a href="#" id="toggle_search_advanced"><span>
+																<i class="material-icons">search</i> Pesquisa Avançada
+															</span></a></p>
+														</div>
+													</div>
+												</div>
+												<div class="card movsearch_advanced" id="search_advanced">
+													<div class="ccontent">
+														<div class="row">
+															<div class="col-md-5 col-sm-5 col-xs-5">
+																<div class="form-group">
+																		<input type="text" value="" placeholder="Descritivo" class="form-control" />
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4 col-xs-4">
+																<input class="datepicker form-control" type="text" value="Data de Lançamento" />
+																<script>
+																$('.datepicker').datepicker({
+																	weekStart:1
+																});
+																</script>
+															</div>
+															<div class="col-md-3 col-sm-3 col-xs-3">
+																<div class="form-group">
+																		<input type="text" value="" placeholder="Montante (€)" class="form-control" />
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="card movtable">
+													<div class="ccontent">
+
+														<table class="table">
+																<thead>
+																		<tr>
+																				<th>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</th>
+																				<th>Data Lançamento</th>
+																				<th class="hidden-xs hidden-sm">Data Valor</th>
+																				<th>Descrição</th>
+																				<th class="text-right">Montante</th>
+																				<th class="hidden-xs text-right">Saldo</th>
+																				<th class="hidden-xs"></th>
+																		</tr>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs">
+																						<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																								<i class="fa fa-file-o"></i>
+																						</button>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs">
+																						<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																								<i class="fa fa-file-o"></i>
+																						</button>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs">
+																						<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																								<i class="fa fa-file-o"></i>
+																						</button>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs"></td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs"></td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs">
+																						<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																								<i class="fa fa-file-o"></i>
+																						</button>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs"></td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs">
+																						<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																								<i class="fa fa-file-o"></i>
+																						</button>
+																				</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>20/08/2016</td>
+																				<td class="hidden-xs hidden-sm">20/08/2016</td>
+																				<td>Lorem impsum dolor sit amet</td>
+																				<td class="text-right">&euro; 100,00</td>
+																				<td class="hidden-xs text-right">&euro; 2.000,00</td>
+																				<td class="td-actions text-right hidden-xs"></td>
+																		</tr>
+																</tbody>
+														</table>
+														<a href="#"><p class="loadmore text-center">Ver mais movimentos <i class="fa fa-chevron-down"></i></p></a>
+														<hr>
+														<div class="actions">
+															<ul class="list-inline">
+															<li><button type="button" class="btn btn-primary">Exportar notas de lançamento</button></li>
+															<li><button type="button" class="btn btn-primary">Exportar movimentos</button></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane active" id="extratosdigitais">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="card ccdocumentos_formatodigital">
+													<div class="row">
+														<div class="col-md-6 col-sm-12 col-xs-12">
+															<h4>Documentos em formato digital</h4>
+														</div>
+														<div class="col-md-2 col-sm-6 col-xs-12">
+															<span class="estado">Estado</span> <span class="estado_activo"><div class="circle_on"></div> ACTIVO</span>
+														</div>
+														<div class="col-md-4 col-sm-6 col-xs-12 text-right">
+															<button type="button" class="btn btn-primary">Cancelar subscrição do serviço</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<div class="card movtable">
+													<div class="ccontent">
+
+														<table class="table">
+																<thead>
+																		<tr>
+																				<th>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</th>
+																				<th>Descrição</th>
+																				<th class="text-right">Data</th>
+																		</tr>
+																</thead>
+																<tbody>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor, lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor, lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>Lorem ipsum dolor sit amet et consecteur dolor, lorem ipsum dolor sit amet et consecteur dolor</td>
+																				<td class="text-right">20/02/2016</td>
+																		</tr>
+																</tbody>
+														</table>
+														<a href="#"><p class="loadmore text-center">Ver mais extratos <i class="fa fa-chevron-down"></i></p></a>
+														<hr>
+														<div class="actions">
+															<ul class="list-inline">
+															<li><button type="button" class="btn btn-primary">Exportar extratos</button></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane" id="detalhes">
+												<div class="card ccdetalhes">
+													<div class="row">
+														<div class="col-md-4 col-xs-12 col-sm-12">
+															<span class="title1">Valor extratado</span>
+															<p class="info1">739,32 <span class="moeda1">EUR</span></p>
+														</div>
+														<div class="col-md-4 col-xs-12 col-sm-12">
+															<div class="space hidden-md hidden-lg"></div>
+															<span class="title1">Valor a pagar este mês</span>
+															<p class="info1">739,32 <span class="moeda1">EUR</span></p>
+														</div>
+														<div class="col-md-4 col-xs-12 col-sm-12">
+															<div class="space hidden-md hidden-lg"></div>
+															<span class="title1">Limite de crédito</span>
+															<p class="info1">800,00 <span class="moeda1">EUR</span></p>
+														</div>
+													</div>
+													<hr>
+													<div class="row">
+														<div class="col-md-6 col-xs-12 col-sm-12">
+															<span class="title2">Opção de pagamento</span>
+															<p class="info2">100%</p>
+														</div>
+														<div class="col-md-6 col-xs-12 col-sm-12">
+															<div class="space hidden-md hidden-lg"></div>
+															<span class="title2">Dias de Pagamento</span>
+															<p class="info2">21 dias</p>
+														</div>
+													</div>
+													<div class="space"></div>
+													<div class="row">
+														<div class="col-md-6 col-xs-12 col-sm-12">
+															<span class="title2">Conta à Ordem associada</span>
+															<p class="info2">Conta Lorem Ipsum Dolor</p>
+															<p class="info3">123456789</p>
+														</div>
+														<div class="col-md-6 col-xs-12">
+															<div class="space hidden-md hidden-lg"></div>
+															<span class="title2">Validade</span>
+															<p class="info2">20/08/2016</p>
+														</div>
+													</div>
+													<hr>
+													<div class="actions text-right">
+														<ul class="list-inline">
+														<li><button type="button" class="btn btn-primary">Exportar informações</button></li>
+														</ul>
+													</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm offcanvas-clone"></div>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/offcanvas.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+	<script>
+		$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+</html>
