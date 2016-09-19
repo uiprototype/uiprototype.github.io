@@ -1782,7 +1782,7 @@ margin: 0;
     font-size: 12px !important;
   }
 }
-@media (max-width: 767px) and (min-width:360px){
+@media (max-width: 767px) and (min-width:361px){
   .account_header .saldo1 {
     margin-top: 10px;
     font-size: 10px;
@@ -1805,7 +1805,7 @@ margin: 0;
         font-weight: 300;
   }
 }
-@media (max-width: 359px){
+@media (max-width: 360px){
   .account_header .card h4 {
         font-size: 16px;
         margin: 0px;
