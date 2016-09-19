@@ -1454,7 +1454,7 @@ text-align: right;
   position:relative;
 }
 #card-inactive-grid {
-  min-height: 207px;
+  min-height: 264px;
   background-color: rgba(255,255,255,0.4);
 }
 #card-inactive-list {
@@ -1462,8 +1462,15 @@ text-align: right;
 }
 @media (min-width:768px) and (max-width:1024px){
   #card-inactive-grid {
-    min-height: 243px;
+    min-height: 300px;
   }
+}
+.card-inactive-actions .btn {
+  padding: 8px 14px;
+}
+#card-inactive-grid .card-inactive-actions .btn {
+  padding: 8px 14px;
+  margin-bottom: 10px;
 }
 .accountgrid_accounts .card .card-disabled {
   background-color: #f0f0f0;
