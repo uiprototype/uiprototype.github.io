@@ -498,6 +498,11 @@ hr {
 }
 
 /* CC Notificações */
+@media (min-width:1025px){
+.ccnotificacoes {
+  min-height: 717px;
+  }
+}
 .ccnotificacoes .ccnotificacoes-not {
   margin-bottom: 10px;
 }
