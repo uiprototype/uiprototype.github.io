@@ -2594,10 +2594,13 @@ div.cc_calendar div.legend span.badge {
   margin-left: 5px;
 }
 
+/* ------------------------------------------ */
+
 /* CONFIGURAÇOES */
+
 /*O meu Perfil*/
 
-/* USER details */
+/* User details */
 .user-details {
   padding: 15px;
   vertical-align: middle;
@@ -2657,7 +2660,7 @@ div.cc_calendar div.legend span.badge {
   }
 }
 
-/*USER access*/
+/*User Access*/
 .user-access {
   padding: 15px;
 }
@@ -2732,5 +2735,97 @@ div.cc_calendar div.legend span.badge {
 @media (min-width:768px){
   #alertas_card, #favoritos_card, #beneficiarios_card {
     min-height: 332px;
+  }
+}
+
+/* Perfil da Empresa */
+
+/* Empresa details */
+.empresa-details {
+  padding: 15px;
+  vertical-align: middle;
+}
+.empresa-details .empresa-initials {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+}
+.empresa-details .empresa-name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.empresa-details .detail {
+  padding: 10px 0px;
+}
+.empresa-details .empresa-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+.empresa-details .empresa-info {
+  font-size: 14px;
+  font-weight: 300;
+}
+.empresa-details p {
+  margin:0;
+  padding:0;
+}
+
+/*Empresa Gestão utilizadores */
+.empresa-gestaousers {
+  padding: 15px;
+}
+.empresa-gestaousers .detail {
+  padding: 10px 10px;
+  border: 1px solid #f0f0f0;
+  margin: 5px 0px;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+.status {
+  height:5px;
+  width:5px;
+  border-radius:50%;
+  display: inline;
+  position: relative;
+  background-color: #fff;
+}
+.empresa-gestaousers .status > .status-online{
+  background-color: green;
+}
+.empresa-gestaousers .status > .status-offline{
+  background-color: #ccc;
+}
+.empresa-gestaousers .user-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+.empresa-gestaousers .user-info {
+  font-size: 14px;
+  font-weight: 300;
+}
+.empresa-gestaousers p {
+  margin:0;
+  padding:0;
+}
+.empresa-gestaousers .last-access-info {
+  font-size: 13px;
+  color: #888;
+  display:block;
+}
+.empresa-gestaousers .last-access-device {
+  font-size: 12px;
+  color: #888;
+  font-weight: 400;
+}
+.empresa-gestaousers i {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+@media (max-width: 360px){
+  #editar_empresa {
+    padding-top: 20px;
   }
 }
