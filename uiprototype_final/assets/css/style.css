@@ -1184,6 +1184,10 @@ text-align: right;
 .accountlist_accounts {
       padding: 0px;
 }
+.accountlist_accounts .col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 .accountlist_accounts a:hover {
       text-decoration: none;
