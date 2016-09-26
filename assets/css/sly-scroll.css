@@ -25,21 +25,6 @@
   display:none;
 }
 
-.scrollbar .handle {
-  width: 100px;
-  height: 100%;
-  background: #292a33;
-  cursor: pointer;
-}
-
-.scrollbar .handle .mousearea {
-  position: absolute;
-  top: -9px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-}
-
 
 /* Pages */
 
