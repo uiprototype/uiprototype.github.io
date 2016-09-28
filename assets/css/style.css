@@ -30,6 +30,87 @@ hr {
   }
 }
 
+.table .card {
+  padding: 10px;
+}
+.table .card .account-type {
+  font-weight: 400;
+  font-size: 10px;
+  color: #888;
+  display: block;
+}
+.table .card .account-name {
+  font-weight: 400;
+  font-size: 13px;
+}
+.table .card .account-number {
+  font-weight: 300;
+  font-size: 12px;
+  display:block;
+}
+.table .card-green {
+  border-left: 3px solid #2EDE5E;
+}
+.table .card-default {
+  border-left: 3px solid #ccc;
+}
+.info-row:hover {
+  background-color: #fafafa;
+}
+.accordian-body {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fafafa;
+}
+.accordian-content {
+  padding: 20px 20px 0px 20px;
+}
+.accordian-content hr {
+  margin:5px 0px 15px 0px !important;
+}
+.accordian-content .title-main {
+  font-weight: 500;
+  font-size: 10px;
+  display:block;
+}
+.accordian-content .title {
+  font-weight: 400;
+  font-size: 13px;
+  display:block;
+}
+.accordian-content .info {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.accordian-content .btn-default {
+    background-color: transparent;
+    color: #d1005d;
+    border: 2px solid #d1005d;
+}
+.accordian-content .btn-default:hover {
+  background-color: #d1005d;
+  color: #fff;
+}
+.accordian-content .btn {
+    font-size: 10px;
+    padding: 8px 8px;
+    border-radius: 50px;
+    box-shadow: none;
+    margin: 0px !important;
+    font-weight: 500;
+    width: 100%;
+}
+.accordian-content ul .list-unstyled li {
+  padding:0px;
+  margin:0px !important;
+}
+
+/* SPACES */
+.space-30 {
+  height: 30px;
+  position: relative;
+}
+
 @media (min-width: 1920px) {
   .container-fluid {
     padding: 0px 100px;
@@ -664,7 +745,6 @@ text-align: right;
 #search-input .glyphicon-search{
     font-size: 23px;
 } */
-
 .no-pad-left{
   padding-left:0px;
 }

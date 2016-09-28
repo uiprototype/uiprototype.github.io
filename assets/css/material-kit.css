@@ -1380,17 +1380,17 @@ output {
 }
 .form-control::-moz-placeholder,
 .form-group .form-control::-moz-placeholder {
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-control:-ms-input-placeholder,
 .form-group .form-control:-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-control::-webkit-input-placeholder,
 .form-group .form-control::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-control[readonly], .form-control[disabled], fieldset[disabled] .form-control,
@@ -1436,11 +1436,11 @@ output {
 }
 .form-group.is-focused label,
 .form-group.is-focused label.control-label {
-  color: #999;
+  color: #555;
 }
 .form-group.is-focused.label-placeholder label,
 .form-group.is-focused.label-placeholder label.control-label {
-  color: #AAAAAA;
+  color: #888;
 }
 .form-group.is-focused .help-block {
   display: block;
@@ -1473,7 +1473,7 @@ output {
 }
 .form-group.has-normal label.control-label,
 .form-group.has-normal .help-block {
-  color: #999;
+  color: #555;
 }
 .form-group.has-success .form-control {
   box-shadow: none;
@@ -1514,19 +1514,19 @@ output {
 .form-control::-moz-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-control:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-control::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 
@@ -1542,7 +1542,7 @@ label {
 label.control-label {
   font-size: 11px;
   line-height: 1.07143;
-  color: #AAAAAA;
+  color: #555;
   font-weight: 400;
   margin: 16px 0 0 0;
 }
@@ -1562,19 +1562,19 @@ label.control-label {
 .form-group .form-control::-moz-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group .form-control:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group .form-control::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.42857;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group .checkbox label,
@@ -1624,19 +1624,19 @@ label.control-label {
 .form-group.form-group-sm .form-control::-moz-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-sm .form-control:-ms-input-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-sm .form-control::-webkit-input-placeholder {
   font-size: 11px;
   line-height: 1.5;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-sm .checkbox label,
@@ -1686,19 +1686,19 @@ label.control-label {
 .form-group.form-group-lg .form-control::-moz-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-lg .form-control:-ms-input-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-lg .form-control::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 1.33333;
-  color: #AAAAAA;
+  color: #888;
   font-weight: 400;
 }
 .form-group.form-group-lg .checkbox label,

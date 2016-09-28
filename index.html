@@ -435,38 +435,186 @@
 											</div>
 											<div role="tabpanel" class="tab-pane" id="movimentos">
 
-															<div class="row">
-																<div class="col-md-12">
-																	<div class="card movsearch">
-																		<div class="ccontent">
-																			<div class="form-group label-floating has-normal">
-																				<label class="control-label">Pesquisar</label>
-																				<input type="text" class="form-control">
-																				<p class="text-right"><a href="#" id="toggle_search_advanced"><span>
-																					<i class="material-icons">search</i> Pesquisa Avançada
-																				</span></a></p>
+															<!-- account selectors -->
+
+															<div class="accountselector" id="accountselector">
+																<div class="panel panel-default panel-horizontal">
+																	<div class="panel-body">
+																		<div class="card hidden-md hidden-lg text-center">
+																			<button class="btn btn-primary" data-toggle="modal" data-target="#accountselector_mobile">Escolher conta</button>
+																			<p>Lorem ipsum dolor sit amet et dolor ipsum sit consecteur...</p>
+																		</div>
+																		<div class="row hidden-xs hidden-sm">
+																			<div class="col-md-3 nopad-left">
+																				<div class="card card-blue">
+																					<h4>Conta à Ordem 1</h4>
+																					<p class="number">213342905</p>
+																					<p class="saldo text-right">1.550,00 <span>EUR</span></p>
+																				</div>
+																			</div>
+																			<div class="col-md-3">
+																				<a id="cardexample_1" style="cursor:pointer;"><div class="card card-green">
+																					<h4>Conta à Ordem 2</h4>
+																					<p class="number">900657891</p>
+																					<p class="saldo text-right">2.000,00 <span>EUR</span></p>
+																				</div></a>
+																			</div>
+																			<div class="col-md-3">
+																				<div class="card card-yellow">
+																					<h4>Conta Fornecedores</h4>
+																					<p class="number">214567092</p>
+																					<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+																				</div>
+																			</div>
+																			<div class="col-md-3 nopad-right">
+																				<div class="card card-yellow">
+																					<h4>Conta Fornecedores</h4>
+																					<p class="number">214567092</p>
+																					<p class="saldo text-right">12.800,00 <span>EUR</span></p>
+																				</div>
 																			</div>
 																		</div>
 																	</div>
-																	<div class="card movsearch_advanced" id="search_advanced">
-																		<div class="ccontent">
-																			<div class="row">
-																				<div class="col-md-4 col-sm-5 col-xs-5">
-																					<div class="form-group">
-																							<input type="text" value="" placeholder="Descritivo" class="form-control" />
+																	<div class="panel-footer text-center hidden-sm hidden-xs">
+																		<a id="plus" style="cursor:pointer;">
+																			<i class="fa fa-plus"></i><br>
+																			<span>CONTAS</span>
+																		</a>
+																		<a id="cancel" style="cursor:pointer;">
+																			<i class="fa fa-times"></i><br>
+																			<span>CANCELAR</span>
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="accountselector_selected" id="accountselector_selected">
+																<div class="panel panel-default panel-horizontal">
+																	<div class="panel-body">
+																		<div class="row">
+																			<div class="col-md-12">
+																				<div class="card card-green">
+																					<div class="row">
+																						<div class="col-md-4 col-sm-4 col-xs-7">
+																							<h4>Conta à Ordem 2</h4>
+																							<p class="number">900657891</p>
+																						</div>
+																						<div class="col-md-8 col-sm-8 col-xs-5">
+																							<div class="col-md-6 col-sm-6 text-right">
+																								<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+																								<p class="saldo">2.000,00 <span>EUR</span></p>
+																							</div>
+																							<div class="col-md-6 col-sm-6 hidden-xs text-right">
+																								<span>SALDO AUTORIZADO</span>
+																								<p class="saldo">2.000,00 <span>EUR</span></p>
+																							</div>
+																						</div>
 																					</div>
 																				</div>
-																				<div class="col-md-4 col-sm-4 col-xs-4">
-																					<input class="datepicker form-control" type="text" value="Data de Lançamento" />
-																					<script>
-																					$('.datepicker').datepicker({
-																						weekStart:1
-																					});
-																					</script>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="panel-footer text-center hidden-sm hidden-xs">
+																		<a id="change" style="cursor:pointer;">
+																			<i class="fa fa-refresh"></i><br>
+																			<span>ALTERAR  </span>
+																		</a>
+																	</div>
+																</div>
+																<p class="text-right hidden-md hidden-lg">
+																	<button class="btn btn-link" data-toggle="modal" data-target="#accountselector_mobile"><i class="fa fa-refresh"></i> Alterar conta</button>
+																</p>
+															</div>
+															<div class="accountselector_dropdown" id="accountselector_dropdown">
+																<div class="panel panel-default panel-horizontal">
+																	<div class="panel-body">
+																		<div class="scrollable">
+																			<div class="card card-blue">
+																				<div class="row">
+																					<div class="col-md-4">
+																						<h4>Conta à Ordem 1</h4>
+																						<p class="number">213342905</p>
+																					</div>
+																					<div class="col-md-8 text-right">
+																						<div class="col-md-6">
+																							<span>SALDO CONTABILÍSTICO</span>
+																							<p class="saldo">1.550,00 <span>EUR</span></p>
+																						</div>
+																						<div class="col-md-6">
+																							<span>SALDO AUTORIZADO</span>
+																							<p class="saldo">1.550,00 <span>EUR</span></p>
+																						</div>
+																					</div>
 																				</div>
-																				<div class="col-md-4 col-sm-3 col-xs-3">
-																					<div class="form-group">
-																							<input type="text" value="" placeholder="Montante (€)" class="form-control" />
+																			</div>
+																			<a id="cardexample_2" style="cursor:pointer;"><div class="card card-green">
+																				<div class="row">
+																					<div class="col-md-4">
+																						<h4>Conta à Ordem 2</h4>
+																						<p class="number">900657891</p>
+																					</div>
+																					<div class="col-md-8 text-right">
+																						<div class="col-md-6">
+																							<span>SALDO CONTABILÍSTICO</span>
+																							<p class="saldo">2.000,00 <span>EUR</span></p>
+																						</div>
+																						<div class="col-md-6">
+																							<span>SALDO AUTORIZADO</span>
+																							<p class="saldo">2.000,00 <span>EUR</span></p>
+																						</div>
+																					</div>
+																				</div>
+																			</div></a>
+																			<div class="card card-yellow">
+																				<div class="row">
+																					<div class="col-md-4">
+																						<h4>Conta Fornecedores</h4>
+																						<p class="number">214567092</p>
+																					</div>
+																					<div class="col-md-8 text-right">
+																						<div class="col-md-6">
+																							<span>SALDO CONTABILÍSTICO</span>
+																							<p class="saldo">12.800,00 <span>EUR</span></p>
+																						</div>
+																						<div class="col-md-6">
+																							<span>SALDO AUTORIZADO</span>
+																							<p class="saldo">12.800,00 <span>EUR</span></p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="card card-primary">
+																				<div class="row">
+																					<div class="col-md-4">
+																						<h4>Conta à Ordem 3</h4>
+																						<p class="number">950242905</p>
+																					</div>
+																					<div class="col-md-8 text-right">
+																						<div class="col-md-6">
+																							<span>SALDO CONTABILÍSTICO</span>
+																							<p class="saldo">550,00 <span>EUR</span></p>
+																						</div>
+																						<div class="col-md-6">
+																							<span>SALDO AUTORIZADO</span>
+																							<p class="saldo">550,00 <span>EUR</span></p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="card card-default">
+																				<div class="row">
+																					<div class="col-md-4">
+																						<h4>Conta Estado</h4>
+																						<p class="number">670901241</p>
+																					</div>
+																					<div class="col-md-8 text-right">
+																						<div class="col-md-6">
+																							<span>SALDO CONTABILÍSTICO</span>
+																							<p class="saldo">2.100,00 <span>EUR</span></p>
+																						</div>
+																						<div class="col-md-6">
+																							<span>SALDO AUTORIZADO</span>
+																							<p class="saldo">2.100,00 <span>EUR</span></p>
+																						</div>
 																					</div>
 																				</div>
 																			</div>
@@ -474,9 +622,53 @@
 																	</div>
 																</div>
 															</div>
+															<div class="space-30"></div>
 															<div class="row">
 																<div class="col-md-12">
 																	<div class="card movtable">
+
+																		<div class="row">
+																			<div class="col-md-12 card_search">
+																				<div class="movsearch">
+																					<div class="ccontent_no_bottom">
+																						<div class="form-group label-floating has-normal">
+																							<label class="control-label">Pesquisar</label>
+																							<input type="text" class="form-control">
+																							<p class="text-right"><a style="cursor:pointer;" id="toggle_search_advanced"><span>
+																								<i class="material-icons">search</i> Pesquisa Avançada
+																							</span></a></p>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="movsearch_advanced" id="search_advanced">
+																					<div class="ccontent_no_top">
+																						<div class="row">
+																							<div class="col-md-4 col-sm-5 col-xs-12">
+																								<div class="form-group label-floating has-normal">
+																									<label class="control-label">Descritivo</label>
+																									<input type="text" class="form-control">
+																								</div>
+																							</div>
+																							<div class="col-md-4 col-sm-4 col-xs-12">
+																								<input class="datepicker form-control" type="text" value="Data de Lançamento"/>
+																									<script>
+																									$('.datepicker').datepicker({
+																										weekStart:1
+																									});
+																									</script>
+																							</div>
+																							<div class="col-md-4 col-sm-3 col-xs-12">
+																								<div class="form-group label-floating has-normal">
+																									<label class="control-label">Montante</label>
+																									<input type="text" class="form-control">
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
 																		<div class="ccontent">
 
 																			<table class="table">
@@ -506,15 +698,56 @@
 																											</label>
 																										</div>
 																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																									<td data-toggle="collapse" data-target="#line1" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line1" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line1" class="accordion-toggle">Pagamento serviços lorem ipsum</a></td>
+																									<td data-toggle="collapse" data-target="#line1" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line1" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
 																									<td class="td-actions text-right hidden-xs">
 																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
 																													<i class="fa fa-file-o"></i>
 																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line1">
+																											<div class="accordian-content">
+																												<div class="row">
+																													<div class="col-md-12">
+																														<span class="title-main">SERVIÇOS MB - PAGAMENTO DE SERVIÇOS</span>
+																													</div>
+																												</div>
+																												<hr>
+																												<div class="row">
+																														<div class="col-md-4">
+																															<div class="card card-green">
+																																<span class="account-type">CONTA ORIGEM</span>
+																																<span class="account-name">Conta Lorem Ipsum</span>
+																																<span class="account-number">987700231</span>
+																															</div>
+																														</div>
+																														<div class="col-md-2">
+																															<span class="title">Entidade</span>
+																															<span class="info">12345</span>
+																														</div>
+																														<div class="col-md-2">
+																															<span class="title">Referência</span>
+																															<span class="info">12345345</span>
+																														</div>
+																														<div class="col-md-2">
+																															<span class="title">Despesas</span>
+																															<span class="info">0,50€</span>
+																														</div>
+																														<div class="col-md-2">
+																															<ul class="list-unstyled">
+																																<li style="margin:0px;"><a class="btn btn-default btn-xs"><i class="material-icons">refresh</i> Repetir</a></li>
+																																<li><a class="btn btn-default btn-xs"><i class="material-icons">favorite</i>Favoritos</a></li>
+																															</ul>
+																														</div>
+																												</div>
+																											</div>
+																										</div>
 																									</td>
 																							</tr>
 																							<tr>
@@ -525,11 +758,11 @@
 																											</label>
 																										</div>
 																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
+																									<td data-toggle="collapse" data-target="#line2" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line2" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line2" class="accordion-toggle">Transf Nacional 1244</a></td>
+																									<td data-toggle="collapse" data-target="#line2" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line2" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
 																									<td class="td-actions text-right hidden-xs">
 																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
 																													<i class="fa fa-file-o"></i>
@@ -537,145 +770,266 @@
 																									</td>
 																							</tr>
 																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line2">
+																											<div class="accordian-content">
+																												<div class="row">
+																													<div class="col-md-12">
+																														<span class="title-main">TRANSFERÊNCIAS - NACIONAIS</span>
+																													</div>
+																												</div>
+																												<hr>
+																												<div class="row">
+																														<div class="col-md-3">
+																															<div class="card card-green">
+																																<span class="account-type">CONTA ORIGEM</span>
+																																<span class="account-name">Conta Lorem Ipsum</span>
+																																<span class="account-number">987700231</span>
+																															</div>
+																														</div>
+																														<div class="col-md-3">
+																															<div class="card card-default">
+																																<span class="account-type">BENEFICIÁRIO</span>
+																																<span class="account-name">John Lorem Doe</span>
+																																<span class="account-number">PT50 0035 12345432567 23</span>
+																															</div>
+																														</div>
+																														<div class="col-md-2">
+																															<span class="title">Encargos</span>
+																															<span class="info">20,00€</span>
+																														</div>
+																														<div class="col-md-2">
+																															<span class="title">Custo da Operação</span>
+																															<span class="info">0,00€</span>
+																														</div>
+																														<div class="col-md-2">
+																															<ul class="list-unstyled">
+																																<li style="margin:0px;"><a class="btn btn-default btn-xs"><i class="material-icons">refresh</i> Repetir</a></li>
+																																<li class="no-pad"><a class="btn btn-default btn-xs"><i class="material-icons">favorite</i> Favoritos</a></li>
+																															</ul>
+																														</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
 																									<td>
 																										<div class="checkbox">
 																											<label>
 																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line3" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line3" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line3" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line3" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line3" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line3">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td>
+																										<div class="checkbox">
+																											<label>
+																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line4" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line4" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line4" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line4" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line4" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line4">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td>
+																										<div class="checkbox">
+																											<label>
+																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line5" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line5" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line5" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line5" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line5" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line5">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td>
+																										<div class="checkbox">
+																											<label>
+																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line6" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line6" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line6" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line6" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line6" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line6">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td>
+																										<div class="checkbox">
+																											<label>
+																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line7" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line7" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line7" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line7" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line7" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line7">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td>
+																										<div class="checkbox">
+																											<label>
+																												<input type="checkbox" name="optionsCheckboxes">
+																											</label>
+																										</div>
+																									</td>
+																									<td data-toggle="collapse" data-target="#line8" class="accordion-toggle" style="cursor:pointer;">20/08/2016</td>
+																									<td data-toggle="collapse" data-target="#line8" style="cursor:pointer;" class="hidden-xs hidden-sm accordion-toggle">20/08/2016</td>
+																									<td><a data-toggle="collapse" data-target="#line8" class="accordion-toggle">Lorem impsum dolor sit amet</a></td>
+																									<td data-toggle="collapse" data-target="#line8" style="cursor:pointer;" class="text-right accordion-toggle">&euro; 100,00</td>
+																									<td data-toggle="collapse" data-target="#line8" style="cursor:pointer;" class="accordion-toggle text-right hidden-xs">&euro; 2.000,00</td>
+																									<td class="td-actions text-right hidden-xs">
+																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
+																													<i class="fa fa-file-o"></i>
+																											</button>
+																									</td>
+																							</tr>
+																							<tr>
+																									<td colspan="7" class="hiddenRow">
+																										<div class="accordian-body collapse" id="line8">
+																											<div class="accordian-content">
+																												<div class="row">
+																														<div class="col-md-3">
+																															<span class="title">Lorem ipsum</span>
+																															<span class="info">Lorem</span>
+																														</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																														<div class="col-md-3">sadasd</div>
+																												</div>
+																											</div>
+																										</div>
+																									</td>
+																							</tr>
 
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
-																							<tr>
-																									<td>
-																										<div class="checkbox">
-																											<label>
-																												<input type="checkbox" name="optionsCheckboxes">
-
-																											</label>
-																										</div>
-																									</td>
-																									<td>20/08/2016</td>
-																									<td class="hidden-xs hidden-sm">20/08/2016</td>
-																									<td>Lorem impsum dolor sit amet</td>
-																									<td class="text-right">&euro; 100,00</td>
-																									<td class="text-right hidden-xs">&euro; 2.000,00</td>
-																									<td class="td-actions text-right hidden-xs">
-																											<button type="button" rel="tooltip" title="Nota de lançamento disponível" class="btn btn-primary btn-simple btn-xs">
-																													<i class="fa fa-file-o"></i>
-																											</button>
-																									</td>
-																							</tr>
 																					</tbody>
 																			</table>
 																			<a href="#"><p class="loadmore text-center">Ver mais movimentos <i class="fa fa-chevron-down"></i></p></a>
