@@ -714,35 +714,45 @@
 																										<div class="accordian-body collapse" id="line1">
 																											<div class="accordian-content">
 																												<div class="row">
-																													<div class="col-md-12">
+																													<div class="col-md-12 col-sm-12 col-xs-12">
 																														<span class="title-main">SERVIÇOS MB - PAGAMENTO DE SERVIÇOS</span>
 																													</div>
 																												</div>
 																												<hr>
 																												<div class="row">
-																														<div class="col-md-4">
+																														<div class="col-md-4 col-sm-4 col-xs-12">
 																															<div class="card card-green">
 																																<span class="account-type">CONTA ORIGEM</span>
 																																<span class="account-name">Conta Lorem Ipsum</span>
 																																<span class="account-number">987700231</span>
 																															</div>
 																														</div>
-																														<div class="col-md-2">
+																														<div class="col-md-2 col-sm-2 col-xs-4">
 																															<span class="title">Entidade</span>
 																															<span class="info">12345</span>
 																														</div>
-																														<div class="col-md-2">
+																														<div class="col-md-2 col-sm-2 col-xs-4">
 																															<span class="title">Referência</span>
 																															<span class="info">12345345</span>
 																														</div>
-																														<div class="col-md-2">
+																														<div class="col-md-2 col-sm-2 col-xs-4">
 																															<span class="title">Despesas</span>
 																															<span class="info">0,50€</span>
 																														</div>
-																														<div class="col-md-2">
+																														<div class="col-md-2 col-sm-2 hidden-xs">
 																															<ul class="list-unstyled">
-																																<li style="margin:0px;"><a class="btn btn-default btn-xs"><i class="material-icons">refresh</i> Repetir</a></li>
+																																<li><a class="btn btn-default btn-xs"><i class="material-icons">refresh</i> Repetir</a></li>
 																																<li><a class="btn btn-default btn-xs"><i class="material-icons">favorite</i> Criar Favorito</a></li>
+																															</ul>
+																														</div>
+																														<div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+																															<ul class="list-unstyled buttons-xs">
+																																<li><a class="btn btn-default btn-xs"><i class="material-icons">refresh</i></a></li>
+																															</ul>
+																														</div>
+																														<div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+																															<ul class="list-unstyled buttons-xs">
+																																<li><a class="btn btn-default btn-xs"><i class="material-icons">favorite</i></a></li>
 																															</ul>
 																														</div>
 																												</div>
@@ -834,7 +844,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line3">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -870,7 +880,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line4">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -906,7 +916,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line5">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -942,7 +952,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line6">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -978,7 +988,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line7">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -1014,7 +1024,7 @@
 																							</tr>
 																							<tr>
 																									<td colspan="7" class="hiddenRow">
-																										<div class="accordian-body collapse" id="line8">
+																										<div class="accordian-body collapse" id="line">
 																											<div class="accordian-content">
 																												<div class="row">
 																														<div class="col-md-3">
@@ -1201,6 +1211,174 @@
 									</div>
 	</div>
 
+
+	<!-- ACCOUNT SELECTOR MOBILE MODAL -->
+	<div id="accountselector_mobile" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg accountselector_modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Escolher conta</h4>
+				</div>
+				<div class="modal-body">
+								<div class="card card-yellow">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Conta à Ordem 1</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a style="cursor:pointer;" id="cardexample_3"><div class="card card-blue" data-dismiss="modal">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>A minha conta 2</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div></a>
+								<div class="card card-primary">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Lorem Ipsum Dolor</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-green">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Conta Estado</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span>S<span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-green">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Conta Estado</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-green">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Conta Estado</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card card-green">
+									<div class="row">
+										<div class="col-sm-4 col-xs-7">
+											<h4>Conta Estado</h4>
+											<p class="number">670901241</p>
+										</div>
+										<div class="col-xs-5 text-right hidden-sm">
+											<span><span class="hidden-xs">SALDO </span>CONTABILÍSTICO</span>
+											<p class="saldo">2.100,00 <span>EUR</span></p>
+										</div>
+										<div class="col-sm-8 text-right hidden-xs">
+											<div class="col-sm-6">
+												<span>SALDO CONTABILÍSTICO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+											<div class="col-sm-6">
+												<span>SALDO AUTORIZADO</span>
+												<p class="saldo">2.100,00 <span>EUR</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm offcanvas-clone"></div>
 </body>

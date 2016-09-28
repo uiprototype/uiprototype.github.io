@@ -100,9 +100,11 @@ hr {
     font-weight: 500;
     width: 100%;
 }
-.accordian-content ul .list-unstyled li {
-  padding:0px;
-  margin:0px !important;
+@media (max-width:360px){
+  .accordian-content .buttons-xs {
+    margin-top: 15px !important;
+    margin-bottom: 10px;
+  }
 }
 
 /* SPACES */
