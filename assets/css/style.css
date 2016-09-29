@@ -62,7 +62,7 @@ hr {
   background-color: #fafafa;
 }
 .accordian-content {
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 10px 20px;
   min-height: 210px;
 }
 .accordian-content hr {
@@ -79,8 +79,9 @@ hr {
 }
 .accordian-content .title {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 11px;
   display:block;
+  text-transform: uppercase;
 }
 .accordian-content .info {
   font-weight: 300;
@@ -89,6 +90,7 @@ hr {
 .accordian-content .sub-info {
   font-weight: 300;
   font-size: 12px;
+  display: block;
 }
 .accordian-content .card {
   margin-bottom:0px;
@@ -112,20 +114,109 @@ hr {
     width: 100%;
     margin: 8px 0px;
 }
+
 @media (max-width:768px) {
-  .accordian-content .buttons-row {
-    text-align: center;
-    margin-top: 5px;
+  .accordian-content {
+    padding: 10px;
+  }
+  .accordian-content .btn {
+      font-size: 10px;
+      padding: 8px 8px;
+      border-radius: 50px;
+      box-shadow: none;
+      font-weight: 500;
+      width: 100%;
+      margin: 5px 0px;
+  }
+  .accordian-content #repetir_operacao {
+    margin-top: 15px;
+  }
+  .accordian-content .sub-info {
+    font-size: 11px;
   }
   .accordian-content .info, .accordian-content .title {
-    display: inline;
-  }
-  .accordian-content .info {
     margin-left: 5px;
+    font-size: 12px;
   }
   .accordian-content .card-default {
     margin-bottom: 10px;
   }
+}
+
+/* MODAL CONTENT TABLE */
+.mov-modal .mov-modal-header {
+  margin-bottom: 30px;
+}
+.mov-modal .sub-title-main {
+  font-weight: 500;
+  font-size: 10px;
+  display:block;
+  color: #777;
+}
+.mov-modal .title-main {
+  font-weight: 16px;
+  font-weight: 400;
+}
+.mov-modal .addfav {
+  color: #d1005d;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+.mov-modal .addfav:hover{
+  text-decoration: none;
+}
+.mov-modal .addfav .material-icons {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.mov-modal .title {
+  font-weight: 400;
+  font-size: 11px;
+  display:block;
+  text-transform: uppercase;
+}
+.mov-modal .info {
+  font-weight: 300;
+  font-size: 13px;
+}
+.mov-modal .sub-info {
+  font-weight: 300;
+  font-size: 12px;
+  display: block;
+}
+.mov-modal hr {
+  margin:10px 0px !important;
+}
+.mov-modal .btn-default {
+    background-color: transparent;
+    color: #777;
+    border: 2px solid #777;
+}
+.mov-modal .btn-default:hover {
+  background-color: #777;
+  color: #fff;
+  box-shadow: none;
+}
+.mov-modal .btn-primary {
+    background-color: transparent;
+    color: #d1005d;
+    border: 2px solid #d1005d;
+}
+.mov-modal .btn-primary:hover {
+  background-color: #d1005d;
+  color: #fff;
+  box-shadow: none;
+}
+.mov-modal .btn {
+    font-size: 10px;
+    padding: 8px 8px;
+    border-radius: 50px;
+    box-shadow: none;
+    font-weight: 500;
+    margin:0px;
 }
 
 /* SPACES */

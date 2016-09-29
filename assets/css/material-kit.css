@@ -2476,7 +2476,7 @@ legend {
 .info {
   max-width: 360px;
   margin: 0 auto;
-  padding: 70px 0 30px;
+  /* padding: 70px 0 30px; */
 }
 .info .icon {
   color: #999999;
@@ -3126,7 +3126,10 @@ h2.title {
 }
 .modal-content .modal-footer {
   border-top: none;
-  padding: 7px;
+    padding-top: 15px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 .modal-content .modal-footer button {
   margin: 0;
@@ -3143,9 +3146,9 @@ h2.title {
 .modal-content .modal-footer button + button {
   margin-bottom: 16px;
 }
-.modal-content .modal-body + .modal-footer {
+/* .modal-content .modal-body + .modal-footer {
   padding-top: 0;
-}
+} */
 
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.3);
