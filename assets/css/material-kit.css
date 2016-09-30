@@ -2802,7 +2802,6 @@ h2.title {
     padding: 5px;
     background-color: #d1005d;
     color: #fff;
-    border-radius:3px;
   }
   .mobile-nav-tabs .btn {
     padding: 10px 15px;
@@ -2822,8 +2821,6 @@ h2.title {
     background-color: rgba(209,0,93, 0.8);
     color: #fff;
     margin-bottom: 10px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
     margin-top: -2px;
   }
   .mobile-nav-drop-navigation .nav-list{
