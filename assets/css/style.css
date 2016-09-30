@@ -2422,17 +2422,12 @@ text-transform: uppercase;
 
 /*FACTORING*/
 /*Consolidacao*/
-.consolidacao {
-  padding: 15px 15px 15px 15px;
-}
-@media (max-width:1024px){
   .consolidacao {
     padding: 15px 15px 0px 15px;
   }
   .consolidacao hr {
     margin: 20px 0px 0px 0px !important;
   }
-}
 
 #consolidacao {
   padding-bottom: 15px;

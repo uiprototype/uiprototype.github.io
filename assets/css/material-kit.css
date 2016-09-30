@@ -2787,6 +2787,49 @@ h2.title {
   transition: background-color .1s .2s;
 }
 
+.mobile-nav-tabs {
+  padding: 5px;
+  background-color: #d1005d;
+  color: #fff;
+  border-radius:3px;
+}
+.mobile-nav-tabs .btn {
+  padding: 10px 15px;
+  font-size: 12px;
+  margin: 0px;
+}
+.mobile-nav-tabs #arrow-left, .mobile-nav-tabs #arrow-right {
+  padding:5px;
+}
+.mobile-nav-tabs #arrow-left i, .mobile-nav-tabs #arrow-right i {
+  font-size: 25px;
+}
+
+.mobile-nav-drop {
+}
+.mobile-nav-drop-navigation {
+  background-color: rgba(209,0,93, 0.8);
+  color: #fff;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-top: -2px;
+}
+.mobile-nav-drop-navigation .nav-list{
+  padding: 8px 0px;
+}
+.mobile-nav-drop-navigation .nav-list li{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 0px 8px 20px;
+}
+.mobile-nav-drop-navigation .nav-list a{
+  color: #fff;
+}
+.mobile-nav-drop-navigation .nav-list a:hover{
+  text-decoration: none;
+}
 /* NAV TABS SM XS */
 @media (max-width: 1024px) {
   .nav-tabs {

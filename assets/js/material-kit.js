@@ -209,6 +209,72 @@ $(document).ready(function(){
     });
 });
 
+// SEARCH ADVANCED & ACCOUNT SELECTOR
+$(document).ready(function(){
+
+  $("#mobile-nav-tabs-2").hide();
+  $("#mobile-nav-tabs-3").hide();
+  $("#mobile-nav-tabs-4").hide();
+
+    $("#mnt-1-arrow-left").click(function(){
+        $("#mobile-nav-tabs-4").show();
+        $("#mobile-nav-tabs-1").hide();
+    });
+    $("#mnt-1-arrow-right").click(function(){
+        $("#mobile-nav-tabs-2").show();
+        $("#mobile-nav-tabs-1").hide();
+    });
+    $("#mnt-2-arrow-left").click(function(){
+        $("#mobile-nav-tabs-1").show();
+        $("#mobile-nav-tabs-2").hide();
+    });
+    $("#mnt-2-arrow-right").click(function(){
+        $("#mobile-nav-tabs-3").show();
+        $("#mobile-nav-tabs-2").hide();
+    });
+    $("#mnt-3-arrow-left").click(function(){
+        $("#mobile-nav-tabs-2").show();
+        $("#mobile-nav-tabs-3").hide();
+    });
+    $("#mnt-3-arrow-right").click(function(){
+        $("#mobile-nav-tabs-4").show();
+        $("#mobile-nav-tabs-3").hide();
+    });
+    $("#mnt-4-arrow-left").click(function(){
+        $("#mobile-nav-tabs-3").show();
+        $("#mobile-nav-tabs-4").hide();
+    });
+    $("#mnt-4-arrow-right").click(function(){
+        $("#mobile-nav-tabs-1").show();
+        $("#mobile-nav-tabs-4").hide();
+    });
+
+    $("#mnt-link-1").click(function(){
+        $("#mobile-nav-tabs-1").show();
+        $("#mobile-nav-tabs-2").hide();
+        $("#mobile-nav-tabs-3").hide();
+        $("#mobile-nav-tabs-4").hide();
+    });
+    $("#mnt-link-2").click(function(){
+        $("#mobile-nav-tabs-2").show();
+        $("#mobile-nav-tabs-1").hide();
+        $("#mobile-nav-tabs-3").hide();
+        $("#mobile-nav-tabs-4").hide();
+    });
+    $("#mnt-link-3").click(function(){
+        $("#mobile-nav-tabs-3").show();
+        $("#mobile-nav-tabs-1").hide();
+        $("#mobile-nav-tabs-2").hide();
+        $("#mobile-nav-tabs-4").hide();
+    });
+    $("#mnt-link-4").click(function(){
+        $("#mobile-nav-tabs-4").show();
+        $("#mobile-nav-tabs-1").hide();
+        $("#mobile-nav-tabs-2").hide();
+        $("#mobile-nav-tabs-3").hide();
+    });
+});
+
 
 
 // CC CALENDAR
