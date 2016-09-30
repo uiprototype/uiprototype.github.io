@@ -2812,7 +2812,7 @@ h2.title {
   .mobile-nav-tabs #arrow-left, .mobile-nav-tabs #arrow-right {
     padding:5px;
   }
-  .mobile-nav-tabs #arrow-left i, .mobile-nav-tabs #arrow-right i {
+  .mobile-nav-tabs .btn .material-icons {
     font-size: 25px;
   }
 
