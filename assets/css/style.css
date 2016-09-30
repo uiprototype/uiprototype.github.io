@@ -338,6 +338,11 @@ hr {
 }
 
 /* USER WELCOME */
+@media (max-width:1024px){
+  .user-welcome {
+    margin-top: 30px;
+  }
+}
 .user-welcome {
   padding: 15px;
   vertical-align: middle;
