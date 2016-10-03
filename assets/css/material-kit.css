@@ -2937,25 +2937,6 @@ h2.title {
     text-decoration: none;
   }
 }
-/* NAV TABS SM XS */
-@media (max-width: 1024px) {
-  .nav-tabs {
-    background: #d1005d;
-    border: 0;
-    border-radius: 0px;
-    margin: 0;
-    padding: 0px;
-  }
-  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    border-radius: 0px;
-  }
-}
-@media (max-width: 767px){
-  .nav-tabs > li > a {
-    font-size: 10px;
-    padding:5px 10px;
-  }
-}
 
 
 .popover, .tooltip-inner {
