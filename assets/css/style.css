@@ -3027,3 +3027,23 @@ div.cc_calendar div.legend span.badge {
     padding-top: 20px;
   }
 }
+
+
+
+#cont {
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  white-space: nowrap;
+}
+#cont li {
+  display: inline-block;
+  float:none;
+}
+/* .box {
+  background-color: #BBBBBB;
+  height: 100px;
+  display: inline-block;
+  margin: 5px 4px 5px 10px;
+  width: 100px;
+} */
