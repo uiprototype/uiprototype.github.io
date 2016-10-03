@@ -2751,11 +2751,7 @@ h2.title {
   color: #03a9f4;
 }
 
-@media(min-width:1024px){
-  .nav-tabs-scrollable {
-    display: none;
-  }
-}
+/* NAV TABS SCROLLABLE */
 @media (max-width:1025px){
   .nav-tabs-scrollable {
     background: #d1005d;
@@ -2803,7 +2799,54 @@ h2.title {
   display: inline-block;
   float:none;
 }
+@media(min-width:1024px){
+  .nav-tabs-scrollable {
+    background: #d1005d;
+    border: 0;
+    border-radius: 3px;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+  }
+  .nav-tabs-scrollable > li > a {
+    color: #FFFFFF;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .nav-tabs-scrollable > li > a:hover {
+    background-color: transparent;
+    border: 0;
+  }
+  .nav-tabs-scrollable > li > a, .nav-tabs-scrollable > li > a:hover, .nav-tabs-scrollable > li > a:focus {
+    border: 0 !important;
+    color: #FFFFFF !important;
+    font-weight: 400;
+  }
+  .nav-tabs-scrollable > li.disabled > a, .nav-tabs-scrollable > li.disabled > a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .nav-tabs-scrollable > li .material-icons {
+    margin: -1px 5px 0 0;
+  }
+  .nav-tabs-scrollable > li.active > a, .nav-tabs-scrollable > li.active > a:hover, .nav-tabs-scrollable > li.active > a:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color .1s .2s;
+  }
+  #scrollable {
+    overflow:hidden;
+    width: 100%;
+    float:none;
+    white-space: nowrap;
+  }
+  #scrollable li {
+    display:auto;
+  }
+}
 
+/* NAV TABS NORMAL */
 @media(max-width:1024px){
   .nav-tabs {
     display: none;
@@ -2846,6 +2889,7 @@ h2.title {
   }
 }
 
+/* NAV TABS DROPDOWN */
 @media(min-width:1025px){
   .mobile-nav-tabs, .mobile-nav-drop {
     display: none;
