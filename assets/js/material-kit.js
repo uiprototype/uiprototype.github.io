@@ -1,35 +1,3 @@
-/*! =========================================================
- *
- * Material Kit Free - V1.1.0
- *
- * =========================================================
- *
- *
- *                       _oo0oo_
- *                      o8888888o
- *                      88" . "88
- *                      (| -_- |)
- *                      0\  =  /0
- *                    ___/`---'\___
- *                  .' \\|     |// '.
- *                 / \\|||  :  |||// \
- *                / _||||| -:- |||||- \
- *               |   | \\\  -  /// |   |
- *               | \_|  ''\---/''  |_/ |
- *               \  .-\__  '-'  ___/-. /
- *             ___'. .'  /--.--\  `. .'___
- *          ."" '<  `.___\_<|>_/___.' >' "".
- *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
- *         \  \ `_.   \_ __\ /__ _/   .-` /  /
- *     =====`-.____`.___ \_____/___.-`___.-'=====
- *                       `=---='
- *
- *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- *
- *               Buddha Bless:  "No Bugs"
- *
- * ========================================================= */
-
 var transparent = true;
 
 var transparentDemo = true;
@@ -297,7 +265,6 @@ $.fn.cc_calendar = function (options) {
     this.each(function () {
         var $calendarElement = $(this);
         $calendarElement.attr('id', "cc_calendar_" + Math.floor(Math.random() * 99999).toString(36));
-
         $calendarElement.data('initYear', opts.year);
         $calendarElement.data('initMonth', opts.month);
         $calendarElement.data('monthLabels', opts.month_labels);
@@ -314,7 +281,6 @@ $.fn.cc_calendar = function (options) {
         $calendarElement.data('legendList', opts.legend);
         $calendarElement.data('actionFunction', opts.action);
         $calendarElement.data('actionNavFunction', opts.action_nav);
-
         drawCalendar();
 
         function drawCalendar() {
@@ -888,7 +854,6 @@ $.fn.cc_calendar_language = function (lang) {
         $('.navbar-nav').toggleClass('slide-in');
         $('.side-body').toggleClass('body-slide-in');
         $('#search').removeClass('in').addClass('collapse').slideUp(200);
-
         /// uncomment code for absolute positioning tweek see top comment in css
         //$('.absolute-wrapper').toggleClass('slide-in');
 
@@ -898,7 +863,6 @@ $.fn.cc_calendar_language = function (lang) {
    $('#search-trigger').click(function () {
         $('.navbar-nav').removeClass('slide-in');
         $('.side-body').removeClass('body-slide-in');
-
         /// uncomment code for absolute positioning tweek see top comment in css
         //$('.absolute-wrapper').removeClass('slide-in');
 
