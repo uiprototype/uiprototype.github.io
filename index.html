@@ -233,7 +233,7 @@
 
 									<!-- NAV TABS DESKTOP -->
 									<div>
-										<ul class="nav nav-tabs-scrollable nav-tabs-cc" role="tablist" id="scrollable">
+										<ul class="nav nav-tabs-scrollable" role="tablist" id="scrollable">
 											<li role="presentation" class="active"><a href="#inicio" aria-controls="inicio" role="tab" data-toggle="tab">Início</a></li>
 											<li role="presentation"><a href="#movimentos" aria-controls="movimentos" role="tab" data-toggle="tab">Movimentos</a></li>
 											<li role="presentation"><a href="#pendentes" aria-controls="pendentes" role="tab" data-toggle="tab">Pendentes</a></li>
@@ -1136,149 +1136,138 @@
 											<div role="tabpanel" class="tab-pane" id="pendentes">
 												<div class="row">
 													<div class="col-md-12">
-														<div class="card pensign movtable">
-															<div class="ccontent">
-																<h5>Operações por assinar</h5>
-																<table class="table">
-																		<thead>
-																				<tr>
-																						<th>
-																							<div class="checkbox">
-																								<label>
-																									<input type="checkbox" name="optionsCheckboxes">
+														<div class="card pensign movtable ccontent">
+															<h5>Operações por assinar</h5>
+															<table class="table">
+																	<thead>
+																			<tr>
+																					<th>
+																						<div class="checkbox">
+																							<label>
+																								<input type="checkbox" name="optionsCheckboxes">
 
-																								</label>
-																							</div>
-																						</th>
-																						<th>Número</th>
-																						<th>Descrição</th>
-																						<th class="hidden-xs">Conta</th>
-																						<th class="text-right">Valor</th>
-																						<th class="hidden-xs text-right">Data/Hora</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																				<tr>
-																						<td>
-																							<div class="checkbox">
-																								<label>
-																									<input type="checkbox" name="optionsCheckboxes">
+																							</label>
+																						</div>
+																					</th>
+																					<th>Número</th>
+																					<th>Descrição</th>
+																					<th class="hidden-xs">Conta</th>
+																					<th class="text-right">Valor</th>
+																					<th class="hidden-xs text-right">Data/Hora</th>
+																			</tr>
+																	</thead>
+																	<tbody>
+																			<tr>
+																					<td>
+																						<div class="checkbox">
+																							<label>
+																								<input type="checkbox" name="optionsCheckboxes">
 
-																								</label>
-																							</div>
-																						</td>
-																						<td>9087645</td>
-																						<td>Lorem ipsum dolor sit amet</td>
-																						<td class="hidden-xs">345098609</td>
-																						<td class="text-right">&euro; 1.000,00</td>
-																						<td class="text-right hidden-xs">20/08/2016 19:45</td>
-																				</tr>
-																				<tr>
-																						<td>
-																							<div class="checkbox">
-																								<label>
-																									<input type="checkbox" name="optionsCheckboxes">
+																							</label>
+																						</div>
+																					</td>
+																					<td>9087645</td>
+																					<td>Lorem ipsum dolor sit amet</td>
+																					<td class="hidden-xs">345098609</td>
+																					<td class="text-right">&euro; 1.000,00</td>
+																					<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																			</tr>
+																			<tr>
+																					<td>
+																						<div class="checkbox">
+																							<label>
+																								<input type="checkbox" name="optionsCheckboxes">
 
-																								</label>
-																							</div>
-																						</td>
-																						<td>9087645</td>
-																						<td>Lorem ipsum dolor sit amet</td>
-																						<td class="hidden-xs">345098609</td>
-																						<td class="text-right">&euro; 1.000,00</td>
-																						<td class="text-right hidden-xs">20/08/2016 19:45</td>
-																				</tr>
-																		</tbody>
-																</table>
-																<div class="actions">
-																	<ul class="list-inline">
-																	<li><button type="button" class="btn btn-primary disabled">Assinar operações</button></li>
-																	</ul>
-																</div>
+																							</label>
+																						</div>
+																					</td>
+																					<td>9087645</td>
+																					<td>Lorem ipsum dolor sit amet</td>
+																					<td class="hidden-xs">345098609</td>
+																					<td class="text-right">&euro; 1.000,00</td>
+																					<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																			</tr>
+																	</tbody>
+															</table>
+															<div class="actions">
+																<ul class="list-inline">
+																<li><button type="button" class="btn btn-primary disabled">Assinar operações</button></li>
+																</ul>
 															</div>
 														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-12">
-														<div class="card pensign movtable">
-															<div class="ccontent">
-																<h5>Operações pendentes</h5>
-																<table class="table">
-																		<thead>
-																				<tr>
-																						<th>
-																							<div class="checkbox">
-																								<label>
-																									<input type="checkbox" name="optionsCheckboxes">
-
-																								</label>
-																							</div>
-																						</th>
-																						<th>Número</th>
-																						<th>Descrição</th>
-																						<th class="hidden-xs">Conta</th>
-																						<th class="text-right">Valor</th>
-																						<th class="text-right hidden-xs">Data/Hora</th>
-																				</tr>
-																		</thead>
-																		<tbody>
+														<div class="card pensign movtable ccontent">
+															<h5>Operações pendentes</h5>
+															<table class="table">
+																	<thead>
 																			<tr>
-																					<td>
+																					<th>
 																						<div class="checkbox">
 																							<label>
 																								<input type="checkbox" name="optionsCheckboxes">
-
 																							</label>
 																						</div>
-																					</td>
-																					<td>9087645</td>
-																					<td>Lorem ipsum dolor sit amet</td>
-																					<td class="hidden-xs">345098609</td>
-																					<td class="text-right">&euro; 1.000,00</td>
-																					<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																					</th>
+																					<th>Número</th>
+																					<th>Descrição</th>
+																					<th class="hidden-xs">Conta</th>
+																					<th class="text-right">Valor</th>
+																					<th class="text-right hidden-xs">Data/Hora</th>
 																			</tr>
-																			<tr>
-																					<td>
-																						<div class="checkbox">
-																							<label>
-																								<input type="checkbox" name="optionsCheckboxes">
+																	</thead>
+																	<tbody>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
 
-																							</label>
-																						</div>
-																					</td>
-																					<td>9087645</td>
-																					<td>Lorem ipsum dolor sit amet</td>
-																					<td class="hidden-xs">345098609</td>
-																					<td class="text-right">&euro; 1.000,00</td>
-																					<td class="text-right hidden-xs">20/08/2016 19:45</td>
-																			</tr>
-																			<tr>
-																					<td>
-																						<div class="checkbox">
-																							<label>
-																								<input type="checkbox" name="optionsCheckboxes">
+																						</label>
+																					</div>
+																				</td>
+																				<td>9087645</td>
+																				<td>Lorem ipsum dolor sit amet</td>
+																				<td class="hidden-xs">345098609</td>
+																				<td class="text-right">&euro; 1.000,00</td>
+																				<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
 
-																							</label>
-																						</div>
-																					</td>
-																					<td>9087645</td>
-																					<td>Lorem ipsum dolor sit amet</td>
-																					<td class="hidden-xs">345098609</td>
-																					<td class="text-right">&euro; 1.000,00</td>
-																					<td class="text-right hidden-xs">20/08/2016 19:45</td>
-																			</tr>
-																		</tbody>
-																</table>
-																<div class="actions">
-																	<ul class="list-inline">
-																	<li><button type="button" class="btn btn-default">Eliminar</button></li>
-																	<li><button type="button" class="btn btn-primary">Notificar Autorizador</button></li>
-																	</ul>
-																</div>
+																						</label>
+																					</div>
+																				</td>
+																				<td>9087645</td>
+																				<td>Lorem ipsum dolor sit amet</td>
+																				<td class="hidden-xs">345098609</td>
+																				<td class="text-right">&euro; 1.000,00</td>
+																				<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																		</tr>
+																		<tr>
+																				<td>
+																					<div class="checkbox">
+																						<label>
+																							<input type="checkbox" name="optionsCheckboxes">
+
+																						</label>
+																					</div>
+																				</td>
+																				<td>9087645</td>
+																				<td>Lorem ipsum dolor sit amet</td>
+																				<td class="hidden-xs">345098609</td>
+																				<td class="text-right">&euro; 1.000,00</td>
+																				<td class="text-right hidden-xs">20/08/2016 19:45</td>
+																		</tr>
+																	</tbody>
+															</table>
+															<div class="actions">
+																<ul class="list-inline">
+																<li><button type="button" class="btn btn-default">Eliminar</button></li>
+																<li><button type="button" class="btn btn-primary">Notificar Autorizador</button></li>
+																</ul>
 															</div>
-														</div>
 													</div>
 												</div>
 											</div>
